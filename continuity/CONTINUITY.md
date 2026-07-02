@@ -2,6 +2,12 @@
 
 This file exists for later readers if the original initiator can no longer continue CivitasX.
 
+For the parent-layer mission, read:
+
+```text
+continuity/CIVITASX_PARENT_MISSION.md
+```
+
 ## What Must Be Preserved
 
 The core direction:
@@ -49,4 +55,3 @@ If continuation is needed, start from:
 CivitasX should grow through public understanding, evidence, verification, and useful implementation.
 
 It should not become dependent on a single founder identity, a private platform account, a token price, or unverifiable authority.
-
