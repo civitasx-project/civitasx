@@ -84,13 +84,13 @@ CivitasX is not going public to announce that every answer has been completed. I
 
 ## 12. What kind of feedback is most valuable now?
 
-The most valuable feedback is concrete and construction-oriented:
+The most valuable feedback now is parent-level and construction-oriented:
 
-1. Which direction should be advanced first.
-2. Which wording is most likely to cause misunderstanding.
-3. Which mechanism is most likely to be distorted by powerful organizations, platforms, capital, or AI Agents.
-4. Which implementation path might harm ordinary members, vulnerable people, minorities, or those who want to exit.
-5. Whether there are better theories, real cases, failure cases, or engineering paths to compare against.
+1. Which wording is most likely to cause misunderstanding.
+2. Whether CivitasX is clear as a parent framework rather than a product, token project, political organization, startup pitch, or finished doctrine.
+3. Which preservation, archive, translation, forwarding, or citation path would make it easier to continue.
+4. Which field, reader, community, theory, real case, failure case, or engineering path should be compared next.
+5. Which risk should be watched before any subproject claims more than it can prove.
 
 ## 13. What kind of feedback is less useful?
 
@@ -99,7 +99,8 @@ Less useful feedback includes:
 1. Saying “too idealistic” without identifying which layer fails.
 2. Saying “I support this” without saying what can be contributed.
 3. Criticizing CivitasX after misreading it as a token launch, nation-building plan, religion, or complete institutional answer.
-4. Demanding all parameters and implementation rules immediately.
+4. Asking the parent framework to choose subproject priority as if CivitasX were a product portfolio.
+5. Demanding all parameters and implementation rules immediately.
 
 ## 14. What are the most important public boundaries right now?
 
