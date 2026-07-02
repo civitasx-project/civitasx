@@ -22,6 +22,7 @@ projects/ProvisionLoop.md
 projects/WillFlow.md
 launch/2026-07-01-first-public-launch.md
 continuity/CONTINUITY.md
+continuity/CIVITASX_PARENT_MISSION.md
 ```
 
 ## Do Not Include By Default
