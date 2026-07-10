@@ -1,15 +1,16 @@
-# Public Archive Manifest
+# CivitasX Public Archive Manifest
 
-Updated: 2026-07-01
+Updated: 2026-07-10
 
-This folder is a staging candidate for the first CivitasX public Git archive.
+Status: local founding-continuity baseline candidate. Not yet pushed.
 
-## Include In First Public Repository
+## Public Archive Contents
 
 ```text
 README.md
 PUBLIC_ARCHIVE_MANIFEST.md
-LICENSE_PENDING.md
+LICENSE.md
+CONTRIBUTING.md
 .gitattributes
 .gitignore
 public/PUBLIC_INTRO_EN.md
@@ -23,31 +24,51 @@ projects/WillFlow.md
 launch/2026-07-01-first-public-launch.md
 continuity/CONTINUITY.md
 continuity/CIVITASX_PARENT_MISSION.md
+continuity/CIVITASX_FOUNDING_BASELINE.md
+organchor/README.md
+organchor/history/2026-07-09/
+organchor/CHECKSUMS.sha256
 ```
 
-## Do Not Include By Default
+## Deliberately Not Included
 
 ```text
-Raw internal drafts.
-Deduplicated 172-item draft review materials.
-Theory workbench files that are still under internal consolidation.
-Account inventories.
-Credentials, recovery codes, API tokens, or private keys.
-Unlicensed third-party assets.
-Video drafts and frozen video assets.
+private keys;
+account credentials or recovery material;
+private outreach notes;
+raw internal drafts;
+the 239-item and 172-item internal source ledgers;
+unfinished theory workbench documents;
+unlicensed third-party assets;
+frozen video and rejected visual experiments.
 ```
 
-## First Repository Goal
+## Archive Goal
 
-The first repository should make CivitasX understandable and continuable, not expose every unfinished thought.
-
-The public archive should answer:
+The public archive should let a later reader answer:
 
 ```text
 What is CivitasX?
-What has already been made public?
+What direction is stable?
+Which mechanisms are still replaceable?
 What are the current project directions?
-Where are the public URLs?
-How can later people continue the work?
-What is still intentionally undecided?
+Where are the official public and signed records?
+What remains intentionally unresolved?
+How may the public text be reused?
+How can the work continue if the original initiator is absent?
+How should an independent continuation or fork identify itself?
 ```
+
+## Publication Gate
+
+Before pushing this candidate:
+
+1. review the CC BY-SA 4.0 scope and attribution wording;
+2. verify all parent and project descriptions against the live statement;
+3. verify the OrgAnchor mirror hashes;
+4. confirm no private key, local private path, credential, or private outreach
+   material is included;
+5. commit intentionally through the `github.com-civitasx` SSH route;
+6. push only after explicit publication approval;
+7. create an immutable baseline tag or release after the remote content is
+   verified.

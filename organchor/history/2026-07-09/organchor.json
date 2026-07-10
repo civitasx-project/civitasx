@@ -1,0 +1,257 @@
+{
+  "type": "OrgAnchorVerifyIndex",
+  "version": "1.0",
+  "generated_at": "2026-07-09T01:22:55.962Z",
+  "role": "adopting-organization-verify-index",
+  "organization": {
+    "name": "CivitasX",
+    "display_name": "CivitasX",
+    "description": "CivitasX is a long-term public engineering effort for future civilization, focused on survival freedom, development freedom, and the possibility for people to live by their own will. Its current OrgAnchor root authority is a temporary founder-stage continuity anchor for origin records and future migration, not a claim of permanent ownership or decentralized governance."
+  },
+  "statement": {
+    "path": "official-endpoints.json",
+    "hash": "sha256:1a52e0d110a50547640f01194d9f2195d5a0a9a44bec79b20966cc78e4f8a5df"
+  },
+  "signature": {
+    "path": "official-endpoints.json.sig",
+    "hash": "sha256:528ebd9dc5a9bc16fb9c303e0d3800ac512d5a01815877b4534692bd11bc75bc"
+  },
+  "root_authority": {
+    "path": "root-authority.json",
+    "hash": "sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f",
+    "authority_id": "root-authority-2026",
+    "threshold": {
+      "required": 1,
+      "total": 1
+    }
+  },
+  "verification": {
+    "command": "organchor statement verify --authority root-authority.json --expected-authority-hash sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f --in official-endpoints.json --sig official-endpoints.json.sig"
+  },
+  "agent_verification": {
+    "contract": "https://organchor.org/specs/agent-verification.v1",
+    "contract_version": "1.0",
+    "primary_entrypoint": "/.well-known/organchor.json",
+    "verify_base_path": "/verify/",
+    "artifact_base_path": "/verify/",
+    "command": "organchor verify url <organization-url>",
+    "compact_command": "organchor verify url <organization-url> --compact",
+    "result_type": "OrgAnchorAgentVerificationResult",
+    "compact_result_type": "OrgAnchorAgentVerificationCompactResult",
+    "trust_decision": "not_assigned_by_organchor",
+    "summary": {
+      "kind": "signed_organization_verification_index",
+      "goal": "Verify organization identity continuity and inspect value evidence with minimal external-agent friction.",
+      "identity_root": "root_authority",
+      "final_trust_decision": "external_agent_policy",
+      "required_identity_checks": [
+        "statement_hash",
+        "signature_hash",
+        "authority_hash",
+        "statement_authority_binding",
+        "statement_signature_threshold"
+      ],
+      "optional_value_checks": [
+        "claims_manifest",
+        "evidence_manifest",
+        "claims_evidence_references",
+        "value_continuity"
+      ],
+      "optional_history_checks": [
+        "lockfile_hash",
+        "lockfile_signature",
+        "carrier_receipts",
+        "external_anchors"
+      ],
+      "preferred_first_pass": "compact"
+    }
+  },
+  "visible_proof": {
+    "status": "PASS",
+    "generated_at": "2026-07-09T01:22:55.962Z",
+    "checks": [
+      {
+        "label": "Official endpoint statement",
+        "status": "PASS",
+        "detail": "Canonical hash recorded as sha256:1a52e0d110a50547640f01194d9f2195d5a0a9a44bec79b20966cc78e4f8a5df."
+      },
+      {
+        "label": "Root authority binding",
+        "status": "PASS",
+        "detail": "Statement root authority hash matches sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f."
+      },
+      {
+        "label": "Signature threshold",
+        "status": "PASS",
+        "detail": "1 valid signature(s) found; 1 required."
+      },
+      {
+        "label": "Signature file",
+        "status": "PASS",
+        "detail": "Detached signature hash recorded as sha256:528ebd9dc5a9bc16fb9c303e0d3800ac512d5a01815877b4534692bd11bc75bc."
+      },
+      {
+        "label": "Claims manifest",
+        "status": "NOT_INCLUDED",
+        "detail": "No signed claims manifest was included in this verify package."
+      },
+      {
+        "label": "Evidence manifest",
+        "status": "NOT_INCLUDED",
+        "detail": "No signed evidence manifest was included in this verify package."
+      },
+      {
+        "label": "Value continuity report",
+        "status": "NOT_INCLUDED",
+        "detail": "No value continuity report was included in this verify package."
+      },
+      {
+        "label": "Migration history",
+        "status": "NOT_INCLUDED",
+        "detail": "No migration history is included in this verify package yet."
+      },
+      {
+        "label": "Carrier receipts",
+        "status": "NOT_INCLUDED",
+        "detail": "No IPFS, Arweave, OpenTimestamps, or other carrier receipts were included."
+      },
+      {
+        "label": "Lockfile integrity",
+        "status": "NOT_INCLUDED",
+        "detail": "No signed publication receipt ledger was included."
+      }
+    ],
+    "summary": {
+      "statement_signed": true,
+      "threshold_met": true,
+      "valid_signature_count": 1,
+      "required_signature_count": 1,
+      "linked_artifact_count": 0,
+      "migration_count": 0,
+      "carrier_receipt_count": 0,
+      "lockfile_status": "NOT_INCLUDED",
+      "lockfile_hash": null,
+      "lockfile_signed": false
+    }
+  },
+  "agent_review": {
+    "overall_status": "WARN",
+    "identity_status": "PASS",
+    "value_status": "NOT_INCLUDED",
+    "conformance_status": "IDENTITY_VERIFY_PASS",
+    "trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+    "policy_route": {
+      "route": "REQUEST_VALUE_EVIDENCE",
+      "guidance": "Identity can be used for endpoint continuity, but product or service evaluation needs signed claims and evidence.",
+      "reasons": [
+        "value_layer_not_included"
+      ]
+    },
+    "evidence_class_summary": [
+      {
+        "label": "S1 First-party",
+        "status": "NOT_INCLUDED",
+        "count": 0,
+        "detail": "Organization-submitted evidence. Useful for scope and integrity, but not independent by itself."
+      },
+      {
+        "label": "S2 Third-party",
+        "status": "NOT_INCLUDED",
+        "count": 0,
+        "detail": "Organization-submitted third-party material with mechanical route and gap checks."
+      },
+      {
+        "label": "S3 Sampling",
+        "status": "NOT_INCLUDED",
+        "count": 0,
+        "detail": "Random purchase or sampling records. Current tooling checks declared gates; network slot ledgers are future work."
+      },
+      {
+        "label": "S4 Observation",
+        "status": "DESIGN_PREVIEW",
+        "count": 0,
+        "detail": "Real-use or delivery observation. Alpha support is partial and should be treated as a design-preview signal."
+      },
+      {
+        "label": "S5 Challenge",
+        "status": "DESIGN_PREVIEW",
+        "count": 0,
+        "detail": "Public challenge, correction, negative evidence, and historical accountability governance is documented but not implemented as a finished acceptance gate."
+      }
+    ],
+    "next_best_actions": [
+      "Ask the organization for signed claims/evidence manifests if product or service evaluation matters.",
+      "Request S3 random purchase or sampling support when anti-hand-picked-sample assurance matters."
+    ],
+    "source_files": [
+      "organchor.json"
+    ]
+  },
+  "root_continuity": {
+    "status": "CURRENT_ROOT_ONLY",
+    "current_root_authority": {
+      "path": "root-authority.json",
+      "hash": "sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f",
+      "authority_id": "root-authority-2026",
+      "threshold": {
+        "required": 1,
+        "total": 1
+      }
+    },
+    "previous_root_authorities": [],
+    "migration_chain": [],
+    "historical_verification_rule": "Historical statements use the root authority that signed them.",
+    "future_statement_rule": "New statements should be verified against the current root authority unless a later valid migration supersedes it."
+  },
+  "carrier_receipts": {
+    "status": "NOT_INCLUDED",
+    "source_lockfile": null,
+    "receipts": []
+  },
+  "lockfile_integrity": {
+    "status": "NOT_INCLUDED",
+    "note": "No lockfile snapshot was included."
+  },
+  "value_continuity": {
+    "status": "NOT_INCLUDED",
+    "summary": {
+      "total_claims": 0,
+      "self_asserted_claims": 0,
+      "evidence_linked_claims": 0,
+      "third_party_claims": 0,
+      "reproducible_claims": 0,
+      "time_proven_claims": 0,
+      "unsupported_claims": 0,
+      "total_evidence_items": 0,
+      "external_evidence_items": 0,
+      "first_party_evidence_items": 0,
+      "stale_evidence_items": 0,
+      "profile_declared_claims": 0,
+      "profile_pass_claims": 0,
+      "profile_gap_claims": 0,
+      "PASS": 0,
+      "WARN": 0,
+      "FAIL": 0,
+      "MANUAL_CHECK_REQUIRED": 0
+    }
+  },
+  "directory_discovery": {
+    "status": "NOT_INCLUDED",
+    "trust_boundary": {
+      "directory_is_trust_root": false,
+      "final_trust_decision": "EXTERNAL_AGENT",
+      "records_must_verify_at_origin": true
+    },
+    "note": "No Directory snapshot was included in this verification index."
+  },
+  "linked_artifacts": {},
+  "migration_history": {
+    "status": "NOT_INCLUDED",
+    "migrations": []
+  },
+  "notes": [
+    "This index belongs to the adopting organization using OrgAnchor.",
+    "This index is not a trust root.",
+    "Verify signatures and root authority before trusting endpoint claims."
+  ]
+}

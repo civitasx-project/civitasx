@@ -2,3 +2,7 @@
 *.md text eol=lf
 *.txt text eol=lf
 
+# Preserve immutable OrgAnchor snapshots byte-for-byte across platforms.
+organchor/history/** -text
+organchor/CHECKSUMS.sha256 text eol=lf
+

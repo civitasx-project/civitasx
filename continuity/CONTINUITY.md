@@ -1,19 +1,25 @@
 # Continuity Note
 
-This file exists for later readers if the original initiator can no longer continue CivitasX.
+This file is the short entry for later readers if the original initiator can no
+longer continue CivitasX.
 
-For the parent-layer mission, read:
+Read these first:
 
 ```text
+public/PUBLIC_INTRO_EN.md
+public/PUBLIC_FAQ_EN.md
 continuity/CIVITASX_PARENT_MISSION.md
+continuity/CIVITASX_FOUNDING_BASELINE.md
+LICENSE.md
 ```
 
 ## What Must Be Preserved
 
-The core direction:
+The stable direction:
 
 ```text
-More people should gain real survival freedom, real development freedom, and a real possibility to choose the shape of their own lives.
+More people should gain real survival freedom, real development freedom, and a
+real possibility to choose the shape and meaning of their own lives.
 ```
 
 The public slogan:
@@ -31,27 +37,39 @@ ProvisionLoop
 WillFlow
 ```
 
-## What Should Not Be Frozen
+## What Must Not Be Frozen
 
-The current project names, mechanisms, implementation details, and roadmaps are not sacred.
+Current names, mechanisms, parameters, implementation details, and roadmaps are
+not sacred.
 
-They can be revised, replaced, or discarded if better designs are found, as long as the core direction remains intact.
+They may be revised, replaced, or discarded if better designs preserve the
+stable direction more effectively.
+
+## Authority And Independent Continuation
+
+The current OrgAnchor authority is a Temporary Founder Authority used for
+origin continuity and future migration. It is not ownership of the idea.
+
+A later authority may claim signed continuity only through a valid migration
+chain.
+
+Without signed migration, continuation remains allowed under the public
+license, but it must be identified honestly as an independent continuation,
+historical fork, translation, adaptation, or inspired work.
 
 ## Practical Continuation Path
 
-If continuation is needed, start from:
-
-```text
-1. Read the public statement and FAQ.
-2. Read the four project direction files.
-3. Preserve the launch record and public URLs.
-4. Identify which project can be advanced with concrete work.
-5. Record changes in public, with dates and reasons.
-6. Avoid presenting unfinished mechanisms as final doctrine.
-```
+1. Preserve the public statement, FAQ, founding baseline, and signed snapshots.
+2. Verify current official endpoints through OrgAnchor when possible.
+3. Separate stable values from replaceable mechanisms.
+4. Record changes publicly with dates and reasons.
+5. Move detailed implementation work into the relevant subproject.
+6. Keep the public record reusable and continuable for the next generation.
 
 ## Boundary
 
-CivitasX should grow through public understanding, evidence, verification, and useful implementation.
+CivitasX should grow through public understanding, evidence, verification,
+useful implementation, and honest correction.
 
-It should not become dependent on a single founder identity, a private platform account, a token price, or unverifiable authority.
+It should not become dependent on a personality, token price, private platform
+account, unverifiable authority, or frozen early mechanism.
