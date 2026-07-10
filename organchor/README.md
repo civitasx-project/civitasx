@@ -14,6 +14,7 @@ https://civitasx.pages.dev/.well-known/organchor.json
 
 ```text
 history/2026-07-09/
+history/2026-07-10-parent-value-001/
 ```
 
 This is the first deployed CivitasX identity-continuity snapshot under OrgAnchor
@@ -33,6 +34,31 @@ beacon-at-publication.json
 The snapshot is historical, not the active discovery route. Future protocol or
 value-layer upgrades may add stronger checks without silently replacing this
 record.
+
+The second snapshot is the first deployed CivitasX parent value package. It
+preserves the same root authority and official statement while adding signed
+parent claims, a signed evidence manifest, and the value-continuity audit.
+
+It contains:
+
+```text
+root-authority.json
+official-endpoints.json
+official-endpoints.json.sig
+organchor.json
+index.html
+claims/product-claims.json
+claims/product-claims.json.sig
+evidence/evidence-manifest.json
+evidence/evidence-manifest.json.sig
+reports/value-continuity-report.json
+reports/value-continuity-report.md
+beacon-at-publication.json
+```
+
+Production verification at publication reported `identity_status: PASS`,
+`value_status: PASS`, and `conformance_status: FULL_COMPATIBLE`. That status is
+a verification result, not an endorsement or final trust decision.
 
 ## Verification Boundary
 

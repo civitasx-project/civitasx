@@ -1,8 +1,8 @@
 # CivitasX Public Archive Manifest
 
-Updated: 2026-07-10
+Updated: 2026-07-11
 
-Status: local founding-continuity baseline candidate. Not yet pushed.
+Status: published through the first Parent Value V2 snapshot.
 
 ## Public Archive Contents
 
@@ -22,11 +22,13 @@ projects/EchoEnginer.md
 projects/ProvisionLoop.md
 projects/WillFlow.md
 launch/2026-07-01-first-public-launch.md
+launch/2026-07-11-parent-value-v2.md
 continuity/CONTINUITY.md
 continuity/CIVITASX_PARENT_MISSION.md
 continuity/CIVITASX_FOUNDING_BASELINE.md
 organchor/README.md
 organchor/history/2026-07-09/
+organchor/history/2026-07-10-parent-value-001/
 organchor/CHECKSUMS.sha256
 ```
 
@@ -59,16 +61,16 @@ How can the work continue if the original initiator is absent?
 How should an independent continuation or fork identify itself?
 ```
 
-## Publication Gate
+## Archive Maintenance Gate
 
-Before pushing this candidate:
+Before publishing future archive updates:
 
-1. review the CC BY-SA 4.0 scope and attribution wording;
+1. preserve earlier immutable records rather than replacing them silently;
 2. verify all parent and project descriptions against the live statement;
-3. verify the OrgAnchor mirror hashes;
+3. verify every OrgAnchor mirror hash against the public origin;
 4. confirm no private key, local private path, credential, or private outreach
    material is included;
 5. commit intentionally through the `github.com-civitasx` SSH route;
-6. push only after explicit publication approval;
-7. create an immutable baseline tag or release after the remote content is
-   verified.
+6. push only after explicit publication authorization;
+7. verify the remote files and create an immutable tag when the update forms a
+   continuity milestone.

@@ -69,15 +69,25 @@ rules.
 ```text
 Verify page: https://civitasx.pages.dev/verify/
 Beacon: https://civitasx.pages.dev/.well-known/organchor.json
-First snapshot: https://civitasx.pages.dev/verify-history/2026-07-09/
+First identity snapshot: https://civitasx.pages.dev/verify-history/2026-07-09/
+First parent value snapshot: https://civitasx.pages.dev/verify-history/2026-07-10-parent-value-001/
+```
+
+Current production verification:
+
+```text
+identity_status: PASS
+value_status: PASS
+conformance_status: FULL_COMPATIBLE
+trust_decision: NOT_ASSIGNED_BY_ORGANCHOR
 ```
 
 The current root authority is a Temporary Founder Authority for origin
 continuity and future migration. It is not permanent ownership, decentralized
 governance, certification, or proof that CivitasX is correct.
 
-The `organchor/` directory mirrors immutable public verification snapshots when
-available.
+The `organchor/` directory mirrors immutable public verification snapshots and
+their publication-time discovery records.
 
 ## Parent Boundary
 

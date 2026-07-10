@@ -1,0 +1,43 @@
+{
+  "type": "OrgAnchorBeacon",
+  "version": "1.0",
+  "origin": "https://civitasx.pages.dev",
+  "verify_url": "https://civitasx.pages.dev/verify/",
+  "well_known_url": "https://civitasx.pages.dev/.well-known/organchor.json",
+  "verify_index_url": "https://civitasx.pages.dev/verify/organchor.json",
+  "root_authority_hash": "sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f",
+  "statement_hash": "sha256:1a52e0d110a50547640f01194d9f2195d5a0a9a44bec79b20966cc78e4f8a5df",
+  "organization": {
+    "name": "CivitasX",
+    "display_name": "CivitasX",
+    "description": "CivitasX is a long-term public engineering effort for future civilization, focused on survival freedom, development freedom, and the possibility for people to live by their own will. Its current OrgAnchor root authority is a temporary founder-stage continuity anchor for origin records and future migration, not a claim of permanent ownership or decentralized governance."
+  },
+  "discovery": {
+    "categories": [
+      "uncategorized"
+    ],
+    "capabilities": [
+      "identity-continuity"
+    ],
+    "regions": [
+      "global"
+    ],
+    "languages": [
+      "en"
+    ]
+  },
+  "summary_status": {
+    "identity_status": "PASS",
+    "value_status": "PASS",
+    "policy_route": "READY_FOR_EXTERNAL_POLICY",
+    "updated_at": "2026-07-10T13:00:47.290Z"
+  },
+  "agent_flow": {
+    "first_pass": "organchor verify url https://civitasx.pages.dev --compact",
+    "deep_verify": "organchor verify url https://civitasx.pages.dev",
+    "beacon_inspect": "organchor beacon inspect https://civitasx.pages.dev",
+    "doctor": "organchor doctor https://civitasx.pages.dev",
+    "trust_decision": "EXTERNAL_AGENT"
+  },
+  "extensions": {}
+}
