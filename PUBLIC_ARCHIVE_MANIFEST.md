@@ -1,8 +1,9 @@
 # CivitasX Public Archive Manifest
 
-Updated: 2026-07-11
+Updated: 2026-07-12
 
-Status: published through the first Parent Value V2 snapshot.
+Status: published through the first Parent Value V2 snapshot, with current
+OrgAnchor adoption-gap status prepared for the next archive update.
 
 ## Public Archive Contents
 
@@ -27,6 +28,8 @@ continuity/CONTINUITY.md
 continuity/CIVITASX_PARENT_MISSION.md
 continuity/CIVITASX_FOUNDING_BASELINE.md
 organchor/README.md
+organchor/current/adoption-status.html
+organchor/current/adoption-status.json
 organchor/history/2026-07-09/
 organchor/history/2026-07-10-parent-value-001/
 organchor/CHECKSUMS.sha256

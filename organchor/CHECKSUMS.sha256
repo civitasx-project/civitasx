@@ -1,8 +1,11 @@
+071c8c2f1b7ec8cab42ccbca262593dd76ddf741035fd06f397f14923e329b28  organchor/README.md
+11e73484b8f9abbaebd029b6da8131330be5bfc188e539dffe792b4b20299eb5  organchor/current/adoption-status.html
 2518b498f91d156d9aff2ee3e42b3febebe1305ea607e9352b8314e018a39fc0  organchor/history/2026-07-09/beacon-at-publication.json
 28760388dd6975addebfcd271c67d2721839ef87a005f83b26cbdfe2bd7a1455  organchor/history/2026-07-09/official-endpoints.json.sig
 28760388dd6975addebfcd271c67d2721839ef87a005f83b26cbdfe2bd7a1455  organchor/history/2026-07-10-parent-value-001/official-endpoints.json.sig
 28a1bc9995efffa80a79005ca6466c3a9c463089c5fcea6316c3d8d41bf542a3  organchor/history/2026-07-09/index.html
 4081af8e66783b595b4e013dc2c1b346c8d4c88d08ff4a1789201bc50afa1f77  organchor/history/2026-07-10-parent-value-001/claims/product-claims.json
+5a2ee8d4767f1e3f9013f4c99fb7169c1881675eea17452575c3e64c1a16be7a  organchor/current/adoption-status.json
 74fc6ba020be4cbe78bfeda93d431f66195b4bb52d066eb81acc083d6c2564ab  organchor/history/2026-07-10-parent-value-001/index.html
 77a15cc06fd86dbbf23cbc367c0cca3c5d3d8763c5964e940cee5c88c70235bc  organchor/history/2026-07-10-parent-value-001/beacon-at-publication.json
 79e47e484e1627280cd8706fe42e9ac18494785df8992c9c2f73a6880c7c32bf  organchor/history/2026-07-09/official-endpoints.json
@@ -12,7 +15,6 @@
 82d76b103c2c2ec32d41b5ea9f545e747b03ec50c0f2cbe83da7a112f4f177c9  organchor/history/2026-07-10-parent-value-001/reports/value-continuity-report.json
 90fad6c2aa36307a7dedddb3795bd4a2a3333d6cc279a4caa062ae8364ea1807  organchor/history/2026-07-10-parent-value-001/organchor.json
 969fd7c40cc2df4b6afb23f75d2bb2e48ee6502611a8ab91c0e9d14be6415a04  organchor/history/2026-07-09/organchor.json
-ab54e2f22b981b486581799e4aafb8ac5b70cb5bd5a6dbbfc0b27378c2bff122  organchor/README.md
 b6c55386d7c83f893868a336bfd98a58b886f258df849376616f84824fdca1bd  organchor/history/2026-07-10-parent-value-001/claims/product-claims.json.sig
 bf9fd7a7d4745e98f9d0f6909c09c6a0a34a8204dfac5e41a1eff924acd63991  organchor/history/2026-07-10-parent-value-001/evidence/evidence-manifest.json.sig
 d75115ac2b9168a5e9432bc6c4650ed558afbbfe75b9409a0248a909b54f432b  organchor/history/2026-07-10-parent-value-001/evidence/evidence-manifest.json

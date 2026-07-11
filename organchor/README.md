@@ -10,6 +10,28 @@ https://civitasx.pages.dev/verify/
 https://civitasx.pages.dev/.well-known/organchor.json
 ```
 
+## Current Adoption Status
+
+```text
+current/adoption-status.html
+current/adoption-status.json
+```
+
+These files explain the current maturity and remaining gaps in CivitasX's own
+OrgAnchor adoption.
+
+They do not replace immutable history snapshots, do not create a new root
+authority statement, and do not claim complete OrgAnchor paradigm adoption.
+They make the live state legible:
+
+```text
+Level 1: PASS
+Level 2: PASS WITH DOMAIN WARNINGS
+Level 3: IN PROGRESS
+Level 4: PARTIAL
+Level 5: PARTIAL AND BLOCKED
+```
+
 ## Historical Snapshots
 
 ```text

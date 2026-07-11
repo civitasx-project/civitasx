@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CivitasX OrgAnchor Adoption Status</title>
+  <link rel="organchor" type="application/json" href="/.well-known/organchor.json">
+  <link rel="alternate" type="application/json" href="./adoption-status.json" title="CivitasX OrgAnchor adoption status">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f4;
+      --text: #171717;
+      --muted: #5f6368;
+      --line: #d9d7cf;
+      --panel: #ffffff;
+      --accent: #174ea6;
+      --ok: #137333;
+      --warn: #8a5a00;
+      --bad: #b3261e;
+      --code: #f1f3f4;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111111;
+        --text: #f1f1f1;
+        --muted: #b7b7b7;
+        --line: #373737;
+        --panel: #1a1a1a;
+        --accent: #8ab4f8;
+        --ok: #81c995;
+        --warn: #fdd663;
+        --bad: #f28b82;
+        --code: #242424;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 1.25rem;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 14px;
+      border-radius: 8px;
+    }
+
+    .label {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 4px;
+    }
+
+    .value {
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    .badge {
+      display: inline-block;
+      min-width: 92px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-align: center;
+      border: 1px solid currentColor;
+    }
+
+    .pass,
+    .ready,
+    .full-compatible {
+      color: var(--ok);
+    }
+
+    .warn,
+    .partial,
+    .in-progress,
+    .limited {
+      color: var(--warn);
+    }
+
+    .blocked,
+    .not-included,
+    .not-published,
+    .not-proven {
+      color: var(--bad);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+    }
+
+    th {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    code,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      background: var(--code);
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 4px;
+      overflow-wrap: anywhere;
+    }
+
+    ol,
+    ul {
+      color: var(--muted);
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .note {
+      border-left: 4px solid var(--warn);
+      padding: 12px 14px;
+      background: var(--panel);
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: min(100% - 24px, 960px);
+        padding: 32px 0;
+      }
+
+      th,
+      td {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>CivitasX OrgAnchor Adoption Status</h1>
+      <p>This page explains how far CivitasX has applied OrgAnchor to itself. It is a public gap status, not a new root authority statement, not an endorsement, and not a higher maturity claim.</p>
+      <p>CivitasX is publicly verifiable now. It has not completed the full long-term OrgAnchor continuity paradigm.</p>
+      <div class="summary" aria-label="Current baseline summary">
+        <div class="card">
+          <span class="label">Identity</span>
+          <span class="badge pass">PASS</span>
+        </div>
+        <div class="card">
+          <span class="label">Value</span>
+          <span class="badge pass">PASS</span>
+        </div>
+        <div class="card">
+          <span class="label">Conformance</span>
+          <span class="badge full-compatible">FULL_COMPATIBLE</span>
+        </div>
+        <div class="card">
+          <span class="label">Doctor</span>
+          <span class="badge ready">READY</span>
+        </div>
+      </div>
+    </header>
+
+    <section aria-labelledby="plain-meaning">
+      <h2 id="plain-meaning">Plain Meaning</h2>
+      <p>CivitasX currently has a working public verification package. People and AI agents can check the signed identity record, public endpoints, parent claims, evidence manifest, and value continuity report.</p>
+      <p>What remains incomplete is deeper resilience: a public signed publication ledger, independent carrier receipts, content-addressed archives, recovery from public artifacts, durable naming, and real multi-custodian migration.</p>
+      <p class="note">In short: the current package is enough for the present public baseline, but not enough to say CivitasX has fully completed the OrgAnchor continuity model.</p>
+    </section>
+
+    <section aria-labelledby="levels">
+      <h2 id="levels">Current Level Matrix</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Level</th>
+            <th scope="col">Status</th>
+            <th scope="col">What it means for CivitasX now</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Level 1: Minimal Verifiable Identity</th>
+            <td><span class="badge pass">PASS</span></td>
+            <td>Root authority, signed official endpoint statement, public verify page, and CLI verification are present.</td>
+          </tr>
+          <tr>
+            <th scope="row">Level 2: Public Verification Presence</th>
+            <td><span class="badge warn">PASS WITH WARNINGS</span></td>
+            <td>The public verification route is live, but the project still uses a shared provider subdomain and some domain controls require manual review.</td>
+          </tr>
+          <tr>
+            <th scope="row">Level 3: Mirrored and Archived Identity</th>
+            <td><span class="badge in-progress">IN PROGRESS</span></td>
+            <td>Cloudflare and GitHub records exist, and a stronger carrier-ledger candidate passed locally. The active public package still lacks a signed lockfile, carrier receipts, IPFS CID, Arweave transaction, or Bitcoin-confirmed timestamp.</td>
+          </tr>
+          <tr>
+            <th scope="row">Level 4: Disaster Recovery and Auxiliary Names</th>
+            <td><span class="badge partial">PARTIAL</span></td>
+            <td>A local clean-room recovery rehearsal passed from a local archive. Recovery from independently retrieved public artifacts has not yet been proven.</td>
+          </tr>
+          <tr>
+            <th scope="row">Level 5: Governance and Migration Ready</th>
+            <td><span class="badge blocked">PARTIAL AND BLOCKED</span></td>
+            <td>The current authority is a truthful 1-of-1 Temporary Founder Authority. Real threshold custody and signed migration require independent long-term custodians and are not complete.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="gaps">
+      <h2 id="gaps">Main Remaining Gaps</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Gap</th>
+            <th scope="col">Status</th>
+            <th scope="col">Why it matters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Signed publication ledger</th>
+            <td><span class="badge not-included">NOT INCLUDED</span></td>
+            <td>The active public package does not include a signed <code>organchor.lock.json</code> showing exactly where the package was preserved, mirrored, timestamped, or archived.</td>
+          </tr>
+          <tr>
+            <th scope="row">Carrier receipts</th>
+            <td><span class="badge not-included">NOT INCLUDED</span></td>
+            <td>No public IPFS, Arweave, OpenTimestamps, or equivalent carrier receipts are included in the active package.</td>
+          </tr>
+          <tr>
+            <th scope="row">Content-addressed mirror</th>
+            <td><span class="badge not-published">NOT PUBLISHED</span></td>
+            <td>No real IPFS CID or equivalent public content-addressed mirror is currently published for the active package.</td>
+          </tr>
+          <tr>
+            <th scope="row">Arweave transaction</th>
+            <td><span class="badge not-published">NOT PUBLISHED</span></td>
+            <td>A portable Arweave manual package candidate exists locally, but there is no public Arweave transaction.</td>
+          </tr>
+          <tr>
+            <th scope="row">Public-artifact recovery</th>
+            <td><span class="badge not-proven">NOT PROVEN</span></td>
+            <td>Recovery has not yet been repeated using only externally retrieved public artifacts.</td>
+          </tr>
+          <tr>
+            <th scope="row">Canonical domain</th>
+            <td><span class="badge partial">PARTIAL</span></td>
+            <td>The project currently uses <code>civitasx.pages.dev</code>. A dedicated canonical domain and hardened naming strategy remain future work.</td>
+          </tr>
+          <tr>
+            <th scope="row">Threshold custody</th>
+            <td><span class="badge blocked">BLOCKED</span></td>
+            <td>The current root authority is 1-of-1. Multi-custodian authority should wait for real independent custodians and must not be simulated.</td>
+          </tr>
+          <tr>
+            <th scope="row">Migration history</th>
+            <td><span class="badge not-included">NOT INCLUDED</span></td>
+            <td>No authority migration has happened, so no migration chain is included in the current package.</td>
+          </tr>
+          <tr>
+            <th scope="row">Independent evidence</th>
+            <td><span class="badge limited">LIMITED</span></td>
+            <td>The current parent claims are supported by first-party evidence and reproducible public records, but not by independent S2/S3/S4 evidence.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="next">
+      <h2 id="next">Recommended Next Actions</h2>
+      <ol>
+        <li>Keep this public adoption-gap status reachable from <code>/verify/</code> and GitHub.</li>
+        <li>Decide whether to unfreeze and publish the already verified carrier-ledger candidate.</li>
+        <li>Add at least one real independent carrier, such as IPFS, Arweave, or another content-addressed or append-only archive.</li>
+        <li>Repeat recovery from public artifacts only.</li>
+        <li>Treat domain hardening and threshold custody as later structural work.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="non-claims">
+      <h2 id="non-claims">What This Does Not Claim</h2>
+      <ul>
+        <li>This status does not mean CivitasX is endorsed by OrgAnchor.</li>
+        <li>This status does not prove that CivitasX is correct.</li>
+        <li>This status does not prove decentralized governance.</li>
+        <li>This status does not make Cloudflare, GitHub, IPFS, Arweave, or any carrier the identity root.</li>
+        <li>This status does not grant authority to issue new official CivitasX statements without the current valid root authority or a later signed migration.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="files">
+      <h2 id="files">Related Files</h2>
+      <ul>
+        <li><a href="./adoption-status.json">Machine-readable adoption status JSON</a></li>
+        <li><a href="./organchor.json">OrgAnchor verify index</a></li>
+        <li><a href="./reports/value-continuity-report.json">Value continuity report JSON</a></li>
+        <li><a href="./reports/value-continuity-report.md">Value continuity report Markdown</a></li>
+        <li><a href="./">Main verification page</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
