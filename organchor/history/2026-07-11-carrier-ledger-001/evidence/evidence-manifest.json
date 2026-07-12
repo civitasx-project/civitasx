@@ -1,0 +1,568 @@
+{
+  "schema": "https://organchor.org/schemas/evidence-manifest.v1.json",
+  "type": "OrgAnchorEvidenceManifest",
+  "version": "1.0",
+  "manifest_id": "organchor-evidence-2026-07-10-001",
+  "issued_at": "2026-07-10T12:45:00.000Z",
+  "organization_ref": {
+    "name": "CivitasX",
+    "display_name": "CivitasX"
+  },
+  "ai_policy": {
+    "summary_policy": "Do not treat organization-signed claims as independently verified facts."
+  },
+  "correction_policy": {
+    "summary": "If evidence is found to be stale, incorrect, unavailable, or misleading, CivitasX should publish a corrected evidence manifest and preserve the old signed manifest as a historical record.",
+    "preferred_record": "Corrections should be made by new signed evidence records, not by silently rewriting historical artifacts."
+  },
+  "evidence": [
+    {
+      "id": "ev-public-intro-en",
+      "title": "CivitasX public statement page",
+      "issuer_type": "first_party",
+      "media_type": "text/html",
+      "reproducibility": "reproducible",
+      "evidence_strength": "hash_bound",
+      "size": 12806,
+      "hash": "sha256:6c967010510c4c11098c23d257bf3a081c69123e824ff9277cad10cbd9bf71be",
+      "locations": [
+        {
+          "type": "https",
+          "uri": "https://civitasx.pages.dev/"
+        }
+      ],
+      "relations": [
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-parent-purpose"
+        },
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-starting-directions"
+        }
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "limitations": [
+        "First-party public statement",
+        "Useful for declared purpose and project framing, not independent proof of future outcomes."
+      ],
+      "method_refs": [
+        "method-public-intro-hash"
+      ]
+    },
+    {
+      "id": "ev-public-faq-en",
+      "title": "CivitasX public FAQ page",
+      "issuer_type": "first_party",
+      "media_type": "text/html",
+      "reproducibility": "reproducible",
+      "evidence_strength": "hash_bound",
+      "size": 11716,
+      "hash": "sha256:5e7bcb5e24682ccd1fe0d30e0dbf247b4b839600a0ebc25e100233aaab4550c6",
+      "locations": [
+        {
+          "type": "https",
+          "uri": "https://civitasx.pages.dev/faq"
+        }
+      ],
+      "relations": [
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-public-boundaries"
+        },
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-starting-directions"
+        }
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "limitations": [
+        "First-party FAQ",
+        "Useful for declared boundary statements, not independent legal or financial assessment."
+      ],
+      "method_refs": [
+        "method-public-faq-hash"
+      ]
+    },
+    {
+      "id": "ev-official-endpoints-statement",
+      "title": "Signed official endpoints statement",
+      "issuer_type": "first_party",
+      "media_type": "application/json",
+      "reproducibility": "reproducible",
+      "evidence_strength": "signed_hash_bound",
+      "size": 2453,
+      "hash": "sha256:79e47e484e1627280cd8706fe42e9ac18494785df8992c9c2f73a6880c7c32bf",
+      "locations": [
+        {
+          "type": "https",
+          "uri": "https://civitasx.pages.dev/verify/official-endpoints.json"
+        }
+      ],
+      "relations": [
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-official-endpoints"
+        },
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-temporary-founder-authority"
+        }
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "limitations": [
+        "Shows signed endpoint continuity under the current root authority",
+        "Does not certify product quality or legal status."
+      ],
+      "method_refs": [
+        "method-official-endpoints-hash"
+      ]
+    },
+    {
+      "id": "ev-history-snapshot-index",
+      "title": "CivitasX first OrgAnchor historical snapshot index",
+      "issuer_type": "first_party",
+      "media_type": "application/json",
+      "reproducibility": "reproducible",
+      "evidence_strength": "hash_bound",
+      "size": 9274,
+      "hash": "sha256:969fd7c40cc2df4b6afb23f75d2bb2e48ee6502611a8ab91c0e9d14be6415a04",
+      "locations": [
+        {
+          "type": "https",
+          "uri": "https://civitasx.pages.dev/verify-history/2026-07-09/organchor.json"
+        }
+      ],
+      "relations": [
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-first-snapshot"
+        }
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "limitations": [
+        "Historical snapshot of this adoption package",
+        "Future current packages may supersede /verify/ without erasing this snapshot."
+      ],
+      "method_refs": [
+        "method-history-snapshot-recheck"
+      ]
+    },
+    {
+      "id": "ev-public-license",
+      "title": "CivitasX public text license at founding baseline commit",
+      "issuer_type": "first_party",
+      "media_type": "text/markdown",
+      "reproducibility": "reproducible",
+      "evidence_strength": "hash_bound",
+      "size": 1655,
+      "hash": "sha256:a86b908ba13a9fb6d16ad833576a35a308e01a0abcea45de8584c42a9bccf670",
+      "locations": [
+        {
+          "type": "https",
+          "uri": "https://raw.githubusercontent.com/civitasx-project/civitasx/8c3b696e77a35dc082dac072d8884d470956a888/LICENSE.md"
+        }
+      ],
+      "relations": [
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-public-text-license"
+        }
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "limitations": [
+        "First-party license declaration for the stated public archive scope.",
+        "Does not grant official continuity, endorsement, trademark rights, private material access, or subproject software rights."
+      ],
+      "method_refs": [
+        "method-public-license-recheck"
+      ]
+    },
+    {
+      "id": "ev-founding-baseline",
+      "title": "CivitasX founding continuity baseline at founding baseline commit",
+      "issuer_type": "first_party",
+      "media_type": "text/markdown",
+      "reproducibility": "reproducible",
+      "evidence_strength": "hash_bound",
+      "size": 8995,
+      "hash": "sha256:ea0922a078ee179482c923da4de117edf0f204d4e0fa5140aa67ff9f4497c1b4",
+      "locations": [
+        {
+          "type": "https",
+          "uri": "https://raw.githubusercontent.com/civitasx-project/civitasx/8c3b696e77a35dc082dac072d8884d470956a888/continuity/CIVITASX_FOUNDING_BASELINE.md"
+        }
+      ],
+      "relations": [
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-parent-purpose"
+        },
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-starting-directions"
+        },
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-temporary-founder-authority"
+        },
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-founding-continuity-baseline"
+        }
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "limitations": [
+        "First-party founder-stage continuity statement.",
+        "Not a finished whitepaper, independent endorsement, or proof of future outcomes."
+      ],
+      "method_refs": [
+        "method-founding-baseline-recheck"
+      ]
+    },
+    {
+      "id": "ev-github-history-snapshot",
+      "title": "GitHub mirror of the first CivitasX OrgAnchor snapshot index",
+      "issuer_type": "first_party",
+      "media_type": "application/json",
+      "reproducibility": "reproducible",
+      "evidence_strength": "hash_bound",
+      "size": 9274,
+      "hash": "sha256:969fd7c40cc2df4b6afb23f75d2bb2e48ee6502611a8ab91c0e9d14be6415a04",
+      "locations": [
+        {
+          "type": "https",
+          "uri": "https://raw.githubusercontent.com/civitasx-project/civitasx/8c3b696e77a35dc082dac072d8884d470956a888/organchor/history/2026-07-09/organchor.json"
+        }
+      ],
+      "relations": [
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-first-snapshot"
+        },
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-github-snapshot-mirror"
+        }
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "limitations": [
+        "Provider mirror of an immutable historical snapshot.",
+        "Not the active discovery entrypoint and not an independent trust decision."
+      ],
+      "method_refs": [
+        "method-github-snapshot-recheck"
+      ]
+    },
+    {
+      "id": "ev-github-checksums",
+      "title": "SHA-256 checksum manifest for the CivitasX GitHub OrgAnchor mirror",
+      "issuer_type": "first_party",
+      "media_type": "text/plain",
+      "reproducibility": "reproducible",
+      "evidence_strength": "hash_bound",
+      "size": 781,
+      "hash": "sha256:0b6e67e5fdbc58296af80037ff1433d474739d79e4e9b1279f772d34db41056b",
+      "locations": [
+        {
+          "type": "https",
+          "uri": "https://raw.githubusercontent.com/civitasx-project/civitasx/8c3b696e77a35dc082dac072d8884d470956a888/organchor/CHECKSUMS.sha256"
+        }
+      ],
+      "relations": [
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-first-snapshot"
+        },
+        {
+          "type": "supports_claim",
+          "claim_id": "cxt-github-snapshot-mirror"
+        }
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "limitations": [
+        "Checksums detect byte changes in the mirrored files.",
+        "Checksums do not assign trust or prove the CivitasX theory."
+      ],
+      "method_refs": [
+        "method-github-checksums-recheck"
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "type": "OrgAnchorEvidenceMethod",
+      "id": "method-public-intro-hash",
+      "method_kind": "hash_recheck",
+      "title": "Recheck public statement page hash",
+      "target_claim_ids": [
+        "cxt-parent-purpose",
+        "cxt-starting-directions"
+      ],
+      "target_evidence_ids": [
+        "ev-public-intro-en"
+      ],
+      "cost_to_verify": "low",
+      "required_tools": [
+        "HTTP client",
+        "SHA-256 hasher"
+      ],
+      "steps": [
+        "Fetch https://civitasx.pages.dev/",
+        "Compute SHA-256 of the fetched page body",
+        "Compare with the evidence hash in this manifest"
+      ],
+      "expected_results": [
+        "The fetched page hashes to sha256:6c967010510c4c11098c23d257bf3a081c69123e824ff9277cad10cbd9bf71be"
+      ],
+      "limitations": [
+        "Cloudflare may normalize transport headers",
+        "hash comparison is for the response body artifact represented in this manifest."
+      ]
+    },
+    {
+      "type": "OrgAnchorEvidenceMethod",
+      "id": "method-public-faq-hash",
+      "method_kind": "hash_recheck",
+      "title": "Recheck public FAQ page hash",
+      "target_claim_ids": [
+        "cxt-public-boundaries",
+        "cxt-starting-directions"
+      ],
+      "target_evidence_ids": [
+        "ev-public-faq-en"
+      ],
+      "cost_to_verify": "low",
+      "required_tools": [
+        "HTTP client",
+        "SHA-256 hasher"
+      ],
+      "steps": [
+        "Fetch https://civitasx.pages.dev/faq",
+        "Compute SHA-256 of the fetched page body",
+        "Compare with the evidence hash in this manifest"
+      ],
+      "expected_results": [
+        "The fetched page hashes to sha256:5e7bcb5e24682ccd1fe0d30e0dbf247b4b839600a0ebc25e100233aaab4550c6"
+      ],
+      "limitations": [
+        "Useful for checking the currently published FAQ artifact",
+        "not an independent assessment of all boundary claims."
+      ]
+    },
+    {
+      "type": "OrgAnchorEvidenceMethod",
+      "id": "method-official-endpoints-hash",
+      "method_kind": "signed_statement_recheck",
+      "title": "Recheck official endpoints statement hash and signature",
+      "target_claim_ids": [
+        "cxt-official-endpoints",
+        "cxt-temporary-founder-authority"
+      ],
+      "target_evidence_ids": [
+        "ev-official-endpoints-statement"
+      ],
+      "cost_to_verify": "low",
+      "required_tools": [
+        "HTTP client",
+        "OrgAnchor CLI or compatible verifier"
+      ],
+      "steps": [
+        "Fetch https://civitasx.pages.dev/verify/official-endpoints.json",
+        "Fetch https://civitasx.pages.dev/verify/official-endpoints.json.sig",
+        "Fetch https://civitasx.pages.dev/verify/root-authority.json",
+        "Verify statement hash and signature threshold against the root authority"
+      ],
+      "expected_results": [
+        "Statement hash is sha256:1a52e0d110a50547640f01194d9f2195d5a0a9a44bec79b20966cc78e4f8a5df and signature verification passes"
+      ],
+      "limitations": [
+        "Verifies endpoint continuity only",
+        "does not certify product quality",
+        "lawfulness",
+        "or final trust."
+      ]
+    },
+    {
+      "type": "OrgAnchorEvidenceMethod",
+      "id": "method-history-snapshot-recheck",
+      "method_kind": "historical_snapshot_recheck",
+      "title": "Recheck first historical snapshot",
+      "target_claim_ids": [
+        "cxt-first-snapshot"
+      ],
+      "target_evidence_ids": [
+        "ev-history-snapshot-index"
+      ],
+      "cost_to_verify": "low",
+      "required_tools": [
+        "HTTP client",
+        "SHA-256 hasher",
+        "OrgAnchor CLI or compatible verifier"
+      ],
+      "steps": [
+        "Fetch https://civitasx.pages.dev/verify-history/2026-07-09/organchor.json",
+        "Compare its statement and root authority hashes with the first published snapshot record",
+        "Verify the corresponding files under the historical snapshot path when needed"
+      ],
+      "expected_results": [
+        "Historical snapshot index remains retrievable and hash-bound to the first CivitasX OrgAnchor adoption snapshot"
+      ],
+      "limitations": [
+        "Historical snapshot is not the active discovery entrypoint",
+        "current /verify/ may advance later."
+      ]
+    },
+    {
+      "type": "OrgAnchorEvidenceMethod",
+      "id": "method-public-license-recheck",
+      "method_kind": "hash_recheck",
+      "title": "Recheck CivitasX public text license",
+      "target_claim_ids": [
+        "cxt-public-text-license"
+      ],
+      "target_evidence_ids": [
+        "ev-public-license"
+      ],
+      "cost_to_verify": "low",
+      "required_tools": [
+        "HTTP client",
+        "SHA-256 hasher"
+      ],
+      "steps": [
+        "Fetch https://raw.githubusercontent.com/civitasx-project/civitasx/8c3b696e77a35dc082dac072d8884d470956a888/LICENSE.md",
+        "Compute SHA-256 of the response body",
+        "Compare with the evidence hash in this manifest"
+      ],
+      "expected_results": [
+        "The file hashes to sha256:a86b908ba13a9fb6d16ad833576a35a308e01a0abcea45de8584c42a9bccf670"
+      ],
+      "limitations": [
+        "Confirms the published license artifact and scope declaration, not jurisdiction-specific legal advice."
+      ]
+    },
+    {
+      "type": "OrgAnchorEvidenceMethod",
+      "id": "method-founding-baseline-recheck",
+      "method_kind": "hash_recheck",
+      "title": "Recheck CivitasX founding continuity baseline",
+      "target_claim_ids": [
+        "cxt-parent-purpose",
+        "cxt-starting-directions",
+        "cxt-temporary-founder-authority",
+        "cxt-founding-continuity-baseline"
+      ],
+      "target_evidence_ids": [
+        "ev-founding-baseline"
+      ],
+      "cost_to_verify": "low",
+      "required_tools": [
+        "HTTP client",
+        "SHA-256 hasher"
+      ],
+      "steps": [
+        "Fetch https://raw.githubusercontent.com/civitasx-project/civitasx/8c3b696e77a35dc082dac072d8884d470956a888/continuity/CIVITASX_FOUNDING_BASELINE.md",
+        "Compute SHA-256 of the response body",
+        "Compare with the evidence hash in this manifest"
+      ],
+      "expected_results": [
+        "The file hashes to sha256:ea0922a078ee179482c923da4de117edf0f204d4e0fa5140aa67ff9f4497c1b4"
+      ],
+      "limitations": [
+        "Confirms the founder-stage public baseline artifact, not independent endorsement or future achievement."
+      ]
+    },
+    {
+      "type": "OrgAnchorEvidenceMethod",
+      "id": "method-github-snapshot-recheck",
+      "method_kind": "historical_snapshot_recheck",
+      "title": "Recheck GitHub mirror of the first OrgAnchor snapshot",
+      "target_claim_ids": [
+        "cxt-first-snapshot",
+        "cxt-github-snapshot-mirror"
+      ],
+      "target_evidence_ids": [
+        "ev-github-history-snapshot"
+      ],
+      "cost_to_verify": "low",
+      "required_tools": [
+        "HTTP client",
+        "SHA-256 hasher",
+        "OrgAnchor CLI or compatible verifier"
+      ],
+      "steps": [
+        "Fetch https://raw.githubusercontent.com/civitasx-project/civitasx/8c3b696e77a35dc082dac072d8884d470956a888/organchor/history/2026-07-09/organchor.json",
+        "Compute SHA-256 of the response body",
+        "Compare the root authority and statement hashes with the first public snapshot"
+      ],
+      "expected_results": [
+        "The file hashes to sha256:969fd7c40cc2df4b6afb23f75d2bb2e48ee6502611a8ab91c0e9d14be6415a04"
+      ],
+      "limitations": [
+        "The GitHub copy is a historical mirror, not the active discovery route."
+      ]
+    },
+    {
+      "type": "OrgAnchorEvidenceMethod",
+      "id": "method-github-checksums-recheck",
+      "method_kind": "hash_recheck",
+      "title": "Recheck GitHub OrgAnchor mirror checksums",
+      "target_claim_ids": [
+        "cxt-first-snapshot",
+        "cxt-github-snapshot-mirror"
+      ],
+      "target_evidence_ids": [
+        "ev-github-checksums"
+      ],
+      "cost_to_verify": "low",
+      "required_tools": [
+        "HTTP client",
+        "SHA-256 hasher"
+      ],
+      "steps": [
+        "Fetch https://raw.githubusercontent.com/civitasx-project/civitasx/8c3b696e77a35dc082dac072d8884d470956a888/organchor/CHECKSUMS.sha256",
+        "Compute SHA-256 of the checksum manifest",
+        "Fetch mirrored files and compare their hashes with the manifest"
+      ],
+      "expected_results": [
+        "The checksum manifest hashes to sha256:0b6e67e5fdbc58296af80037ff1433d474739d79e4e9b1279f772d34db41056b",
+        "The listed mirrored files match their declared SHA-256 values"
+      ],
+      "limitations": [
+        "Checksum verification detects byte changes but does not assign final trust."
+      ]
+    }
+  ]
+}

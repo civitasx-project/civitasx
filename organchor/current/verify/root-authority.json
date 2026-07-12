@@ -1,0 +1,25 @@
+{
+  "schema": "https://organchor.org/schemas/root-authority.v1.json",
+  "type": "OrgAnchorRootAuthority",
+  "version": "1.0",
+  "authority_id": "root-authority-2026",
+  "created_at": "2026-07-09T01:10:42.724Z",
+  "threshold": {
+    "required": 1,
+    "total": 1
+  },
+  "keys": [
+    {
+      "id": "civitasx-founder-rehearsal-2026",
+      "algorithm": "ed25519",
+      "public_key": {
+        "format": "jwk",
+        "jwk": {
+          "crv": "Ed25519",
+          "x": "Zes4YGX2Km9FzfBPblo8dn0HNxKwQbDIphFACDYmH60",
+          "kty": "OKP"
+        }
+      }
+    }
+  ]
+}

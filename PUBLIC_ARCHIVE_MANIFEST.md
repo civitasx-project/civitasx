@@ -2,8 +2,8 @@
 
 Updated: 2026-07-12
 
-Status: published through the first Parent Value V2 snapshot, with current
-OrgAnchor adoption-gap status prepared for the next archive update.
+Status: published through the carrier-ledger continuity snapshot, with current
+OrgAnchor adoption-gap status mirrored.
 
 ## Public Archive Contents
 
@@ -24,14 +24,18 @@ projects/ProvisionLoop.md
 projects/WillFlow.md
 launch/2026-07-01-first-public-launch.md
 launch/2026-07-11-parent-value-v2.md
+launch/2026-07-12-carrier-ledger-refresh.md
 continuity/CONTINUITY.md
 continuity/CIVITASX_PARENT_MISSION.md
 continuity/CIVITASX_FOUNDING_BASELINE.md
 organchor/README.md
 organchor/current/adoption-status.html
 organchor/current/adoption-status.json
+organchor/current/well-known/organchor.json
+organchor/current/verify/
 organchor/history/2026-07-09/
 organchor/history/2026-07-10-parent-value-001/
+organchor/history/2026-07-11-carrier-ledger-001/
 organchor/CHECKSUMS.sha256
 ```
 

@@ -1,0 +1,2346 @@
+{
+  "type": "OrgAnchorValueContinuityReport",
+  "version": "1.0",
+  "audited_at": "2026-07-10T12:50:03.060Z",
+  "generated_by": "organchor",
+  "claims_path": "claims\\product-claims.json",
+  "evidence_path": "evidence\\evidence-manifest.json",
+  "summary": {
+    "PASS": 63,
+    "WARN": 0,
+    "FAIL": 0,
+    "MANUAL_CHECK_REQUIRED": 8,
+    "total_claims": 9,
+    "self_asserted_claims": 0,
+    "evidence_linked_claims": 9,
+    "third_party_claims": 0,
+    "reproducible_claims": 9,
+    "time_proven_claims": 0,
+    "unsupported_claims": 0,
+    "total_evidence_items": 8,
+    "external_evidence_items": 8,
+    "first_party_evidence_items": 8,
+    "stale_evidence_items": 0,
+    "profile_declared_claims": 0,
+    "profile_pass_claims": 0,
+    "profile_gap_claims": 0
+  },
+  "s2_summary": {
+    "effective_s2_count": 0,
+    "candidate_unverified_external_material_count": 0,
+    "s2_state_counts": {
+      "S2_1_GENERIC_ROUTE_PROVIDED": 0,
+      "S2_2_VERIFIED_ROUTE_CHECKED": 0,
+      "S2_3_ISSUER_BACKED": 0
+    },
+    "expired_s2_count": 0,
+    "broken_s2_anchor_count": 0,
+    "manual_check_s2_count": 0,
+    "unknown_sample_source_count": 0,
+    "unknown_relationship_count": 0,
+    "top_s2_gaps": [],
+    "next_actions": [
+      "No S2 material is declared; request S2 only if the target purpose requires external support."
+    ],
+    "not_a_trust_decision": true
+  },
+  "s3_summary": {
+    "effective_s3_count": 0,
+    "candidate_unverified_sampling_count": 0,
+    "s3_state_counts": {
+      "S3_1_SAMPLING_ROUTE_PROVIDED": 0,
+      "S3_2_CUSTODY_DOCUMENTED": 0,
+      "S3_3_INDEPENDENT_TEST_RECORDED": 0
+    },
+    "organization_selected_sample_count": 0,
+    "organization_provided_sample_count": 0,
+    "missing_sample_identity_count": 0,
+    "missing_claim_binding_count": 0,
+    "missing_sample_pool_count": 0,
+    "missing_sample_slot_count": 0,
+    "missing_finite_policy_count": 0,
+    "missing_duplicate_control_count": 0,
+    "missing_credential_binding_count": 0,
+    "missing_sampling_plan_count": 0,
+    "organization_can_choose_samples_count": 0,
+    "missing_raw_evidence_reference_count": 0,
+    "organization_controlled_storage_count": 0,
+    "missing_custody_count": 0,
+    "manual_check_s3_count": 0,
+    "top_s3_gaps": [],
+    "next_actions": [
+      "No S3 sampling evidence is declared; request S3 only if the target purpose requires random sampling or anti-hand-picked-sample support."
+    ],
+    "not_a_trust_decision": true
+  },
+  "s4_summary": {
+    "effective_s4_count": 0,
+    "candidate_unverified_observation_count": 0,
+    "s4_state_counts": {
+      "S4_1_OBSERVATION_SUMMARY_PROVIDED": 0,
+      "S4_2_RAW_BUNDLE_AVAILABLE": 0,
+      "S4_3_OBSERVER_OR_DIRECTORY_REVIEWED": 0
+    },
+    "current_window_observation_count": 0,
+    "historical_observation_count": 0,
+    "raw_bundle_available_count": 0,
+    "missing_subject_binding_count": 0,
+    "manual_check_s4_count": 0,
+    "top_s4_gaps": [],
+    "next_actions": [
+      "No S4 observation evidence is declared; request S4 only if the target purpose requires real delivery, use, support, uptime, or supply-continuity observation."
+    ],
+    "not_a_trust_decision": true
+  },
+  "checks": [
+    {
+      "id": "claims_manifest",
+      "title": "Claims manifest",
+      "status": "PASS",
+      "summary": "Claims manifest loaded from claims\\product-claims.json."
+    },
+    {
+      "id": "evidence_manifest",
+      "title": "Evidence manifest",
+      "status": "PASS",
+      "summary": "Evidence manifest loaded from evidence\\evidence-manifest.json."
+    },
+    {
+      "id": "correction_chain",
+      "title": "Correction chain",
+      "status": "PASS",
+      "summary": "A correction or supersession policy is present."
+    },
+    {
+      "id": "evidence:ev-public-intro-en:location",
+      "title": "Evidence ev-public-intro-en location",
+      "status": "PASS",
+      "summary": "Evidence has at least one external/public location."
+    },
+    {
+      "id": "evidence:ev-public-intro-en:issuer",
+      "title": "Evidence ev-public-intro-en issuer",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "summary": "Evidence is first-party. This may be valid, but it is not independent evidence."
+    },
+    {
+      "id": "evidence:ev-public-intro-en:reproducibility",
+      "title": "Evidence ev-public-intro-en reproducibility",
+      "status": "PASS",
+      "summary": "Evidence reproducibility is reproducible."
+    },
+    {
+      "id": "evidence:ev-public-intro-en:method_refs",
+      "title": "Evidence ev-public-intro-en recheck methods",
+      "status": "PASS",
+      "summary": "Evidence links to a low-cost recheck method."
+    },
+    {
+      "id": "evidence:ev-public-faq-en:location",
+      "title": "Evidence ev-public-faq-en location",
+      "status": "PASS",
+      "summary": "Evidence has at least one external/public location."
+    },
+    {
+      "id": "evidence:ev-public-faq-en:issuer",
+      "title": "Evidence ev-public-faq-en issuer",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "summary": "Evidence is first-party. This may be valid, but it is not independent evidence."
+    },
+    {
+      "id": "evidence:ev-public-faq-en:reproducibility",
+      "title": "Evidence ev-public-faq-en reproducibility",
+      "status": "PASS",
+      "summary": "Evidence reproducibility is reproducible."
+    },
+    {
+      "id": "evidence:ev-public-faq-en:method_refs",
+      "title": "Evidence ev-public-faq-en recheck methods",
+      "status": "PASS",
+      "summary": "Evidence links to a low-cost recheck method."
+    },
+    {
+      "id": "evidence:ev-official-endpoints-statement:location",
+      "title": "Evidence ev-official-endpoints-statement location",
+      "status": "PASS",
+      "summary": "Evidence has at least one external/public location."
+    },
+    {
+      "id": "evidence:ev-official-endpoints-statement:issuer",
+      "title": "Evidence ev-official-endpoints-statement issuer",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "summary": "Evidence is first-party. This may be valid, but it is not independent evidence."
+    },
+    {
+      "id": "evidence:ev-official-endpoints-statement:reproducibility",
+      "title": "Evidence ev-official-endpoints-statement reproducibility",
+      "status": "PASS",
+      "summary": "Evidence reproducibility is reproducible."
+    },
+    {
+      "id": "evidence:ev-official-endpoints-statement:method_refs",
+      "title": "Evidence ev-official-endpoints-statement recheck methods",
+      "status": "PASS",
+      "summary": "Evidence links to a low-cost recheck method."
+    },
+    {
+      "id": "evidence:ev-history-snapshot-index:location",
+      "title": "Evidence ev-history-snapshot-index location",
+      "status": "PASS",
+      "summary": "Evidence has at least one external/public location."
+    },
+    {
+      "id": "evidence:ev-history-snapshot-index:issuer",
+      "title": "Evidence ev-history-snapshot-index issuer",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "summary": "Evidence is first-party. This may be valid, but it is not independent evidence."
+    },
+    {
+      "id": "evidence:ev-history-snapshot-index:reproducibility",
+      "title": "Evidence ev-history-snapshot-index reproducibility",
+      "status": "PASS",
+      "summary": "Evidence reproducibility is reproducible."
+    },
+    {
+      "id": "evidence:ev-history-snapshot-index:method_refs",
+      "title": "Evidence ev-history-snapshot-index recheck methods",
+      "status": "PASS",
+      "summary": "Evidence links to a low-cost recheck method."
+    },
+    {
+      "id": "evidence:ev-public-license:location",
+      "title": "Evidence ev-public-license location",
+      "status": "PASS",
+      "summary": "Evidence has at least one external/public location."
+    },
+    {
+      "id": "evidence:ev-public-license:issuer",
+      "title": "Evidence ev-public-license issuer",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "summary": "Evidence is first-party. This may be valid, but it is not independent evidence."
+    },
+    {
+      "id": "evidence:ev-public-license:reproducibility",
+      "title": "Evidence ev-public-license reproducibility",
+      "status": "PASS",
+      "summary": "Evidence reproducibility is reproducible."
+    },
+    {
+      "id": "evidence:ev-public-license:method_refs",
+      "title": "Evidence ev-public-license recheck methods",
+      "status": "PASS",
+      "summary": "Evidence links to a low-cost recheck method."
+    },
+    {
+      "id": "evidence:ev-founding-baseline:location",
+      "title": "Evidence ev-founding-baseline location",
+      "status": "PASS",
+      "summary": "Evidence has at least one external/public location."
+    },
+    {
+      "id": "evidence:ev-founding-baseline:issuer",
+      "title": "Evidence ev-founding-baseline issuer",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "summary": "Evidence is first-party. This may be valid, but it is not independent evidence."
+    },
+    {
+      "id": "evidence:ev-founding-baseline:reproducibility",
+      "title": "Evidence ev-founding-baseline reproducibility",
+      "status": "PASS",
+      "summary": "Evidence reproducibility is reproducible."
+    },
+    {
+      "id": "evidence:ev-founding-baseline:method_refs",
+      "title": "Evidence ev-founding-baseline recheck methods",
+      "status": "PASS",
+      "summary": "Evidence links to a low-cost recheck method."
+    },
+    {
+      "id": "evidence:ev-github-history-snapshot:location",
+      "title": "Evidence ev-github-history-snapshot location",
+      "status": "PASS",
+      "summary": "Evidence has at least one external/public location."
+    },
+    {
+      "id": "evidence:ev-github-history-snapshot:issuer",
+      "title": "Evidence ev-github-history-snapshot issuer",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "summary": "Evidence is first-party. This may be valid, but it is not independent evidence."
+    },
+    {
+      "id": "evidence:ev-github-history-snapshot:reproducibility",
+      "title": "Evidence ev-github-history-snapshot reproducibility",
+      "status": "PASS",
+      "summary": "Evidence reproducibility is reproducible."
+    },
+    {
+      "id": "evidence:ev-github-history-snapshot:method_refs",
+      "title": "Evidence ev-github-history-snapshot recheck methods",
+      "status": "PASS",
+      "summary": "Evidence links to a low-cost recheck method."
+    },
+    {
+      "id": "evidence:ev-github-checksums:location",
+      "title": "Evidence ev-github-checksums location",
+      "status": "PASS",
+      "summary": "Evidence has at least one external/public location."
+    },
+    {
+      "id": "evidence:ev-github-checksums:issuer",
+      "title": "Evidence ev-github-checksums issuer",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "summary": "Evidence is first-party. This may be valid, but it is not independent evidence."
+    },
+    {
+      "id": "evidence:ev-github-checksums:reproducibility",
+      "title": "Evidence ev-github-checksums reproducibility",
+      "status": "PASS",
+      "summary": "Evidence reproducibility is reproducible."
+    },
+    {
+      "id": "evidence:ev-github-checksums:method_refs",
+      "title": "Evidence ev-github-checksums recheck methods",
+      "status": "PASS",
+      "summary": "Evidence links to a low-cost recheck method."
+    },
+    {
+      "id": "claim:cxt-parent-purpose:evidence",
+      "title": "Claim cxt-parent-purpose evidence",
+      "status": "PASS",
+      "summary": "Claim references existing evidence."
+    },
+    {
+      "id": "claim:cxt-parent-purpose:limitations",
+      "title": "Claim cxt-parent-purpose limitations",
+      "status": "PASS",
+      "summary": "Claim includes limitations."
+    },
+    {
+      "id": "claim:cxt-parent-purpose:scope",
+      "title": "Claim cxt-parent-purpose scope",
+      "status": "PASS",
+      "summary": "Claim includes explicit scope."
+    },
+    {
+      "id": "claim:cxt-parent-purpose:subject_coverage",
+      "title": "Claim cxt-parent-purpose subject coverage",
+      "status": "PASS",
+      "summary": "All resolved evidence subject bindings match public_framework:civitasx-parent-framework.",
+      "details": {
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 2,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "not_a_trust_decision": true
+      }
+    },
+    {
+      "id": "claim:cxt-official-endpoints:evidence",
+      "title": "Claim cxt-official-endpoints evidence",
+      "status": "PASS",
+      "summary": "Claim references existing evidence."
+    },
+    {
+      "id": "claim:cxt-official-endpoints:limitations",
+      "title": "Claim cxt-official-endpoints limitations",
+      "status": "PASS",
+      "summary": "Claim includes limitations."
+    },
+    {
+      "id": "claim:cxt-official-endpoints:scope",
+      "title": "Claim cxt-official-endpoints scope",
+      "status": "PASS",
+      "summary": "Claim includes explicit scope."
+    },
+    {
+      "id": "claim:cxt-official-endpoints:subject_coverage",
+      "title": "Claim cxt-official-endpoints subject coverage",
+      "status": "PASS",
+      "summary": "All resolved evidence subject bindings match public_framework:civitasx-parent-framework.",
+      "details": {
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 1,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "not_a_trust_decision": true
+      }
+    },
+    {
+      "id": "claim:cxt-starting-directions:evidence",
+      "title": "Claim cxt-starting-directions evidence",
+      "status": "PASS",
+      "summary": "Claim references existing evidence."
+    },
+    {
+      "id": "claim:cxt-starting-directions:limitations",
+      "title": "Claim cxt-starting-directions limitations",
+      "status": "PASS",
+      "summary": "Claim includes limitations."
+    },
+    {
+      "id": "claim:cxt-starting-directions:scope",
+      "title": "Claim cxt-starting-directions scope",
+      "status": "PASS",
+      "summary": "Claim includes explicit scope."
+    },
+    {
+      "id": "claim:cxt-starting-directions:subject_coverage",
+      "title": "Claim cxt-starting-directions subject coverage",
+      "status": "PASS",
+      "summary": "All resolved evidence subject bindings match public_framework:civitasx-parent-framework.",
+      "details": {
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 3,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "not_a_trust_decision": true
+      }
+    },
+    {
+      "id": "claim:cxt-public-boundaries:evidence",
+      "title": "Claim cxt-public-boundaries evidence",
+      "status": "PASS",
+      "summary": "Claim references existing evidence."
+    },
+    {
+      "id": "claim:cxt-public-boundaries:limitations",
+      "title": "Claim cxt-public-boundaries limitations",
+      "status": "PASS",
+      "summary": "Claim includes limitations."
+    },
+    {
+      "id": "claim:cxt-public-boundaries:scope",
+      "title": "Claim cxt-public-boundaries scope",
+      "status": "PASS",
+      "summary": "Claim includes explicit scope."
+    },
+    {
+      "id": "claim:cxt-public-boundaries:subject_coverage",
+      "title": "Claim cxt-public-boundaries subject coverage",
+      "status": "PASS",
+      "summary": "All resolved evidence subject bindings match public_framework:civitasx-parent-framework.",
+      "details": {
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 1,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "not_a_trust_decision": true
+      }
+    },
+    {
+      "id": "claim:cxt-temporary-founder-authority:evidence",
+      "title": "Claim cxt-temporary-founder-authority evidence",
+      "status": "PASS",
+      "summary": "Claim references existing evidence."
+    },
+    {
+      "id": "claim:cxt-temporary-founder-authority:limitations",
+      "title": "Claim cxt-temporary-founder-authority limitations",
+      "status": "PASS",
+      "summary": "Claim includes limitations."
+    },
+    {
+      "id": "claim:cxt-temporary-founder-authority:scope",
+      "title": "Claim cxt-temporary-founder-authority scope",
+      "status": "PASS",
+      "summary": "Claim includes explicit scope."
+    },
+    {
+      "id": "claim:cxt-temporary-founder-authority:subject_coverage",
+      "title": "Claim cxt-temporary-founder-authority subject coverage",
+      "status": "PASS",
+      "summary": "All resolved evidence subject bindings match public_framework:civitasx-parent-framework.",
+      "details": {
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 2,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "not_a_trust_decision": true
+      }
+    },
+    {
+      "id": "claim:cxt-first-snapshot:evidence",
+      "title": "Claim cxt-first-snapshot evidence",
+      "status": "PASS",
+      "summary": "Claim references existing evidence."
+    },
+    {
+      "id": "claim:cxt-first-snapshot:limitations",
+      "title": "Claim cxt-first-snapshot limitations",
+      "status": "PASS",
+      "summary": "Claim includes limitations."
+    },
+    {
+      "id": "claim:cxt-first-snapshot:scope",
+      "title": "Claim cxt-first-snapshot scope",
+      "status": "PASS",
+      "summary": "Claim includes explicit scope."
+    },
+    {
+      "id": "claim:cxt-first-snapshot:subject_coverage",
+      "title": "Claim cxt-first-snapshot subject coverage",
+      "status": "PASS",
+      "summary": "All resolved evidence subject bindings match public_framework:civitasx-parent-framework.",
+      "details": {
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 3,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "not_a_trust_decision": true
+      }
+    },
+    {
+      "id": "claim:cxt-public-text-license:evidence",
+      "title": "Claim cxt-public-text-license evidence",
+      "status": "PASS",
+      "summary": "Claim references existing evidence."
+    },
+    {
+      "id": "claim:cxt-public-text-license:limitations",
+      "title": "Claim cxt-public-text-license limitations",
+      "status": "PASS",
+      "summary": "Claim includes limitations."
+    },
+    {
+      "id": "claim:cxt-public-text-license:scope",
+      "title": "Claim cxt-public-text-license scope",
+      "status": "PASS",
+      "summary": "Claim includes explicit scope."
+    },
+    {
+      "id": "claim:cxt-public-text-license:subject_coverage",
+      "title": "Claim cxt-public-text-license subject coverage",
+      "status": "PASS",
+      "summary": "All resolved evidence subject bindings match public_framework:civitasx-parent-framework.",
+      "details": {
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 1,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "not_a_trust_decision": true
+      }
+    },
+    {
+      "id": "claim:cxt-founding-continuity-baseline:evidence",
+      "title": "Claim cxt-founding-continuity-baseline evidence",
+      "status": "PASS",
+      "summary": "Claim references existing evidence."
+    },
+    {
+      "id": "claim:cxt-founding-continuity-baseline:limitations",
+      "title": "Claim cxt-founding-continuity-baseline limitations",
+      "status": "PASS",
+      "summary": "Claim includes limitations."
+    },
+    {
+      "id": "claim:cxt-founding-continuity-baseline:scope",
+      "title": "Claim cxt-founding-continuity-baseline scope",
+      "status": "PASS",
+      "summary": "Claim includes explicit scope."
+    },
+    {
+      "id": "claim:cxt-founding-continuity-baseline:subject_coverage",
+      "title": "Claim cxt-founding-continuity-baseline subject coverage",
+      "status": "PASS",
+      "summary": "All resolved evidence subject bindings match public_framework:civitasx-parent-framework.",
+      "details": {
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 1,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "not_a_trust_decision": true
+      }
+    },
+    {
+      "id": "claim:cxt-github-snapshot-mirror:evidence",
+      "title": "Claim cxt-github-snapshot-mirror evidence",
+      "status": "PASS",
+      "summary": "Claim references existing evidence."
+    },
+    {
+      "id": "claim:cxt-github-snapshot-mirror:limitations",
+      "title": "Claim cxt-github-snapshot-mirror limitations",
+      "status": "PASS",
+      "summary": "Claim includes limitations."
+    },
+    {
+      "id": "claim:cxt-github-snapshot-mirror:scope",
+      "title": "Claim cxt-github-snapshot-mirror scope",
+      "status": "PASS",
+      "summary": "Claim includes explicit scope."
+    },
+    {
+      "id": "claim:cxt-github-snapshot-mirror:subject_coverage",
+      "title": "Claim cxt-github-snapshot-mirror subject coverage",
+      "status": "PASS",
+      "summary": "All resolved evidence subject bindings match public_framework:civitasx-parent-framework.",
+      "details": {
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 2,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "not_a_trust_decision": true
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "cxt-parent-purpose",
+      "status": "PASS",
+      "level": "REPRODUCIBLE",
+      "protocol_support_level": "L3_REPRODUCIBLE_METHOD",
+      "support_axes": {
+        "artifact_integrity": "HASH_DECLARED",
+        "retrievability": "HAS_PUBLIC_LOCATIONS",
+        "specificity": "SCOPED",
+        "limitations": "PRESENT",
+        "issuer_independence": "FIRST_PARTY_ONLY",
+        "method_reproducibility": "REPRODUCIBLE_OR_INDEPENDENT",
+        "freshness": "CURRENT_OR_NOT_DATED",
+        "challenge_status": "NO_KNOWN_CHALLENGE"
+      },
+      "risk_gaps": [
+        "Only first-party evidence is linked."
+      ],
+      "next_best_actions": [
+        "Add an independent attestation or external evidence source for the exact claim."
+      ],
+      "organchor_trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+      "policy_route": "EXTERNAL_POLICY_REVIEW",
+      "profile_review": {
+        "profile": "not_declared",
+        "status": "NOT_DECLARED",
+        "missing_fields": [],
+        "risk_gaps": [],
+        "next_best_actions": []
+      },
+      "subject_coverage": {
+        "status": "PASS",
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "evidence_subjects": [
+          {
+            "evidence_id": "ev-public-intro-en",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          },
+          {
+            "evidence_id": "ev-founding-baseline",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          }
+        ],
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 2,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "next_best_actions": [],
+        "not_a_trust_decision": true
+      },
+      "has_third_party_evidence": false,
+      "has_reproducible_evidence": true,
+      "evidence_refs": [
+        "ev-public-intro-en",
+        "ev-founding-baseline"
+      ],
+      "resolved_evidence_refs": [
+        "ev-public-intro-en",
+        "ev-founding-baseline"
+      ],
+      "missing_evidence_refs": [],
+      "findings": []
+    },
+    {
+      "id": "cxt-official-endpoints",
+      "status": "PASS",
+      "level": "REPRODUCIBLE",
+      "protocol_support_level": "L3_REPRODUCIBLE_METHOD",
+      "support_axes": {
+        "artifact_integrity": "HASH_DECLARED",
+        "retrievability": "HAS_PUBLIC_LOCATIONS",
+        "specificity": "SCOPED",
+        "limitations": "PRESENT",
+        "issuer_independence": "FIRST_PARTY_ONLY",
+        "method_reproducibility": "REPRODUCIBLE_OR_INDEPENDENT",
+        "freshness": "CURRENT_OR_NOT_DATED",
+        "challenge_status": "NO_KNOWN_CHALLENGE"
+      },
+      "risk_gaps": [
+        "Only first-party evidence is linked."
+      ],
+      "next_best_actions": [
+        "Add an independent attestation or external evidence source for the exact claim."
+      ],
+      "organchor_trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+      "policy_route": "EXTERNAL_POLICY_REVIEW",
+      "profile_review": {
+        "profile": "not_declared",
+        "status": "NOT_DECLARED",
+        "missing_fields": [],
+        "risk_gaps": [],
+        "next_best_actions": []
+      },
+      "subject_coverage": {
+        "status": "PASS",
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "evidence_subjects": [
+          {
+            "evidence_id": "ev-official-endpoints-statement",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          }
+        ],
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 1,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "next_best_actions": [],
+        "not_a_trust_decision": true
+      },
+      "has_third_party_evidence": false,
+      "has_reproducible_evidence": true,
+      "evidence_refs": [
+        "ev-official-endpoints-statement"
+      ],
+      "resolved_evidence_refs": [
+        "ev-official-endpoints-statement"
+      ],
+      "missing_evidence_refs": [],
+      "findings": []
+    },
+    {
+      "id": "cxt-starting-directions",
+      "status": "PASS",
+      "level": "REPRODUCIBLE",
+      "protocol_support_level": "L3_REPRODUCIBLE_METHOD",
+      "support_axes": {
+        "artifact_integrity": "HASH_DECLARED",
+        "retrievability": "HAS_PUBLIC_LOCATIONS",
+        "specificity": "SCOPED",
+        "limitations": "PRESENT",
+        "issuer_independence": "FIRST_PARTY_ONLY",
+        "method_reproducibility": "REPRODUCIBLE_OR_INDEPENDENT",
+        "freshness": "CURRENT_OR_NOT_DATED",
+        "challenge_status": "NO_KNOWN_CHALLENGE"
+      },
+      "risk_gaps": [
+        "Only first-party evidence is linked."
+      ],
+      "next_best_actions": [
+        "Add an independent attestation or external evidence source for the exact claim."
+      ],
+      "organchor_trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+      "policy_route": "EXTERNAL_POLICY_REVIEW",
+      "profile_review": {
+        "profile": "not_declared",
+        "status": "NOT_DECLARED",
+        "missing_fields": [],
+        "risk_gaps": [],
+        "next_best_actions": []
+      },
+      "subject_coverage": {
+        "status": "PASS",
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "evidence_subjects": [
+          {
+            "evidence_id": "ev-public-intro-en",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          },
+          {
+            "evidence_id": "ev-public-faq-en",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          },
+          {
+            "evidence_id": "ev-founding-baseline",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          }
+        ],
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 3,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "next_best_actions": [],
+        "not_a_trust_decision": true
+      },
+      "has_third_party_evidence": false,
+      "has_reproducible_evidence": true,
+      "evidence_refs": [
+        "ev-public-intro-en",
+        "ev-public-faq-en",
+        "ev-founding-baseline"
+      ],
+      "resolved_evidence_refs": [
+        "ev-public-intro-en",
+        "ev-public-faq-en",
+        "ev-founding-baseline"
+      ],
+      "missing_evidence_refs": [],
+      "findings": []
+    },
+    {
+      "id": "cxt-public-boundaries",
+      "status": "PASS",
+      "level": "REPRODUCIBLE",
+      "protocol_support_level": "L3_REPRODUCIBLE_METHOD",
+      "support_axes": {
+        "artifact_integrity": "HASH_DECLARED",
+        "retrievability": "HAS_PUBLIC_LOCATIONS",
+        "specificity": "SCOPED",
+        "limitations": "PRESENT",
+        "issuer_independence": "FIRST_PARTY_ONLY",
+        "method_reproducibility": "REPRODUCIBLE_OR_INDEPENDENT",
+        "freshness": "CURRENT_OR_NOT_DATED",
+        "challenge_status": "NO_KNOWN_CHALLENGE"
+      },
+      "risk_gaps": [
+        "Only first-party evidence is linked."
+      ],
+      "next_best_actions": [
+        "Add an independent attestation or external evidence source for the exact claim."
+      ],
+      "organchor_trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+      "policy_route": "EXTERNAL_POLICY_REVIEW",
+      "profile_review": {
+        "profile": "not_declared",
+        "status": "NOT_DECLARED",
+        "missing_fields": [],
+        "risk_gaps": [],
+        "next_best_actions": []
+      },
+      "subject_coverage": {
+        "status": "PASS",
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "evidence_subjects": [
+          {
+            "evidence_id": "ev-public-faq-en",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          }
+        ],
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 1,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "next_best_actions": [],
+        "not_a_trust_decision": true
+      },
+      "has_third_party_evidence": false,
+      "has_reproducible_evidence": true,
+      "evidence_refs": [
+        "ev-public-faq-en"
+      ],
+      "resolved_evidence_refs": [
+        "ev-public-faq-en"
+      ],
+      "missing_evidence_refs": [],
+      "findings": []
+    },
+    {
+      "id": "cxt-temporary-founder-authority",
+      "status": "PASS",
+      "level": "REPRODUCIBLE",
+      "protocol_support_level": "L3_REPRODUCIBLE_METHOD",
+      "support_axes": {
+        "artifact_integrity": "HASH_DECLARED",
+        "retrievability": "HAS_PUBLIC_LOCATIONS",
+        "specificity": "SCOPED",
+        "limitations": "PRESENT",
+        "issuer_independence": "FIRST_PARTY_ONLY",
+        "method_reproducibility": "REPRODUCIBLE_OR_INDEPENDENT",
+        "freshness": "CURRENT_OR_NOT_DATED",
+        "challenge_status": "NO_KNOWN_CHALLENGE"
+      },
+      "risk_gaps": [
+        "Only first-party evidence is linked."
+      ],
+      "next_best_actions": [
+        "Add an independent attestation or external evidence source for the exact claim."
+      ],
+      "organchor_trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+      "policy_route": "EXTERNAL_POLICY_REVIEW",
+      "profile_review": {
+        "profile": "not_declared",
+        "status": "NOT_DECLARED",
+        "missing_fields": [],
+        "risk_gaps": [],
+        "next_best_actions": []
+      },
+      "subject_coverage": {
+        "status": "PASS",
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "evidence_subjects": [
+          {
+            "evidence_id": "ev-official-endpoints-statement",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          },
+          {
+            "evidence_id": "ev-founding-baseline",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          }
+        ],
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 2,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "next_best_actions": [],
+        "not_a_trust_decision": true
+      },
+      "has_third_party_evidence": false,
+      "has_reproducible_evidence": true,
+      "evidence_refs": [
+        "ev-official-endpoints-statement",
+        "ev-founding-baseline"
+      ],
+      "resolved_evidence_refs": [
+        "ev-official-endpoints-statement",
+        "ev-founding-baseline"
+      ],
+      "missing_evidence_refs": [],
+      "findings": []
+    },
+    {
+      "id": "cxt-first-snapshot",
+      "status": "PASS",
+      "level": "REPRODUCIBLE",
+      "protocol_support_level": "L3_REPRODUCIBLE_METHOD",
+      "support_axes": {
+        "artifact_integrity": "HASH_DECLARED",
+        "retrievability": "HAS_PUBLIC_LOCATIONS",
+        "specificity": "SCOPED",
+        "limitations": "PRESENT",
+        "issuer_independence": "FIRST_PARTY_ONLY",
+        "method_reproducibility": "REPRODUCIBLE_OR_INDEPENDENT",
+        "freshness": "CURRENT_OR_NOT_DATED",
+        "challenge_status": "NO_KNOWN_CHALLENGE"
+      },
+      "risk_gaps": [
+        "Only first-party evidence is linked."
+      ],
+      "next_best_actions": [
+        "Add an independent attestation or external evidence source for the exact claim."
+      ],
+      "organchor_trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+      "policy_route": "EXTERNAL_POLICY_REVIEW",
+      "profile_review": {
+        "profile": "not_declared",
+        "status": "NOT_DECLARED",
+        "missing_fields": [],
+        "risk_gaps": [],
+        "next_best_actions": []
+      },
+      "subject_coverage": {
+        "status": "PASS",
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "evidence_subjects": [
+          {
+            "evidence_id": "ev-history-snapshot-index",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          },
+          {
+            "evidence_id": "ev-github-history-snapshot",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          },
+          {
+            "evidence_id": "ev-github-checksums",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          }
+        ],
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 3,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "next_best_actions": [],
+        "not_a_trust_decision": true
+      },
+      "has_third_party_evidence": false,
+      "has_reproducible_evidence": true,
+      "evidence_refs": [
+        "ev-history-snapshot-index",
+        "ev-github-history-snapshot",
+        "ev-github-checksums"
+      ],
+      "resolved_evidence_refs": [
+        "ev-history-snapshot-index",
+        "ev-github-history-snapshot",
+        "ev-github-checksums"
+      ],
+      "missing_evidence_refs": [],
+      "findings": []
+    },
+    {
+      "id": "cxt-public-text-license",
+      "status": "PASS",
+      "level": "REPRODUCIBLE",
+      "protocol_support_level": "L3_REPRODUCIBLE_METHOD",
+      "support_axes": {
+        "artifact_integrity": "HASH_DECLARED",
+        "retrievability": "HAS_PUBLIC_LOCATIONS",
+        "specificity": "SCOPED",
+        "limitations": "PRESENT",
+        "issuer_independence": "FIRST_PARTY_ONLY",
+        "method_reproducibility": "REPRODUCIBLE_OR_INDEPENDENT",
+        "freshness": "CURRENT_OR_NOT_DATED",
+        "challenge_status": "NO_KNOWN_CHALLENGE"
+      },
+      "risk_gaps": [
+        "Only first-party evidence is linked."
+      ],
+      "next_best_actions": [
+        "Add an independent attestation or external evidence source for the exact claim."
+      ],
+      "organchor_trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+      "policy_route": "EXTERNAL_POLICY_REVIEW",
+      "profile_review": {
+        "profile": "not_declared",
+        "status": "NOT_DECLARED",
+        "missing_fields": [],
+        "risk_gaps": [],
+        "next_best_actions": []
+      },
+      "subject_coverage": {
+        "status": "PASS",
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "evidence_subjects": [
+          {
+            "evidence_id": "ev-public-license",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          }
+        ],
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 1,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "next_best_actions": [],
+        "not_a_trust_decision": true
+      },
+      "has_third_party_evidence": false,
+      "has_reproducible_evidence": true,
+      "evidence_refs": [
+        "ev-public-license"
+      ],
+      "resolved_evidence_refs": [
+        "ev-public-license"
+      ],
+      "missing_evidence_refs": [],
+      "findings": []
+    },
+    {
+      "id": "cxt-founding-continuity-baseline",
+      "status": "PASS",
+      "level": "REPRODUCIBLE",
+      "protocol_support_level": "L3_REPRODUCIBLE_METHOD",
+      "support_axes": {
+        "artifact_integrity": "HASH_DECLARED",
+        "retrievability": "HAS_PUBLIC_LOCATIONS",
+        "specificity": "SCOPED",
+        "limitations": "PRESENT",
+        "issuer_independence": "FIRST_PARTY_ONLY",
+        "method_reproducibility": "REPRODUCIBLE_OR_INDEPENDENT",
+        "freshness": "CURRENT_OR_NOT_DATED",
+        "challenge_status": "NO_KNOWN_CHALLENGE"
+      },
+      "risk_gaps": [
+        "Only first-party evidence is linked."
+      ],
+      "next_best_actions": [
+        "Add an independent attestation or external evidence source for the exact claim."
+      ],
+      "organchor_trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+      "policy_route": "EXTERNAL_POLICY_REVIEW",
+      "profile_review": {
+        "profile": "not_declared",
+        "status": "NOT_DECLARED",
+        "missing_fields": [],
+        "risk_gaps": [],
+        "next_best_actions": []
+      },
+      "subject_coverage": {
+        "status": "PASS",
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "evidence_subjects": [
+          {
+            "evidence_id": "ev-founding-baseline",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          }
+        ],
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 1,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "next_best_actions": [],
+        "not_a_trust_decision": true
+      },
+      "has_third_party_evidence": false,
+      "has_reproducible_evidence": true,
+      "evidence_refs": [
+        "ev-founding-baseline"
+      ],
+      "resolved_evidence_refs": [
+        "ev-founding-baseline"
+      ],
+      "missing_evidence_refs": [],
+      "findings": []
+    },
+    {
+      "id": "cxt-github-snapshot-mirror",
+      "status": "PASS",
+      "level": "REPRODUCIBLE",
+      "protocol_support_level": "L3_REPRODUCIBLE_METHOD",
+      "support_axes": {
+        "artifact_integrity": "HASH_DECLARED",
+        "retrievability": "HAS_PUBLIC_LOCATIONS",
+        "specificity": "SCOPED",
+        "limitations": "PRESENT",
+        "issuer_independence": "FIRST_PARTY_ONLY",
+        "method_reproducibility": "REPRODUCIBLE_OR_INDEPENDENT",
+        "freshness": "CURRENT_OR_NOT_DATED",
+        "challenge_status": "NO_KNOWN_CHALLENGE"
+      },
+      "risk_gaps": [
+        "Only first-party evidence is linked."
+      ],
+      "next_best_actions": [
+        "Add an independent attestation or external evidence source for the exact claim."
+      ],
+      "organchor_trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+      "policy_route": "EXTERNAL_POLICY_REVIEW",
+      "profile_review": {
+        "profile": "not_declared",
+        "status": "NOT_DECLARED",
+        "missing_fields": [],
+        "risk_gaps": [],
+        "next_best_actions": []
+      },
+      "subject_coverage": {
+        "status": "PASS",
+        "claim_subject": {
+          "subject_type": "public_framework",
+          "subject_id": "civitasx-parent-framework",
+          "source": "claim.subject",
+          "scope_text": "CivitasX parent framework and public continuity record"
+        },
+        "evidence_subjects": [
+          {
+            "evidence_id": "ev-github-history-snapshot",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          },
+          {
+            "evidence_id": "ev-github-checksums",
+            "subject": {
+              "subject_type": "public_framework",
+              "subject_id": "civitasx-parent-framework",
+              "source": "evidence.subject",
+              "scope_text": "CivitasX parent framework and public continuity record"
+            },
+            "relation": "EXACT_SUBJECT_MATCH",
+            "summary": "Evidence subject public_framework:civitasx-parent-framework exactly matches claim subject public_framework:civitasx-parent-framework."
+          }
+        ],
+        "relations": {
+          "EXACT_SUBJECT_MATCH": 2,
+          "SUBJECT_ID_MISMATCH": 0,
+          "EVIDENCE_BROADER_THAN_CLAIM": 0,
+          "EVIDENCE_NARROWER_THAN_CLAIM": 0,
+          "FAMILY_TO_MODEL_REVIEW_REQUIRED": 0,
+          "BATCH_TO_FUTURE_BATCH_UNSUPPORTED": 0,
+          "ORGANIZATION_TO_PRODUCT_UNSUPPORTED": 0,
+          "SUBJECT_UNKNOWN": 0
+        },
+        "gaps": [],
+        "next_best_actions": [],
+        "not_a_trust_decision": true
+      },
+      "has_third_party_evidence": false,
+      "has_reproducible_evidence": true,
+      "evidence_refs": [
+        "ev-github-history-snapshot",
+        "ev-github-checksums"
+      ],
+      "resolved_evidence_refs": [
+        "ev-github-history-snapshot",
+        "ev-github-checksums"
+      ],
+      "missing_evidence_refs": [],
+      "findings": []
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-public-intro-en",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "evidence_type": "not_specified",
+      "issuer_type": "first_party",
+      "reproducibility": "reproducible",
+      "method_refs": [
+        "method-public-intro-hash"
+      ],
+      "resolved_method_refs": [
+        "method-public-intro-hash"
+      ],
+      "missing_method_refs": [],
+      "method_kinds": [
+        "hash_recheck"
+      ],
+      "has_recheck_method": true,
+      "has_low_cost_recheck_method": true,
+      "has_external_location": true,
+      "is_stale": false,
+      "s_class": "",
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "source": "evidence.subject",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "s2": {
+        "declared_state": "",
+        "state": "NOT_S2",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "covered_subject_type": "",
+        "covered_subject_id": "",
+        "scope_text": "",
+        "route_id": "",
+        "route_kind": "",
+        "external_recheck_anchor_present": false,
+        "anchor_url_valid": true,
+        "expired": false,
+        "sample_source_unknown": false,
+        "selected_by_unknown": false,
+        "relationship_unknown": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s3": {
+        "declared_state": "",
+        "state": "NOT_S3",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "sample_type": "",
+        "sampler_type": "",
+        "sample_source": "",
+        "selected_by": "",
+        "sample_size": 0,
+        "claim_binding_present": false,
+        "sample_pool_id": "",
+        "sample_slot_id": "",
+        "sample_slot_declared": false,
+        "finite_sample_policy_present": false,
+        "max_active_samples": 0,
+        "duplicate_control_present": false,
+        "credential_binding_present": false,
+        "credential_verified_against_root": false,
+        "sampling_plan_present": false,
+        "organization_can_choose_samples": false,
+        "subject_type": "",
+        "subject_id": "",
+        "batch_id": "",
+        "serial_or_unit_id": "",
+        "organization_selected_sample": false,
+        "organization_provided_sample": false,
+        "sample_identity_present": false,
+        "acquired_at_present": false,
+        "raw_evidence_reference_present": false,
+        "raw_availability_status": "",
+        "storage_role": "",
+        "custody_documented": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s4": {
+        "declared_state": "",
+        "state": "NOT_S4",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "observation_type": "",
+        "observer_type": "",
+        "observer_id_or_origin": "",
+        "subject_type": "",
+        "subject_id": "",
+        "observation_window_present": false,
+        "current_window": false,
+        "metric_type": "",
+        "metric_summary_present": false,
+        "raw_bundle_hash_valid": false,
+        "raw_bundle_location_present": false,
+        "gaps": [],
+        "checks": []
+      },
+      "findings": [
+        "Evidence is first-party; independent review may still be needed."
+      ]
+    },
+    {
+      "id": "ev-public-faq-en",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "evidence_type": "not_specified",
+      "issuer_type": "first_party",
+      "reproducibility": "reproducible",
+      "method_refs": [
+        "method-public-faq-hash"
+      ],
+      "resolved_method_refs": [
+        "method-public-faq-hash"
+      ],
+      "missing_method_refs": [],
+      "method_kinds": [
+        "hash_recheck"
+      ],
+      "has_recheck_method": true,
+      "has_low_cost_recheck_method": true,
+      "has_external_location": true,
+      "is_stale": false,
+      "s_class": "",
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "source": "evidence.subject",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "s2": {
+        "declared_state": "",
+        "state": "NOT_S2",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "covered_subject_type": "",
+        "covered_subject_id": "",
+        "scope_text": "",
+        "route_id": "",
+        "route_kind": "",
+        "external_recheck_anchor_present": false,
+        "anchor_url_valid": true,
+        "expired": false,
+        "sample_source_unknown": false,
+        "selected_by_unknown": false,
+        "relationship_unknown": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s3": {
+        "declared_state": "",
+        "state": "NOT_S3",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "sample_type": "",
+        "sampler_type": "",
+        "sample_source": "",
+        "selected_by": "",
+        "sample_size": 0,
+        "claim_binding_present": false,
+        "sample_pool_id": "",
+        "sample_slot_id": "",
+        "sample_slot_declared": false,
+        "finite_sample_policy_present": false,
+        "max_active_samples": 0,
+        "duplicate_control_present": false,
+        "credential_binding_present": false,
+        "credential_verified_against_root": false,
+        "sampling_plan_present": false,
+        "organization_can_choose_samples": false,
+        "subject_type": "",
+        "subject_id": "",
+        "batch_id": "",
+        "serial_or_unit_id": "",
+        "organization_selected_sample": false,
+        "organization_provided_sample": false,
+        "sample_identity_present": false,
+        "acquired_at_present": false,
+        "raw_evidence_reference_present": false,
+        "raw_availability_status": "",
+        "storage_role": "",
+        "custody_documented": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s4": {
+        "declared_state": "",
+        "state": "NOT_S4",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "observation_type": "",
+        "observer_type": "",
+        "observer_id_or_origin": "",
+        "subject_type": "",
+        "subject_id": "",
+        "observation_window_present": false,
+        "current_window": false,
+        "metric_type": "",
+        "metric_summary_present": false,
+        "raw_bundle_hash_valid": false,
+        "raw_bundle_location_present": false,
+        "gaps": [],
+        "checks": []
+      },
+      "findings": [
+        "Evidence is first-party; independent review may still be needed."
+      ]
+    },
+    {
+      "id": "ev-official-endpoints-statement",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "evidence_type": "not_specified",
+      "issuer_type": "first_party",
+      "reproducibility": "reproducible",
+      "method_refs": [
+        "method-official-endpoints-hash"
+      ],
+      "resolved_method_refs": [
+        "method-official-endpoints-hash"
+      ],
+      "missing_method_refs": [],
+      "method_kinds": [
+        "signed_statement_recheck"
+      ],
+      "has_recheck_method": true,
+      "has_low_cost_recheck_method": true,
+      "has_external_location": true,
+      "is_stale": false,
+      "s_class": "",
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "source": "evidence.subject",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "s2": {
+        "declared_state": "",
+        "state": "NOT_S2",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "covered_subject_type": "",
+        "covered_subject_id": "",
+        "scope_text": "",
+        "route_id": "",
+        "route_kind": "",
+        "external_recheck_anchor_present": false,
+        "anchor_url_valid": true,
+        "expired": false,
+        "sample_source_unknown": false,
+        "selected_by_unknown": false,
+        "relationship_unknown": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s3": {
+        "declared_state": "",
+        "state": "NOT_S3",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "sample_type": "",
+        "sampler_type": "",
+        "sample_source": "",
+        "selected_by": "",
+        "sample_size": 0,
+        "claim_binding_present": false,
+        "sample_pool_id": "",
+        "sample_slot_id": "",
+        "sample_slot_declared": false,
+        "finite_sample_policy_present": false,
+        "max_active_samples": 0,
+        "duplicate_control_present": false,
+        "credential_binding_present": false,
+        "credential_verified_against_root": false,
+        "sampling_plan_present": false,
+        "organization_can_choose_samples": false,
+        "subject_type": "",
+        "subject_id": "",
+        "batch_id": "",
+        "serial_or_unit_id": "",
+        "organization_selected_sample": false,
+        "organization_provided_sample": false,
+        "sample_identity_present": false,
+        "acquired_at_present": false,
+        "raw_evidence_reference_present": false,
+        "raw_availability_status": "",
+        "storage_role": "",
+        "custody_documented": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s4": {
+        "declared_state": "",
+        "state": "NOT_S4",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "observation_type": "",
+        "observer_type": "",
+        "observer_id_or_origin": "",
+        "subject_type": "",
+        "subject_id": "",
+        "observation_window_present": false,
+        "current_window": false,
+        "metric_type": "",
+        "metric_summary_present": false,
+        "raw_bundle_hash_valid": false,
+        "raw_bundle_location_present": false,
+        "gaps": [],
+        "checks": []
+      },
+      "findings": [
+        "Evidence is first-party; independent review may still be needed."
+      ]
+    },
+    {
+      "id": "ev-history-snapshot-index",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "evidence_type": "not_specified",
+      "issuer_type": "first_party",
+      "reproducibility": "reproducible",
+      "method_refs": [
+        "method-history-snapshot-recheck"
+      ],
+      "resolved_method_refs": [
+        "method-history-snapshot-recheck"
+      ],
+      "missing_method_refs": [],
+      "method_kinds": [
+        "historical_snapshot_recheck"
+      ],
+      "has_recheck_method": true,
+      "has_low_cost_recheck_method": true,
+      "has_external_location": true,
+      "is_stale": false,
+      "s_class": "",
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "source": "evidence.subject",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "s2": {
+        "declared_state": "",
+        "state": "NOT_S2",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "covered_subject_type": "",
+        "covered_subject_id": "",
+        "scope_text": "",
+        "route_id": "",
+        "route_kind": "",
+        "external_recheck_anchor_present": false,
+        "anchor_url_valid": true,
+        "expired": false,
+        "sample_source_unknown": false,
+        "selected_by_unknown": false,
+        "relationship_unknown": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s3": {
+        "declared_state": "",
+        "state": "NOT_S3",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "sample_type": "",
+        "sampler_type": "",
+        "sample_source": "",
+        "selected_by": "",
+        "sample_size": 0,
+        "claim_binding_present": false,
+        "sample_pool_id": "",
+        "sample_slot_id": "",
+        "sample_slot_declared": false,
+        "finite_sample_policy_present": false,
+        "max_active_samples": 0,
+        "duplicate_control_present": false,
+        "credential_binding_present": false,
+        "credential_verified_against_root": false,
+        "sampling_plan_present": false,
+        "organization_can_choose_samples": false,
+        "subject_type": "",
+        "subject_id": "",
+        "batch_id": "",
+        "serial_or_unit_id": "",
+        "organization_selected_sample": false,
+        "organization_provided_sample": false,
+        "sample_identity_present": false,
+        "acquired_at_present": false,
+        "raw_evidence_reference_present": false,
+        "raw_availability_status": "",
+        "storage_role": "",
+        "custody_documented": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s4": {
+        "declared_state": "",
+        "state": "NOT_S4",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "observation_type": "",
+        "observer_type": "",
+        "observer_id_or_origin": "",
+        "subject_type": "",
+        "subject_id": "",
+        "observation_window_present": false,
+        "current_window": false,
+        "metric_type": "",
+        "metric_summary_present": false,
+        "raw_bundle_hash_valid": false,
+        "raw_bundle_location_present": false,
+        "gaps": [],
+        "checks": []
+      },
+      "findings": [
+        "Evidence is first-party; independent review may still be needed."
+      ]
+    },
+    {
+      "id": "ev-public-license",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "evidence_type": "not_specified",
+      "issuer_type": "first_party",
+      "reproducibility": "reproducible",
+      "method_refs": [
+        "method-public-license-recheck"
+      ],
+      "resolved_method_refs": [
+        "method-public-license-recheck"
+      ],
+      "missing_method_refs": [],
+      "method_kinds": [
+        "hash_recheck"
+      ],
+      "has_recheck_method": true,
+      "has_low_cost_recheck_method": true,
+      "has_external_location": true,
+      "is_stale": false,
+      "s_class": "",
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "source": "evidence.subject",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "s2": {
+        "declared_state": "",
+        "state": "NOT_S2",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "covered_subject_type": "",
+        "covered_subject_id": "",
+        "scope_text": "",
+        "route_id": "",
+        "route_kind": "",
+        "external_recheck_anchor_present": false,
+        "anchor_url_valid": true,
+        "expired": false,
+        "sample_source_unknown": false,
+        "selected_by_unknown": false,
+        "relationship_unknown": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s3": {
+        "declared_state": "",
+        "state": "NOT_S3",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "sample_type": "",
+        "sampler_type": "",
+        "sample_source": "",
+        "selected_by": "",
+        "sample_size": 0,
+        "claim_binding_present": false,
+        "sample_pool_id": "",
+        "sample_slot_id": "",
+        "sample_slot_declared": false,
+        "finite_sample_policy_present": false,
+        "max_active_samples": 0,
+        "duplicate_control_present": false,
+        "credential_binding_present": false,
+        "credential_verified_against_root": false,
+        "sampling_plan_present": false,
+        "organization_can_choose_samples": false,
+        "subject_type": "",
+        "subject_id": "",
+        "batch_id": "",
+        "serial_or_unit_id": "",
+        "organization_selected_sample": false,
+        "organization_provided_sample": false,
+        "sample_identity_present": false,
+        "acquired_at_present": false,
+        "raw_evidence_reference_present": false,
+        "raw_availability_status": "",
+        "storage_role": "",
+        "custody_documented": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s4": {
+        "declared_state": "",
+        "state": "NOT_S4",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "observation_type": "",
+        "observer_type": "",
+        "observer_id_or_origin": "",
+        "subject_type": "",
+        "subject_id": "",
+        "observation_window_present": false,
+        "current_window": false,
+        "metric_type": "",
+        "metric_summary_present": false,
+        "raw_bundle_hash_valid": false,
+        "raw_bundle_location_present": false,
+        "gaps": [],
+        "checks": []
+      },
+      "findings": [
+        "Evidence is first-party; independent review may still be needed."
+      ]
+    },
+    {
+      "id": "ev-founding-baseline",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "evidence_type": "not_specified",
+      "issuer_type": "first_party",
+      "reproducibility": "reproducible",
+      "method_refs": [
+        "method-founding-baseline-recheck"
+      ],
+      "resolved_method_refs": [
+        "method-founding-baseline-recheck"
+      ],
+      "missing_method_refs": [],
+      "method_kinds": [
+        "hash_recheck"
+      ],
+      "has_recheck_method": true,
+      "has_low_cost_recheck_method": true,
+      "has_external_location": true,
+      "is_stale": false,
+      "s_class": "",
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "source": "evidence.subject",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "s2": {
+        "declared_state": "",
+        "state": "NOT_S2",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "covered_subject_type": "",
+        "covered_subject_id": "",
+        "scope_text": "",
+        "route_id": "",
+        "route_kind": "",
+        "external_recheck_anchor_present": false,
+        "anchor_url_valid": true,
+        "expired": false,
+        "sample_source_unknown": false,
+        "selected_by_unknown": false,
+        "relationship_unknown": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s3": {
+        "declared_state": "",
+        "state": "NOT_S3",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "sample_type": "",
+        "sampler_type": "",
+        "sample_source": "",
+        "selected_by": "",
+        "sample_size": 0,
+        "claim_binding_present": false,
+        "sample_pool_id": "",
+        "sample_slot_id": "",
+        "sample_slot_declared": false,
+        "finite_sample_policy_present": false,
+        "max_active_samples": 0,
+        "duplicate_control_present": false,
+        "credential_binding_present": false,
+        "credential_verified_against_root": false,
+        "sampling_plan_present": false,
+        "organization_can_choose_samples": false,
+        "subject_type": "",
+        "subject_id": "",
+        "batch_id": "",
+        "serial_or_unit_id": "",
+        "organization_selected_sample": false,
+        "organization_provided_sample": false,
+        "sample_identity_present": false,
+        "acquired_at_present": false,
+        "raw_evidence_reference_present": false,
+        "raw_availability_status": "",
+        "storage_role": "",
+        "custody_documented": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s4": {
+        "declared_state": "",
+        "state": "NOT_S4",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "observation_type": "",
+        "observer_type": "",
+        "observer_id_or_origin": "",
+        "subject_type": "",
+        "subject_id": "",
+        "observation_window_present": false,
+        "current_window": false,
+        "metric_type": "",
+        "metric_summary_present": false,
+        "raw_bundle_hash_valid": false,
+        "raw_bundle_location_present": false,
+        "gaps": [],
+        "checks": []
+      },
+      "findings": [
+        "Evidence is first-party; independent review may still be needed."
+      ]
+    },
+    {
+      "id": "ev-github-history-snapshot",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "evidence_type": "not_specified",
+      "issuer_type": "first_party",
+      "reproducibility": "reproducible",
+      "method_refs": [
+        "method-github-snapshot-recheck"
+      ],
+      "resolved_method_refs": [
+        "method-github-snapshot-recheck"
+      ],
+      "missing_method_refs": [],
+      "method_kinds": [
+        "historical_snapshot_recheck"
+      ],
+      "has_recheck_method": true,
+      "has_low_cost_recheck_method": true,
+      "has_external_location": true,
+      "is_stale": false,
+      "s_class": "",
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "source": "evidence.subject",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "s2": {
+        "declared_state": "",
+        "state": "NOT_S2",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "covered_subject_type": "",
+        "covered_subject_id": "",
+        "scope_text": "",
+        "route_id": "",
+        "route_kind": "",
+        "external_recheck_anchor_present": false,
+        "anchor_url_valid": true,
+        "expired": false,
+        "sample_source_unknown": false,
+        "selected_by_unknown": false,
+        "relationship_unknown": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s3": {
+        "declared_state": "",
+        "state": "NOT_S3",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "sample_type": "",
+        "sampler_type": "",
+        "sample_source": "",
+        "selected_by": "",
+        "sample_size": 0,
+        "claim_binding_present": false,
+        "sample_pool_id": "",
+        "sample_slot_id": "",
+        "sample_slot_declared": false,
+        "finite_sample_policy_present": false,
+        "max_active_samples": 0,
+        "duplicate_control_present": false,
+        "credential_binding_present": false,
+        "credential_verified_against_root": false,
+        "sampling_plan_present": false,
+        "organization_can_choose_samples": false,
+        "subject_type": "",
+        "subject_id": "",
+        "batch_id": "",
+        "serial_or_unit_id": "",
+        "organization_selected_sample": false,
+        "organization_provided_sample": false,
+        "sample_identity_present": false,
+        "acquired_at_present": false,
+        "raw_evidence_reference_present": false,
+        "raw_availability_status": "",
+        "storage_role": "",
+        "custody_documented": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s4": {
+        "declared_state": "",
+        "state": "NOT_S4",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "observation_type": "",
+        "observer_type": "",
+        "observer_id_or_origin": "",
+        "subject_type": "",
+        "subject_id": "",
+        "observation_window_present": false,
+        "current_window": false,
+        "metric_type": "",
+        "metric_summary_present": false,
+        "raw_bundle_hash_valid": false,
+        "raw_bundle_location_present": false,
+        "gaps": [],
+        "checks": []
+      },
+      "findings": [
+        "Evidence is first-party; independent review may still be needed."
+      ]
+    },
+    {
+      "id": "ev-github-checksums",
+      "status": "MANUAL_CHECK_REQUIRED",
+      "evidence_type": "not_specified",
+      "issuer_type": "first_party",
+      "reproducibility": "reproducible",
+      "method_refs": [
+        "method-github-checksums-recheck"
+      ],
+      "resolved_method_refs": [
+        "method-github-checksums-recheck"
+      ],
+      "missing_method_refs": [],
+      "method_kinds": [
+        "hash_recheck"
+      ],
+      "has_recheck_method": true,
+      "has_low_cost_recheck_method": true,
+      "has_external_location": true,
+      "is_stale": false,
+      "s_class": "",
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "source": "evidence.subject",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      },
+      "s2": {
+        "declared_state": "",
+        "state": "NOT_S2",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "covered_subject_type": "",
+        "covered_subject_id": "",
+        "scope_text": "",
+        "route_id": "",
+        "route_kind": "",
+        "external_recheck_anchor_present": false,
+        "anchor_url_valid": true,
+        "expired": false,
+        "sample_source_unknown": false,
+        "selected_by_unknown": false,
+        "relationship_unknown": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s3": {
+        "declared_state": "",
+        "state": "NOT_S3",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "sample_type": "",
+        "sampler_type": "",
+        "sample_source": "",
+        "selected_by": "",
+        "sample_size": 0,
+        "claim_binding_present": false,
+        "sample_pool_id": "",
+        "sample_slot_id": "",
+        "sample_slot_declared": false,
+        "finite_sample_policy_present": false,
+        "max_active_samples": 0,
+        "duplicate_control_present": false,
+        "credential_binding_present": false,
+        "credential_verified_against_root": false,
+        "sampling_plan_present": false,
+        "organization_can_choose_samples": false,
+        "subject_type": "",
+        "subject_id": "",
+        "batch_id": "",
+        "serial_or_unit_id": "",
+        "organization_selected_sample": false,
+        "organization_provided_sample": false,
+        "sample_identity_present": false,
+        "acquired_at_present": false,
+        "raw_evidence_reference_present": false,
+        "raw_availability_status": "",
+        "storage_role": "",
+        "custody_documented": false,
+        "gaps": [],
+        "checks": []
+      },
+      "s4": {
+        "declared_state": "",
+        "state": "NOT_S4",
+        "effective": false,
+        "claim_refs": [],
+        "unresolved_claim_refs": [],
+        "observation_type": "",
+        "observer_type": "",
+        "observer_id_or_origin": "",
+        "subject_type": "",
+        "subject_id": "",
+        "observation_window_present": false,
+        "current_window": false,
+        "metric_type": "",
+        "metric_summary_present": false,
+        "raw_bundle_hash_valid": false,
+        "raw_bundle_location_present": false,
+        "gaps": [],
+        "checks": []
+      },
+      "findings": [
+        "Evidence is first-party; independent review may still be needed."
+      ]
+    }
+  ]
+}

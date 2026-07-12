@@ -71,6 +71,7 @@ Verify page: https://civitasx.pages.dev/verify/
 Beacon: https://civitasx.pages.dev/.well-known/organchor.json
 First identity snapshot: https://civitasx.pages.dev/verify-history/2026-07-09/
 First parent value snapshot: https://civitasx.pages.dev/verify-history/2026-07-10-parent-value-001/
+Carrier-ledger snapshot: https://civitasx.pages.dev/verify-history/2026-07-11-carrier-ledger-001/
 ```
 
 Current production verification:
@@ -80,6 +81,8 @@ identity_status: PASS
 value_status: PASS
 conformance_status: FULL_COMPATIBLE
 trust_decision: NOT_ASSIGNED_BY_ORGANCHOR
+lockfile_integrity: SIGNED
+carrier_receipts: PRESENT
 ```
 
 The current root authority is a Temporary Founder Authority for origin

@@ -1,0 +1,1005 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CivitasX Verification</title>
+  <link rel="organchor" type="application/json" href="/.well-known/organchor.json">
+  <link rel="alternate" type="application/json" href="./organchor.json" title="OrgAnchor verify index">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"CivitasX","url":"https://civitasx.pages.dev/","description":"CivitasX is a long-term public engineering effort for future civilization, focused on survival freedom, development freedom, and the possibility for people to live by their own will. Its current OrgAnchor root authority is a temporary founder-stage continuity anchor for origin records and future migration, not a claim of permanent ownership or decentralized governance.","sameAs":["https://civitasx.pages.dev/","https://civitasx.pages.dev/verify/","https://civitasx.pages.dev/faq","https://civitasx.pages.dev/zh","https://civitasx.pages.dev/faq-zh","https://github.com/civitasx-project/civitasx","https://bsky.app/profile/civitasx.bsky.social","https://bsky.app/profile/civitasx.bsky.social/post/3mpkzxox7bf2k","https://bsky.app/profile/civitasx.bsky.social/post/3mpl2qzsduc2s"]}</script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f4;
+      --text: #171717;
+      --muted: #5f6368;
+      --line: #d9d7cf;
+      --panel: #ffffff;
+      --accent: #174ea6;
+      --ok: #137333;
+      --warn: #8a5a00;
+      --neutral: #5f6368;
+      --code: #f1f3f4;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111111;
+        --text: #f1f1f1;
+        --muted: #b7b7b7;
+        --line: #373737;
+        --panel: #1a1a1a;
+        --accent: #8ab4f8;
+        --ok: #81c995;
+        --warn: #fdd663;
+        --neutral: #b7b7b7;
+        --code: #242424;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 1.25rem;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .status {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--ok);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .summary-item {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 14px;
+      border-radius: 8px;
+    }
+
+    .summary-label {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 4px;
+    }
+
+    .summary-value {
+      font-size: 1.25rem;
+      font-weight: 800;
+    }
+
+    .badge {
+      display: inline-block;
+      min-width: 92px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-align: center;
+      border: 1px solid currentColor;
+    }
+
+    .badge-pass {
+      color: var(--ok);
+    }
+
+    .badge-present {
+      color: var(--accent);
+    }
+
+    .badge-not_included {
+      color: var(--neutral);
+    }
+
+    .badge-published,
+    .badge-verified,
+    .badge-signed {
+      color: var(--ok);
+    }
+
+    .badge-manual_package,
+    .badge-unsigned {
+      color: var(--warn);
+    }
+
+    .badge-dry_run {
+      color: var(--neutral);
+    }
+
+    .badge-warn,
+    .badge-review_value_warnings,
+    .badge-external_policy_review,
+    .badge-partial,
+    .badge-design_preview,
+    .badge-manual_check_required {
+      color: var(--warn);
+    }
+
+    .badge-fail,
+    .badge-stop,
+    .badge-stop_identity_failure,
+    .badge-review_failed_checks {
+      color: #b3261e;
+    }
+
+    .badge-external_policy,
+    .badge-recheck_required {
+      color: var(--warn);
+    }
+
+    .badge-full_compatible,
+    .badge-ready_for_external_policy,
+    .badge-identity_verify_pass,
+    .badge-value_verify_pass {
+      color: var(--ok);
+    }
+
+    .status::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--ok);
+    }
+
+    section {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .agent-panel {
+      display: grid;
+      gap: 16px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      border-radius: 8px;
+    }
+
+    .agent-decision {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+
+    .agent-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      background: var(--bg);
+    }
+
+    .agent-card strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 1.35rem;
+    }
+
+    .next-actions {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .read-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .read-step {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .read-step strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .read-step p {
+      margin: 0;
+    }
+
+    .guardrails {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .guardrail-card {
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--warn);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .guardrail-card p {
+      margin: 10px 0 0;
+    }
+
+    .term-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin: 18px 0 0;
+    }
+
+    .term-item {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .term-item dt {
+      margin-bottom: 6px;
+    }
+
+    .term-item dd {
+      color: var(--muted);
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: minmax(140px, 220px) 1fr;
+      gap: 10px 18px;
+      margin: 0;
+    }
+
+    dt {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+    }
+
+    th {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    code,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      background: var(--code);
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    :not(pre) > code {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    pre {
+      overflow-x: auto;
+      padding: 16px;
+      border: 1px solid var(--line);
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: min(100% - 24px, 960px);
+        padding: 32px 0;
+      }
+
+      dl {
+        grid-template-columns: 1fr;
+      }
+
+      th,
+      td {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="status">Signed artifacts generated</div>
+      <h1>CivitasX</h1>
+      <p>CivitasX is a long-term public engineering effort for future civilization, focused on survival freedom, development freedom, and the possibility for people to live by their own will. Its current OrgAnchor root authority is a temporary founder-stage continuity anchor for origin records and future migration, not a claim of permanent ownership or decentralized governance.</p>
+      <p>This is an adopting organization OrgAnchor verification page. The page helps people and machines find signed verification artifacts.</p>
+      <p>This page display does not by itself prove identity. Trust comes from verifying the signed statement against the expected root authority.</p>
+      <div class="summary" aria-label="Visible verification summary">
+        <div class="summary-item">
+          <span class="summary-label">Statement</span>
+          <span class="summary-value">Signed</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Root authority</span>
+          <span class="summary-value">1 of 1</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Valid signatures</span>
+          <span class="summary-value">1</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Generated</span>
+          <span class="summary-value">2026-07-11</span>
+        </div>
+      </div>
+    </header>
+
+    <section aria-labelledby="how-to-read">
+      <h2 id="how-to-read">How to Read This Page</h2>
+      <p>This page has two audiences: people who need a visible review path, and machines that need stable artifacts to verify. Use this order before relying on the organization.</p>
+      <ol class="read-steps">
+
+        <li class="read-step">
+          <strong>1. Check identity first</strong>
+          <p>If identity checks fail, stop. Evidence and carrier mirrors are not meaningful until the signed statement verifies against the expected root authority.</p>
+        </li>
+
+        <li class="read-step">
+          <strong>2. Review evidence state</strong>
+          <p>Value and evidence status show what support is present, what is missing, and what still needs external review.</p>
+        </li>
+
+        <li class="read-step">
+          <strong>3. Apply external policy</strong>
+          <p>OrgAnchor does not certify quality, safety, legality, or suitability. The requesting person, organization, directory, or agent applies its own policy.</p>
+        </li>
+
+        <li class="read-step">
+          <strong>4. Re-check with tools</strong>
+          <p>Machines should start from /.well-known/organchor.json or organchor.json, then run organchor verify url &lt;origin&gt; --compact.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="reliance-guardrails">
+      <h2 id="reliance-guardrails">Reliance Guardrails</h2>
+      <p>These guardrails prevent a visible page from being mistaken for endorsement. They are intentionally shown before the detailed proof trail.</p>
+      <div class="guardrails" aria-label="Reliance guardrails">
+
+        <div class="guardrail-card">
+          <span class="summary-label">Identity gate</span>
+          <span class="badge badge-pass">PASS</span>
+          <p>Identity checks passed when this package was generated. Re-run verification from the current origin before relying.</p>
+        </div>
+
+        <div class="guardrail-card">
+          <span class="summary-label">Evidence limits</span>
+          <span class="badge badge-pass">PASS</span>
+          <p>The claims/evidence package is present and no unsupported claims were found by the local value audit. External policy may still require stronger evidence.</p>
+        </div>
+
+        <div class="guardrail-card">
+          <span class="summary-label">Not a trust badge</span>
+          <span class="badge badge-external_policy">EXTERNAL_POLICY</span>
+          <p>OrgAnchor does not certify that this organization is good, safe, lawful, effective, or the best choice. It exposes verifiable materials for external judgment.</p>
+        </div>
+
+        <div class="guardrail-card">
+          <span class="summary-label">Design preview boundary</span>
+          <span class="badge badge-design_preview">DESIGN_PREVIEW</span>
+          <p>S4 real-use observation and S5 public challenge, correction, and historical accountability are not finished Fireseed acceptance gates. Do not treat them as mature governance systems yet.</p>
+        </div>
+
+        <div class="guardrail-card">
+          <span class="summary-label">Carrier boundary</span>
+          <span class="badge badge-present">PRESENT</span>
+          <p>IPFS, Arweave, OpenTimestamps, websites, and other carriers can improve durability and discovery, but they are not the identity root.</p>
+        </div>
+
+        <div class="guardrail-card">
+          <span class="summary-label">History ledger boundary</span>
+          <span class="badge badge-signed">SIGNED</span>
+          <p>The lockfile snapshot is hash-bound and signed by the root authority. It records publication receipts, but it does not make carriers an identity root.</p>
+        </div>
+
+        <div class="guardrail-card">
+          <span class="summary-label">Recheck before relying</span>
+          <span class="badge badge-recheck_required">RECHECK_REQUIRED</span>
+          <p>Use organchor.json for machine inspection and run organchor verify url &lt;origin&gt; --compact against the current public origin.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="proof-trail">
+      <h2 id="proof-trail">Visible Proof Trail</h2>
+      <p>These checks were performed when this static verification package was generated. They are recorded here so humans can see what happened, and in <code>organchor.json</code> so machines can inspect the same evidence.</p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Check</th>
+            <th scope="col">Status</th>
+            <th scope="col">Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+          <th scope="row">Official endpoint statement</th>
+          <td><span class="badge badge-pass">PASS</span></td>
+          <td>Canonical hash recorded as sha256:1a52e0d110a50547640f01194d9f2195d5a0a9a44bec79b20966cc78e4f8a5df.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Root authority binding</th>
+          <td><span class="badge badge-pass">PASS</span></td>
+          <td>Statement root authority hash matches sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Signature threshold</th>
+          <td><span class="badge badge-pass">PASS</span></td>
+          <td>1 valid signature(s) found; 1 required.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Signature file</th>
+          <td><span class="badge badge-pass">PASS</span></td>
+          <td>Detached signature hash recorded as sha256:528ebd9dc5a9bc16fb9c303e0d3800ac512d5a01815877b4534692bd11bc75bc.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Claims manifest</th>
+          <td><span class="badge badge-pass">PASS</span></td>
+          <td>Signed claims manifest was included and verified against this root authority.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Evidence manifest</th>
+          <td><span class="badge badge-pass">PASS</span></td>
+          <td>Signed evidence manifest was included and verified against this root authority.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Value continuity report</th>
+          <td><span class="badge badge-present">PRESENT</span></td>
+          <td>Value audit report included with 9 claim(s), 9 evidence-linked claim(s), and 0 unsupported claim(s).</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Migration history</th>
+          <td><span class="badge badge-not_included">NOT_INCLUDED</span></td>
+          <td>No migration history is included in this verify package yet.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Carrier receipts</th>
+          <td><span class="badge badge-present">PRESENT</span></td>
+          <td>2 carrier receipt(s) summarized from organchor.lock.json.</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Lockfile integrity</th>
+          <td><span class="badge badge-pass">PASS</span></td>
+          <td>organchor.lock.json hash sha256:fd315ad3ea311c9cf298c05bb215c567f0e409fab3a84ad7f6da942e3bc25b56 is signed by 1/1 required root member(s).</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="agent-view">
+      <h2 id="agent-view">Agent Verification View</h2>
+      <p>This is the human-readable version of the same machine-readable verification package. It shows what an AI agent can cheaply learn first, before making any external policy or transaction decision.</p>
+      <div class="agent-panel">
+        <div class="agent-decision" aria-label="AI agent first-pass decision summary">
+          <div class="summary-item">
+            <span class="summary-label">Overall status</span>
+            <span class="badge badge-pass">PASS</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Identity status</span>
+            <span class="badge badge-pass">PASS</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Value status</span>
+            <span class="badge badge-pass">PASS</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Conformance</span>
+            <span class="badge badge-full_compatible">FULL_COMPATIBLE</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Trust decision</span>
+            <span class="summary-value">External policy</span>
+          </div>
+        </div>
+        <div>
+          <h2>Evidence Classes</h2>
+          <div class="summary" aria-label="Evidence class summary">
+
+        <div class="agent-card">
+          <span class="summary-label">S1 First-party</span>
+          <span class="badge badge-present">PRESENT</span>
+          <strong>8</strong>
+          <p>Organization-submitted evidence. Useful for scope and integrity, but not independent by itself.</p>
+        </div>
+
+        <div class="agent-card">
+          <span class="summary-label">S2 Third-party</span>
+          <span class="badge badge-not_included">NOT_INCLUDED</span>
+          <strong>0</strong>
+          <p>Organization-submitted third-party material with mechanical route and gap checks.</p>
+        </div>
+
+        <div class="agent-card">
+          <span class="summary-label">S3 Sampling</span>
+          <span class="badge badge-not_included">NOT_INCLUDED</span>
+          <strong>0</strong>
+          <p>Random purchase or sampling records. Current tooling checks declared gates; network slot ledgers are future work.</p>
+        </div>
+
+        <div class="agent-card">
+          <span class="summary-label">S4 Observation</span>
+          <span class="badge badge-design_preview">DESIGN_PREVIEW</span>
+          <strong>0</strong>
+          <p>Real-use or delivery observation. Alpha support is partial and should be treated as a design-preview signal.</p>
+        </div>
+
+        <div class="agent-card">
+          <span class="summary-label">S5 Challenge</span>
+          <span class="badge badge-design_preview">DESIGN_PREVIEW</span>
+          <strong>0</strong>
+          <p>Public challenge, correction, negative evidence, and historical accountability governance is documented but not implemented as a finished acceptance gate.</p>
+        </div>
+          </div>
+        </div>
+        <div>
+          <h2>External Policy Route</h2>
+          <p><span class="badge badge-external_policy_review">EXTERNAL_POLICY_REVIEW</span></p>
+          <p>Verification passed, but external policy still needs to decide whether the evidence is sufficient for the intended purpose.</p>
+          <p>Reasons: <code>manual_checks_present</code>, <code>no_third_party_claims</code></p>
+        </div>
+        <div>
+          <h2>Next Checks</h2>
+          <ol class="next-actions">
+<li>Request independent S2/S3/S4 support when the decision requires more than first-party evidence.</li>
+<li>Request S3 random purchase or sampling support when anti-hand-picked-sample assurance matters.</li>
+<li>Add an independent attestation or external evidence source for the exact claim.</li>
+<li>No S2 material is declared; request S2 only if the target purpose requires external support.</li>
+<li>No S3 sampling evidence is declared; request S3 only if the target purpose requires random sampling or anti-hand-picked-sample support.</li>
+<li>No S4 observation evidence is declared; request S4 only if the target purpose requires real delivery, use, support, uptime, or supply-continuity observation.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="key-terms">
+      <h2 id="key-terms">Key Terms</h2>
+      <p>Short explanations for human review. The machine-readable protocol still uses stable JSON keys, status codes, and policy route codes.</p>
+      <dl class="term-list">
+
+        <div class="term-item">
+          <dt>Root authority</dt>
+          <dd>The organization&#39;s authority record for OrgAnchor verification. It lists the root member keys and signature threshold used to verify current statements.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>Statement</dt>
+          <dd>The signed official endpoint declaration. It says which website, verify page, security contact, and related public entry points currently belong to the organization.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>Signature threshold</dt>
+          <dd>How many authorized root-member signatures are required before a statement is accepted as valid.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>Agent Verification View</dt>
+          <dd>A human-readable version of the same first-pass state that AI agents read from organchor.json.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>Overall status</dt>
+          <dd>A summary of identity, evidence, and conformance checks. It is not an endorsement of the organization.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>Identity status</dt>
+          <dd>Whether the signed statement, hashes, signatures, and root authority checks passed.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>Value status</dt>
+          <dd>Whether the signed claims and evidence package is present and whether obvious evidence gaps were found.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>Conformance</dt>
+          <dd>How completely this package matches the OrgAnchor verification contract expected by tools and AI agents.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>Trust decision</dt>
+          <dd>The final reliance decision. OrgAnchor does not assign it; the requesting person, organization, directory, or AI agent applies its own policy.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>External Policy Route</dt>
+          <dd>A machine-readable hint telling external agents whether to stop, review warnings, request more evidence, or continue with their own policy.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>S1 First-party</dt>
+          <dd>Evidence submitted by the organization itself. Useful for scope and integrity, but not independent by itself.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>S2 Third-party</dt>
+          <dd>Third-party-looking material such as certification or lab reports, preferably with a recheck route and clear scope.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>S3 Sampling</dt>
+          <dd>Evidence from random purchase, random sampling, or real market/customer-site sample checks, designed to reduce hand-picked sample risk.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>S4 Observation</dt>
+          <dd>Real-world use, delivery, support, uptime, repair, or supply-continuity observation over time. In Fireseed Alpha this is design preview.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>S5 Challenge</dt>
+          <dd>Public challenge, negative evidence, correction, dispute lifecycle, and historical accountability. In Fireseed Alpha this is design preview.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>Carrier receipts</dt>
+          <dd>Records showing where artifacts were mirrored, archived, pinned, or timestamped. Carriers help durability, but they are not the identity root.</dd>
+        </div>
+
+        <div class="term-item">
+          <dt>Lockfile</dt>
+          <dd>A publication ledger for carrier receipts and artifact hashes. When signed by the root authority, it becomes a tamper-evident snapshot of publication history.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="identity">
+      <h2 id="identity">Identity Artifacts</h2>
+      <dl>
+        <dt>Statement hash</dt>
+        <dd><code>sha256:1a52e0d110a50547640f01194d9f2195d5a0a9a44bec79b20966cc78e4f8a5df</code></dd>
+        <dt>Root authority hash</dt>
+        <dd><code>sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f</code></dd>
+        <dt>Signature hash</dt>
+        <dd><code>sha256:528ebd9dc5a9bc16fb9c303e0d3800ac512d5a01815877b4534692bd11bc75bc</code></dd>
+        <dt>Statement id</dt>
+        <dd>civitasx-official-endpoints-2026-001</dd>
+        <dt>Issued at</dt>
+        <dd>2026-07-09T01:22:12.150Z</dd>
+        <dt>Generated at</dt>
+        <dd>2026-07-11T07:36:23.529Z</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="value-continuity">
+      <h2 id="value-continuity">Value Continuity</h2>
+      <p>This section summarizes the organization's signed claims and evidence trail. It does not prove the organization is good or that every claim is true; it helps people and AI agents see how much support the claims currently have.</p>
+      <div class="summary" aria-label="Value continuity summary">
+        <div class="summary-item">
+          <span class="summary-label">Status</span>
+          <span class="summary-value">PRESENT</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Claims</span>
+          <span class="summary-value">9</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Evidence-linked</span>
+          <span class="summary-value">9</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Third-party</span>
+          <span class="summary-value">0</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Reproducible</span>
+          <span class="summary-value">9</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Unsupported</span>
+          <span class="summary-value">0</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Stale evidence</span>
+          <span class="summary-value">0</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Audit warnings</span>
+          <span class="summary-value">0</span>
+        </div>
+      </div>
+      <dl>
+        <dt>Report JSON</dt>
+        <dd><a href="./reports/value-continuity-report.json">reports/value-continuity-report.json</a><br><code>sha256:38b8cad18c666de6d9da332a3217491cc9ec00256a95d6efc58a4d03ec73ceb5</code></dd>
+        <dt>Report Markdown</dt>
+        <dd><a href="./reports/value-continuity-report.md">reports/value-continuity-report.md</a><br><code>sha256:f1f3699eb02a8092607ec7115cf306f86ddd5a7a9b7d42144745fc0196624dba</code></dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="carrier-receipts">
+      <h2 id="carrier-receipts">Carrier Receipts</h2>
+      <p>These receipts summarize where this verification package or related proof artifacts were mirrored, archived, pinned, or timestamped. Carriers help discovery and durability; they are not the identity root.</p>
+      <h2>Lockfile Integrity</h2>
+      <p>The lockfile is the publication receipt ledger. A signed lockfile snapshot makes receipt history tamper-evident: changing a receipt, timestamp, CID, TX id, or artifact hash changes the lockfile hash and breaks the signature check.</p>
+      <p><span class="badge badge-signed">SIGNED</span></p>
+      <dl>
+        <dt>Lockfile</dt>
+        <dd><a href="./organchor.lock.json">organchor.lock.json</a><br><code>sha256:fd315ad3ea311c9cf298c05bb215c567f0e409fab3a84ad7f6da942e3bc25b56</code></dd>
+        <dt>Lockfile signature</dt>
+        <dd><a href="./organchor.lock.json.sig">organchor.lock.json.sig</a><br><code>sha256:3f5ec7e3b5b9cedea274f59c32a054a2da195c78b53d9512db13982b92599588</code></dd>
+        <dt>Root signatures</dt>
+        <dd>1 of 1</dd>
+      </dl>
+      <p>Human summary: 2 receipt(s) across 2 provider(s). The table shows only the latest receipt for each provider; the complete signed history remains in <a href="./organchor.lock.json">the lockfile</a> for tools and AI agents.</p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Provider</th>
+            <th scope="col">Records</th>
+            <th scope="col">Latest status</th>
+            <th scope="col">Latest artifact</th>
+            <th scope="col">Latest receipt summary</th>
+            <th scope="col">Latest recorded at</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+          <th scope="row">arweave</th>
+          <td>1</td>
+          <td><span class="badge badge-manual_package">MANUAL_PACKAGE</span></td>
+          <td>archive.arweave.publish<br>arweave-manual-package<br><code>sha256:ab12717c5655d607ac6602aef57ab106d86bad25a57ef96f6a144f37bbb5039a</code></td>
+          <td><div><strong>mode:</strong> manual-package</div><div><strong>manifest_hash:</strong> sha256:ab12717c5655d607ac6602aef57ab106d86bad25a57ef96f6a144f37bbb5039a</div><div><strong>manifest_canonical_hash:</strong> sha256:ab12717c5655d607ac6602aef57ab106d86bad25a57ef96f6a144f37bbb5039a</div><div><strong>manifest_file_hash:</strong> sha256:38ad857b1fe0479e0ac31bc0a999a74f9ada6f4171f441f4ce398c38aeaebb5a</div></td>
+          <td>2026-07-11T07:35:12.764Z</td>
+        </tr>
+
+        <tr>
+          <th scope="row">opentimestamps</th>
+          <td>1</td>
+          <td><span class="badge badge-published">PUBLISHED</span></td>
+          <td>anchor.opentimestamps.stamp<br>opentimestamps-stamped-file<br><code>sha256:79e47e484e1627280cd8706fe42e9ac18494785df8992c9c2f73a6880c7c32bf</code></td>
+          <td><div><strong>bitcoin_anchor_status:</strong> PENDING</div></td>
+          <td>2026-07-11T07:03:02.361Z</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="root-continuity">
+      <h2 id="root-continuity">Root Continuity</h2>
+      <p>The current root authority is the root that verifies new statements in this package. Older statements remain historical records and must be checked against the root authority that signed them.</p>
+      <dl>
+        <dt>Current root authority</dt>
+        <dd>root-authority-2026<br><code>sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f</code></dd>
+        <dt>Current threshold</dt>
+        <dd>1 of 1</dd>
+        <dt>Migration status</dt>
+        <dd>No migration chain is included. Current statements use the current root authority directly.</dd>
+        <dt>Historical statements</dt>
+        <dd>Historical statements use the root authority that signed them.</dd>
+        <dt>Future statements</dt>
+        <dd>New statements should be verified against the current root authority unless a later valid migration supersedes it.</dd>
+      </dl>
+      
+    </section>
+
+    <section aria-labelledby="endpoints">
+      <h2 id="endpoints">Official Endpoints</h2>
+      <table>
+        <tbody>
+        <tr>
+          <th scope="row">website</th>
+          <td><a href="https://civitasx.pages.dev/">https://civitasx.pages.dev/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">verify</th>
+          <td><a href="https://civitasx.pages.dev/verify/">https://civitasx.pages.dev/verify/</a></td>
+        </tr>
+        <tr>
+          <th scope="row">faq</th>
+          <td><a href="https://civitasx.pages.dev/faq">https://civitasx.pages.dev/faq</a></td>
+        </tr>
+        <tr>
+          <th scope="row">zh_statement</th>
+          <td><a href="https://civitasx.pages.dev/zh">https://civitasx.pages.dev/zh</a></td>
+        </tr>
+        <tr>
+          <th scope="row">zh_faq</th>
+          <td><a href="https://civitasx.pages.dev/faq-zh">https://civitasx.pages.dev/faq-zh</a></td>
+        </tr>
+        <tr>
+          <th scope="row">github</th>
+          <td><a href="https://github.com/civitasx-project/civitasx">https://github.com/civitasx-project/civitasx</a></td>
+        </tr>
+        <tr>
+          <th scope="row">bluesky</th>
+          <td><a href="https://bsky.app/profile/civitasx.bsky.social">https://bsky.app/profile/civitasx.bsky.social</a></td>
+        </tr>
+        <tr>
+          <th scope="row">first_post</th>
+          <td><a href="https://bsky.app/profile/civitasx.bsky.social/post/3mpkzxox7bf2k">https://bsky.app/profile/civitasx.bsky.social/post/3mpkzxox7bf2k</a></td>
+        </tr>
+        <tr>
+          <th scope="row">first_thread</th>
+          <td><a href="https://bsky.app/profile/civitasx.bsky.social/post/3mpl2qzsduc2s">https://bsky.app/profile/civitasx.bsky.social/post/3mpl2qzsduc2s</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="authority">
+      <h2 id="authority">Root Authority</h2>
+      <dl>
+        <dt>Authority id</dt>
+        <dd>root-authority-2026</dd>
+        <dt>Threshold</dt>
+        <dd>1 of 1</dd>
+      </dl>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Key id</th>
+            <th scope="col">Algorithm</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+          <th scope="row">civitasx-founder-rehearsal-2026</th>
+          <td>ed25519</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="signatures">
+      <h2 id="signatures">Signatures</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Key id</th>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Signed at</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+          <th scope="row">civitasx-founder-rehearsal-2026</th>
+          <td>ed25519</td>
+          <td>2026-07-09T01:22:21.981Z</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+
+    <section aria-labelledby="files">
+      <h2 id="files">Machine-Readable Files</h2>
+      <ul>
+        <li><a href="./organchor.json">organchor.json</a></li>
+        <li><a href="./root-authority.json">root-authority.json</a></li>
+        <li><a href="./official-endpoints.json">official-endpoints.json</a></li>
+        <li><a href="./official-endpoints.json.sig">official-endpoints.json.sig</a></li>
+        <li><a href="./organchor.lock.json">organchor.lock.json</a></li>
+        <li><a href="./organchor.lock.json.sig">organchor.lock.json.sig</a></li>
+        <li><a href="./adoption-status.html">adoption-status.html</a></li>
+        <li><a href="./adoption-status.json">adoption-status.json</a></li>
+      </ul>
+      <h2>Claims And Evidence</h2><ul>
+        <li>
+          <a href="./claims/product-claims.json">Product Claims Manifest</a>
+          <br><code>sha256:412694e0bafa073da095b695fc8583f590f4257f0d6fc7ad1a102fab056f09b4</code>
+          <br><a href="./claims/product-claims.json.sig">claims/product-claims.json.sig</a>
+          <br><code>sha256:efd02dd016e27dc7242730be1f499327a8ff297bfdd41c772be30e0cdfea97c7</code>
+        </li>
+
+        <li>
+          <a href="./evidence/evidence-manifest.json">Evidence Manifest</a>
+          <br><code>sha256:c0957dbe91015922af37e2afe116bb719d2693a01f0289b8178b2e227307e8b1</code>
+          <br><a href="./evidence/evidence-manifest.json.sig">evidence/evidence-manifest.json.sig</a>
+          <br><code>sha256:a3a2c2a111a0c4f651fe8d161a5b9784b6c965a0544fb67735ae66e7e3fb0c38</code>
+        </li>
+      </ul>
+      
+    </section>
+
+    <section aria-labelledby="verify">
+      <h2 id="verify">CLI Verification</h2>
+      <pre><code>organchor statement verify \
+  --authority root-authority.json \
+  --expected-authority-hash sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f \
+  --in official-endpoints.json \
+  --sig official-endpoints.json.sig
+
+organchor lockfile verify \
+  --authority root-authority.json \
+  --expected-authority-hash sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f \
+  --in organchor.lock.json \
+  --sig organchor.lock.json.sig</code></pre>
+    </section>
+  </main>
+</body>
+</html>
+

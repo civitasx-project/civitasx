@@ -15,6 +15,8 @@ https://civitasx.pages.dev/.well-known/organchor.json
 ```text
 current/adoption-status.html
 current/adoption-status.json
+current/well-known/organchor.json
+current/verify/
 ```
 
 These files explain the current maturity and remaining gaps in CivitasX's own
@@ -32,11 +34,26 @@ Level 4: PARTIAL
 Level 5: PARTIAL AND BLOCKED
 ```
 
+The current active verification mirror also includes the signed lockfile and
+carrier-ledger materials now deployed at:
+
+```text
+https://civitasx.pages.dev/verify/
+```
+
+Current carrier-ledger state:
+
+```text
+lockfile_integrity: SIGNED
+carrier_receipts: PRESENT
+```
+
 ## Historical Snapshots
 
 ```text
 history/2026-07-09/
 history/2026-07-10-parent-value-001/
+history/2026-07-11-carrier-ledger-001/
 ```
 
 This is the first deployed CivitasX identity-continuity snapshot under OrgAnchor
@@ -81,6 +98,22 @@ beacon-at-publication.json
 Production verification at publication reported `identity_status: PASS`,
 `value_status: PASS`, and `conformance_status: FULL_COMPATIBLE`. That status is
 a verification result, not an endorsement or final trust decision.
+
+The third snapshot is the first carrier-ledger continuity snapshot. It preserves
+the active signed parent value package and adds:
+
+```text
+organchor.lock.json
+organchor.lock.json.sig
+anchors/opentimestamps/official-endpoints.json.ots
+arweave-manifest-complete-2026-07-11.json
+arweave-package-complete-2026-07-11/
+```
+
+It records local publication-ledger and carrier-receipt evidence. It does not
+claim complete Level 3 adoption, Level 4 completion, Level 5 readiness, real
+IPFS publication, real Arweave transaction, Bitcoin-confirmed OpenTimestamps
+anchoring, multi-custodian authority, or decentralized governance.
 
 ## Verification Boundary
 

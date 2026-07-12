@@ -1,0 +1,193 @@
+{
+  "schema": "https://organchor.org/schemas/product-claims.v1.json",
+  "type": "OrgAnchorProductClaims",
+  "version": "1.0",
+  "statement_id": "civitasx-parent-claims-2026-07-10-001",
+  "issued_at": "2026-07-10T12:45:00.000Z",
+  "organization_ref": {
+    "name": "CivitasX",
+    "display_name": "CivitasX"
+  },
+  "correction_policy": {
+    "summary": "If a CivitasX public claim is found to be wrong, overstated, obsolete, or misleading, the correction should be published through the current public site and future OrgAnchor continuity records instead of silently rewriting history.",
+    "preferred_record": "Future corrections should preserve old signed records as historical snapshots and publish corrected claims as new signed records."
+  },
+  "products": [
+    {
+      "id": "civitasx-parent-framework",
+      "name": "CivitasX parent framework",
+      "description": "The CivitasX parent public framework and its continuity record, not a finished product, certification, investment product, or governance system."
+    }
+  ],
+  "claims": [
+    {
+      "id": "cxt-parent-purpose",
+      "product_id": "civitasx-parent-framework",
+      "claim_text": "CivitasX publicly presents itself as a long-term public engineering effort for future civilization, focused on survival freedom, development freedom, and the possibility for people to live by their own will.",
+      "claim_scope": "Public self-description and parent-framework positioning.",
+      "evidence_refs": [
+        "ev-public-intro-en",
+        "ev-founding-baseline"
+      ],
+      "limitations": [
+        "This is a signed record of CivitasX's public framing, not proof that the long-term civilization goals have been achieved.",
+        "OrgAnchor does not assign final trust or ideological agreement."
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      }
+    },
+    {
+      "id": "cxt-official-endpoints",
+      "product_id": "civitasx-parent-framework",
+      "claim_text": "CivitasX currently declares its public statement, FAQ, Chinese reference pages, GitHub archive, Bluesky profile, first public posts, OrgAnchor verify page, and historical snapshot as official public endpoints.",
+      "claim_scope": "Official public endpoint continuity as declared by the signed OrgAnchor official-endpoints statement.",
+      "evidence_refs": [
+        "ev-official-endpoints-statement"
+      ],
+      "limitations": [
+        "Endpoint continuity is not a trust badge, ranking, legal identity certification, or proof of product quality.",
+        "External agents should still apply their own policy before relying on any endpoint for a specific decision."
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      }
+    },
+    {
+      "id": "cxt-starting-directions",
+      "product_id": "civitasx-parent-framework",
+      "claim_text": "CivitasX currently presents OrgAnchor, EchoEnginer, ProvisionLoop, and WillFlow as its first four starting directions for exploration and practice.",
+      "claim_scope": "Current public project-direction framing in the CivitasX parent statement.",
+      "evidence_refs": [
+        "ev-public-intro-en",
+        "ev-public-faq-en",
+        "ev-founding-baseline"
+      ],
+      "limitations": [
+        "These are current starting directions, not a claim that all four projects are complete or equally mature.",
+        "Subproject product evaluation belongs to the corresponding subproject, not this parent-level claim."
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      }
+    },
+    {
+      "id": "cxt-public-boundaries",
+      "product_id": "civitasx-parent-framework",
+      "claim_text": "CivitasX publicly states that it is not a token launch, investment product, financial product, political organization, state-building plan, certification authority, or finished governance answer.",
+      "claim_scope": "Parent-level public non-goals and boundary statements.",
+      "evidence_refs": [
+        "ev-public-faq-en"
+      ],
+      "limitations": [
+        "This records CivitasX's public boundary statement; it is not legal advice or regulatory analysis.",
+        "External readers should evaluate legal, financial, and political implications under their own jurisdiction and policy."
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      }
+    },
+    {
+      "id": "cxt-temporary-founder-authority",
+      "product_id": "civitasx-parent-framework",
+      "claim_text": "CivitasX's current OrgAnchor root authority is described as a temporary founder-stage continuity anchor for origin records and future migration, not a claim of lasting ownership or current decentralized governance.",
+      "claim_scope": "Current root-authority interpretation and public continuity boundary.",
+      "evidence_refs": [
+        "ev-official-endpoints-statement",
+        "ev-founding-baseline"
+      ],
+      "limitations": [
+        "This does not prove decentralized stewardship has already been achieved.",
+        "Future durable stewardship would require explicit migration, threshold authority changes, and public continuity records."
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      }
+    },
+    {
+      "id": "cxt-first-snapshot",
+      "product_id": "civitasx-parent-framework",
+      "claim_text": "The first deployed CivitasX OrgAnchor package is preserved as a schema v1.0 adoption snapshot dated 2026-07-09, while the active /verify/ path may evolve in future versions.",
+      "claim_scope": "Historical package preservation and protocol-evolution continuity.",
+      "evidence_refs": [
+        "ev-history-snapshot-index",
+        "ev-github-history-snapshot",
+        "ev-github-checksums"
+      ],
+      "limitations": [
+        "A historical snapshot is not the active discovery entrypoint.",
+        "Future OrgAnchor versions may add stronger checks or reveal gaps without retroactively erasing the historical validity of this snapshot."
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      }
+    },
+    {
+      "id": "cxt-public-text-license",
+      "product_id": "civitasx-parent-framework",
+      "claim_text": "CivitasX publishes the original public text and documentation in its public archive under CC BY-SA 4.0, except where another license or exclusion is stated.",
+      "claim_scope": "Declared reuse terms for original public text and documentation in the CivitasX public archive.",
+      "evidence_refs": [
+        "ev-public-license"
+      ],
+      "limitations": [
+        "The license does not grant official signed continuity, endorsement, trademark rights, access to private materials, or a software license for subprojects.",
+        "This is a signed record of the published license declaration, not jurisdiction-specific legal advice."
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      }
+    },
+    {
+      "id": "cxt-founding-continuity-baseline",
+      "product_id": "civitasx-parent-framework",
+      "claim_text": "CivitasX publishes a founding continuity baseline that records its stable direction, current starting projects, confirmed long-horizon structures, replaceable mechanisms, open questions, authority interpretation, and honest continuation path.",
+      "claim_scope": "Published founder-stage continuity context for later readers and builders.",
+      "evidence_refs": [
+        "ev-founding-baseline"
+      ],
+      "limitations": [
+        "The baseline is not a finished whitepaper, proof of future outcomes, or permanent freeze on current mechanisms.",
+        "Independent continuations must describe their relationship honestly when no valid signed migration exists."
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      }
+    },
+    {
+      "id": "cxt-github-snapshot-mirror",
+      "product_id": "civitasx-parent-framework",
+      "claim_text": "CivitasX mirrors its first deployed OrgAnchor identity snapshot in the public GitHub archive and publishes SHA-256 checksums for the mirrored files.",
+      "claim_scope": "Provider-diverse preservation of the first public OrgAnchor adoption snapshot.",
+      "evidence_refs": [
+        "ev-github-history-snapshot",
+        "ev-github-checksums"
+      ],
+      "limitations": [
+        "The GitHub mirror is a preservation copy, not the active OrgAnchor discovery entrypoint.",
+        "Provider mirroring and checksums do not assign final trust or prove the CivitasX theory."
+      ],
+      "subject": {
+        "subject_type": "public_framework",
+        "subject_id": "civitasx-parent-framework",
+        "scope_text": "CivitasX parent framework and public continuity record"
+      }
+    }
+  ]
+}
