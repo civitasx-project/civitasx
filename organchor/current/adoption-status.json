@@ -13,8 +13,9 @@
                              "doctor_status":  "READY",
                              "current_package_is_sufficient_for_present_public_continuity_baseline":  true,
                              "complete_organchor_paradigm_adoption":  false,
-                             "signed_publication_ledger":  "INCLUDED_IN_REFRESHED_CARRIER_LEDGER_CANDIDATE",
-                             "carrier_receipts":  "PRESENT_LIMITED"
+                             "signed_publication_ledger":  "DEPLOYED_SIGNED",
+                             "carrier_receipts":  "PRESENT_LIMITED",
+                             "github_mirror":  "MIRRORED_AND_TAGGED"
                          },
     "level_matrix":  [
                          {
@@ -98,28 +99,28 @@
     "recommended_next_actions":  [
                                      {
                                          "order":  1,
-                                         "action":  "Deploy only after explicit user authorization, then verify production bytes and routes.",
-                                         "reason":  "The refreshed candidate is a local package until deployment is authorized and verified."
-                                     },
-                                     {
-                                         "order":  2,
-                                         "action":  "Mirror the exact published carrier-ledger snapshot to GitHub with immutable tag and checksums.",
-                                         "reason":  "GitHub should preserve the same bytes that production serves."
-                                     },
-                                     {
-                                         "order":  3,
                                          "action":  "Add at least one real independent carrier such as IPFS, Arweave transaction, or another content-addressed or append-only archive.",
                                          "reason":  "Cloudflare, GitHub, OpenTimestamps calendar receipt, and Arweave manual package still do not complete independent carrier redundancy."
                                      },
                                      {
-                                         "order":  4,
+                                         "order":  2,
                                          "action":  "Repeat recovery from public artifacts only.",
                                          "reason":  "This tests whether later people can reconstruct the record without local files or the active Cloudflare account."
                                      },
                                      {
+                                         "order":  3,
+                                         "action":  "Harden the canonical domain and durable naming strategy.",
+                                         "reason":  "A provider subdomain is acceptable for the current baseline, but not the long-term naming end state."
+                                     },
+                                     {
+                                         "order":  4,
+                                         "action":  "Track Bitcoin confirmation for the OpenTimestamps receipt and record the result when available.",
+                                         "reason":  "Calendar acceptance exists, but Bitcoin anchoring remains a separate evidence state."
+                                     },
+                                     {
                                          "order":  5,
-                                         "action":  "Treat domain hardening and threshold custody as later structural work.",
-                                         "reason":  "They are important, but should not be faked or rushed before the prerequisites exist."
+                                         "action":  "Prepare threshold custody only when real independent long-term custodians exist.",
+                                         "reason":  "Multi-custodian authority should not be simulated or rushed before the social prerequisite exists."
                                      }
                                  ],
     "non_claims":  [
@@ -131,5 +132,6 @@
                    ],
     "source_audit":  "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_PARADIGM_GAP_AUDIT_2026-07-12.md",
     "source_roadmap":  "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_ADOPTION_ROADMAP_2026-07-12.md",
-    "source_unfreeze_review":  "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_CARRIER_LEDGER_UNFREEZE_REVIEW_2026-07-12.md"
+    "source_unfreeze_review":  "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_CARRIER_LEDGER_UNFREEZE_REVIEW_2026-07-12.md",
+    "source_deployment":  "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_CARRIER_LEDGER_DEPLOYED_2026-07-12.md"
 }

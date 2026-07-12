@@ -21,8 +21,12 @@ Carrier-ledger history: https://civitasx.pages.dev/verify-history/2026-07-11-car
 Deployment URL:
 
 ```text
-https://1653d1b2.civitasx.pages.dev
+https://5ab7691b.civitasx.pages.dev
 ```
+
+The initial carrier-ledger deployment was followed by a same-day
+adoption-status refresh so the public status page no longer listed deployment
+and GitHub mirroring as future actions after they were complete.
 
 ## Verification At Publication
 
