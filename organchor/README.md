@@ -45,14 +45,22 @@ Current carrier-ledger state:
 
 ```text
 lockfile_integrity: SIGNED
-carrier_receipts: PRESENT
+carrier_receipts: PRESENT_WITH_IPFS_AND_OTS
+content_addressed_mirror: PUBLISHED_IPFS_PINATA
 opentimestamps_bitcoin_anchor: CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK
 public_artifact_recovery: PASSED_PUBLIC_REHEARSAL
 ```
 
 The active mirror now includes the upgraded OpenTimestamps proof with Bitcoin
-block-header attestations. It still does not include a real IPFS CID or a real
-Arweave transaction.
+block-header attestations and a real IPFS Pinata CID:
+
+```text
+bafybeibqtofd5n74wyiteepu34irjlllzazsndliglpwk6ogduayaumlc4
+```
+
+It still does not include a real Arweave transaction, local Bitcoin Core
+full-node verification, custom-domain hardening, multi-custodian authority, or
+decentralized governance.
 
 ## Historical Snapshots
 

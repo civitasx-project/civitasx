@@ -14,8 +14,9 @@
     "current_package_is_sufficient_for_present_public_continuity_baseline": true,
     "complete_organchor_paradigm_adoption": false,
     "signed_publication_ledger": "DEPLOYED_SIGNED",
-    "carrier_receipts": "PRESENT_LIMITED",
+    "carrier_receipts": "PRESENT_WITH_IPFS_AND_OTS",
     "github_mirror": "MIRRORED_AND_TAGGED",
+    "content_addressed_mirror": "PUBLISHED_IPFS_PINATA",
     "opentimestamps_bitcoin_anchor": "CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK"
   },
   "level_matrix": [
@@ -35,7 +36,7 @@
       "level": 3,
       "name": "Mirrored and Archived Identity",
       "status": "IN_PROGRESS",
-      "summary": "The refreshed carrier-ledger package includes a signed lockfile, limited carrier receipts, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. It still lacks a real IPFS CID or equivalent independent content-addressed public mirror and a real Arweave transaction."
+      "summary": "The refreshed carrier-ledger package includes a signed lockfile, carrier receipts, a real IPFS Pinata CID, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. It still lacks a real Arweave transaction and deeper long-term carrier redundancy."
     },
     {
       "level": 4,
@@ -58,13 +59,13 @@
     },
     {
       "id": "carrier-receipts",
-      "status": "PRESENT_LIMITED",
-      "summary": "This refreshed carrier-ledger package includes limited carrier receipts for an OpenTimestamps proof upgraded with Bitcoin block-header attestations and an Arweave manual package. It does not include a real IPFS CID or real Arweave transaction."
+      "status": "PRESENT_WITH_IPFS_AND_OTS",
+      "summary": "This refreshed carrier-ledger package includes carrier receipts for a real IPFS Pinata publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, and an Arweave manual package. It does not include a real Arweave transaction."
     },
     {
       "id": "content-addressed-mirror",
-      "status": "NOT_PUBLISHED",
-      "summary": "No real IPFS CID or equivalent independent public content-addressed mirror is currently published for this package."
+      "status": "PUBLISHED_IPFS_PINATA",
+      "summary": "A real IPFS Pinata CID is recorded for the current verify directory: bafybeibqtofd5n74wyiteepu34irjlllzazsndliglpwk6ogduayaumlc4. This improves carrier redundancy but does not make IPFS or Pinata the identity root."
     },
     {
       "id": "arweave-transaction",
@@ -100,8 +101,8 @@
   "recommended_next_actions": [
     {
       "order": 1,
-      "action": "Add at least one real independent carrier such as IPFS, Arweave transaction, or another content-addressed or append-only archive.",
-      "reason": "Cloudflare, GitHub, OpenTimestamps, and an Arweave manual package still do not complete independent carrier redundancy."
+      "action": "Add a real Arweave transaction or another second independent append-only/content-addressed carrier.",
+      "reason": "The real IPFS publication improves carrier redundancy, but one pinning-backed IPFS mirror does not complete long-term independent preservation."
     },
     {
       "order": 2,
@@ -132,4 +133,6 @@
   "source_deployment": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_CARRIER_LEDGER_DEPLOYED_2026-07-12.md",
   "source_public_artifact_recovery": "outreach/first-public-civitasx/CIVITASX_PUBLIC_ARTIFACT_RECOVERY_REHEARSAL_2026-07-13.md",
   "source_opentimestamps_confirmation": "outreach/first-public-civitasx/CIVITASX_OPENTIMESTAMPS_BITCOIN_CONFIRMATION_2026-07-13.md"
+  ,
+  "source_ipfs_pinata_publication": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_IPFS_PINATA_DEPLOYED_2026-07-13.md"
 }

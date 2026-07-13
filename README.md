@@ -72,6 +72,7 @@ Beacon: https://civitasx.pages.dev/.well-known/organchor.json
 First identity snapshot: https://civitasx.pages.dev/verify-history/2026-07-09/
 First parent value snapshot: https://civitasx.pages.dev/verify-history/2026-07-10-parent-value-001/
 Carrier-ledger snapshot: https://civitasx.pages.dev/verify-history/2026-07-11-carrier-ledger-001/
+IPFS Pinata mirror: https://gateway.pinata.cloud/ipfs/bafybeibqtofd5n74wyiteepu34irjlllzazsndliglpwk6ogduayaumlc4/organchor.json
 ```
 
 Current production verification:
@@ -82,9 +83,9 @@ value_status: PASS
 conformance_status: FULL_COMPATIBLE
 trust_decision: NOT_ASSIGNED_BY_ORGANCHOR
 lockfile_integrity: SIGNED
-carrier_receipts: PRESENT
+carrier_receipts: PRESENT_WITH_IPFS_AND_OTS
+content_addressed_mirror: PUBLISHED_IPFS_PINATA
 opentimestamps_bitcoin_anchor: CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK
-public_artifact_recovery: PASSED_PUBLIC_REHEARSAL
 ```
 
 The current root authority is a Temporary Founder Authority for origin

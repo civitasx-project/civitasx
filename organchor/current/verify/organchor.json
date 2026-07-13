@@ -1,7 +1,7 @@
 {
   "type": "OrgAnchorVerifyIndex",
   "version": "1.0",
-  "generated_at": "2026-07-13T00:56:19.054Z",
+  "generated_at": "2026-07-13T03:21:14.810Z",
   "role": "adopting-organization-verify-index",
   "organization": {
     "name": "CivitasX",
@@ -68,7 +68,7 @@
   },
   "visible_proof": {
     "status": "PASS",
-    "generated_at": "2026-07-13T00:56:19.054Z",
+    "generated_at": "2026-07-13T03:21:14.810Z",
     "checks": [
       {
         "label": "Official endpoint statement",
@@ -113,12 +113,12 @@
       {
         "label": "Carrier receipts",
         "status": "PRESENT",
-        "detail": "2 carrier receipt(s) summarized from organchor.lock.json."
+        "detail": "3 carrier receipt(s) summarized from organchor.lock.json."
       },
       {
         "label": "Lockfile integrity",
         "status": "PASS",
-        "detail": "organchor.lock.json hash sha256:88d558cc8954b80b2e3b1c77a7266b8f3b14fb2701a4a965529c9f950314fdcd is signed by 1/1 required root member(s)."
+        "detail": "organchor.lock.json hash sha256:aa8124ea195854808760de14ed103da3465e13d42fac304eade233ee90c32fd9 is signed by 1/1 required root member(s)."
       }
     ],
     "summary": {
@@ -128,9 +128,9 @@
       "required_signature_count": 1,
       "linked_artifact_count": 2,
       "migration_count": 0,
-      "carrier_receipt_count": 2,
+      "carrier_receipt_count": 3,
       "lockfile_status": "SIGNED",
-      "lockfile_hash": "sha256:88d558cc8954b80b2e3b1c77a7266b8f3b14fb2701a4a965529c9f950314fdcd",
+      "lockfile_hash": "sha256:aa8124ea195854808760de14ed103da3465e13d42fac304eade233ee90c32fd9",
       "lockfile_signed": true
     }
   },
@@ -222,6 +222,23 @@
     "source_lockfile": "organchor.lock.json",
     "receipts": [
       {
+        "artifact_hash": "sha256:51ef917683a4af249719e0e78d51059a0663ede4d0925dc986e7ece0fb048356",
+        "artifact_kind": "verify-directory",
+        "artifact_path": "site/verify",
+        "provider": "ipfs-pinata",
+        "action": "mirror.ipfs.upload",
+        "status": "PUBLISHED",
+        "recorded_at": "2026-07-13T03:10:27.202Z",
+        "summary": {
+          "mode": "pinata-upload",
+          "cid": "bafybeibqtofd5n74wyiteepu34irjlllzazsndliglpwk6ogduayaumlc4",
+          "directory_hash": "sha256:51ef917683a4af249719e0e78d51059a0663ede4d0925dc986e7ece0fb048356",
+          "total_size": 444657,
+          "file_count": 36,
+          "receipt_file_count": 36
+        }
+      },
+      {
         "artifact_hash": "sha256:ab12717c5655d607ac6602aef57ab106d86bad25a57ef96f6a144f37bbb5039a",
         "artifact_kind": "arweave-manual-package",
         "artifact_path": "arweave-manifest-complete-2026-07-11.json",
@@ -253,9 +270,9 @@
   "lockfile_integrity": {
     "status": "SIGNED",
     "path": "organchor.lock.json",
-    "hash": "sha256:88d558cc8954b80b2e3b1c77a7266b8f3b14fb2701a4a965529c9f950314fdcd",
+    "hash": "sha256:aa8124ea195854808760de14ed103da3465e13d42fac304eade233ee90c32fd9",
     "signature_path": "organchor.lock.json.sig",
-    "signature_hash": "sha256:1e3153e3fb312fa12af93b119f3617b65f10575677764a703c62cae058f79b4f",
+    "signature_hash": "sha256:cee4e175d33309bed621ffebdde603995d2b9bc79b858c2a47e0ebec3db50ada",
     "valid_signatures": [
       "civitasx-founder-rehearsal-2026"
     ],

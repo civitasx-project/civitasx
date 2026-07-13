@@ -1,8 +1,8 @@
 # CivitasX Public Archive Manifest
 
-Updated: 2026-07-12
+Updated: 2026-07-13
 
-Status: published through the carrier-ledger continuity snapshot, with current
+Status: published through the IPFS Pinata continuity mirror, with current
 OrgAnchor adoption-gap status mirrored.
 
 ## Public Archive Contents
@@ -25,6 +25,8 @@ projects/WillFlow.md
 launch/2026-07-01-first-public-launch.md
 launch/2026-07-11-parent-value-v2.md
 launch/2026-07-12-carrier-ledger-refresh.md
+launch/2026-07-13-ots-bitcoin-confirmation.md
+launch/2026-07-13-ipfs-pinata-mirror.md
 continuity/CONTINUITY.md
 continuity/CIVITASX_PARENT_MISSION.md
 continuity/CIVITASX_FOUNDING_BASELINE.md

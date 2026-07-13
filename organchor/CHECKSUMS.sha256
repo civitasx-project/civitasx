@@ -1,5 +1,5 @@
-13aa6a978e6cd088fd3a3cfe823167d7da78257845aead2774d61fedbb23de13  organchor/current/verify/organchor.lock.json
-1f081344244c8f00b26f7ac99b835a8eb49c7d4833c0b091089d581859ae4d68  organchor/current/verify/index.html
+0a622f27a5b99fc7a31ba5053e54b5a9af33dc2c07f630b1c2a184c8bf947358  organchor/current/verify/organchor.lock.json
+22910d136361c87a40d948b41b8622d015c428234b5e69f11a05491d59b203e1  organchor/README.md
 2518b498f91d156d9aff2ee3e42b3febebe1305ea607e9352b8314e018a39fc0  organchor/history/2026-07-09/beacon-at-publication.json
 26eafe7bb9a7185fd10b236b3dcf4435fa7804ab5cc24fdef351262a06dec877  organchor/current/verify/anchors/opentimestamps/official-endpoints.json.ots
 28760388dd6975addebfcd271c67d2721839ef87a005f83b26cbdfe2bd7a1455  organchor/current/verify/arweave-package-complete-2026-07-11/official-endpoints.json.sig
@@ -12,8 +12,8 @@
 28760388dd6975addebfcd271c67d2721839ef87a005f83b26cbdfe2bd7a1455  organchor/history/2026-07-11-carrier-ledger-001/official-endpoints.json.sig
 28a1bc9995efffa80a79005ca6466c3a9c463089c5fcea6316c3d8d41bf542a3  organchor/history/2026-07-09/index.html
 2b4bbea010de6e891e11b14989450317ed7255280e25ef752996ea41772aa016  organchor/history/2026-07-11-carrier-ledger-001/index.html
-35763f0999e3739d115c05ec99afd558a8db78f9f9abd25968d9aaa15a2cfa4f  organchor/README.md
-36b7cfa0d57f087ba5fc2b914c104b2ace792c49ade87df3f62932f25c20f59f  organchor/current/verify/organchor.json
+2ee72c074822fe08e9f09259bfc6503b183cb454be372bb229c6e9ec2d84c862  organchor/current/adoption-status.html
+2ee72c074822fe08e9f09259bfc6503b183cb454be372bb229c6e9ec2d84c862  organchor/current/verify/adoption-status.html
 38ad857b1fe0479e0ac31bc0a999a74f9ada6f4171f441f4ce398c38aeaebb5a  organchor/current/verify/arweave-manifest-complete-2026-07-11.json
 38ad857b1fe0479e0ac31bc0a999a74f9ada6f4171f441f4ce398c38aeaebb5a  organchor/current/verify/arweave-package-complete-2026-07-11/arweave-manifest.json
 38ad857b1fe0479e0ac31bc0a999a74f9ada6f4171f441f4ce398c38aeaebb5a  organchor/history/2026-07-11-carrier-ledger-001/arweave-manifest-complete-2026-07-11.json
@@ -25,13 +25,12 @@
 4081af8e66783b595b4e013dc2c1b346c8d4c88d08ff4a1789201bc50afa1f77  organchor/history/2026-07-11-carrier-ledger-001/arweave-package-complete-2026-07-11/claims/product-claims.json
 4081af8e66783b595b4e013dc2c1b346c8d4c88d08ff4a1789201bc50afa1f77  organchor/history/2026-07-11-carrier-ledger-001/arweave-package-complete-2026-07-11/verify/claims/product-claims.json
 4081af8e66783b595b4e013dc2c1b346c8d4c88d08ff4a1789201bc50afa1f77  organchor/history/2026-07-11-carrier-ledger-001/claims/product-claims.json
+4fe2531d79979d829764f92484c3ac97f79e321a305a4f7b56001d4def9d347e  organchor/current/verify/organchor.json
 749120153fc56ab4c2be45501ec99abdc8d34ea8fedeff5908353d13791b37aa  organchor/history/2026-07-11-carrier-ledger-001/anchors/opentimestamps/official-endpoints.json.ots
 74fc6ba020be4cbe78bfeda93d431f66195b4bb52d066eb81acc083d6c2564ab  organchor/current/verify/arweave-package-complete-2026-07-11/verify/index.html
 74fc6ba020be4cbe78bfeda93d431f66195b4bb52d066eb81acc083d6c2564ab  organchor/history/2026-07-10-parent-value-001/index.html
 74fc6ba020be4cbe78bfeda93d431f66195b4bb52d066eb81acc083d6c2564ab  organchor/history/2026-07-11-carrier-ledger-001/arweave-package-complete-2026-07-11/verify/index.html
 77a15cc06fd86dbbf23cbc367c0cca3c5d3d8763c5964e940cee5c88c70235bc  organchor/history/2026-07-10-parent-value-001/beacon-at-publication.json
-78b117c21a9561ab87d6db04af5d0e1773d0b4fa77f7aa58e8e218b6d6a42d37  organchor/current/adoption-status.json
-78b117c21a9561ab87d6db04af5d0e1773d0b4fa77f7aa58e8e218b6d6a42d37  organchor/current/verify/adoption-status.json
 79e47e484e1627280cd8706fe42e9ac18494785df8992c9c2f73a6880c7c32bf  organchor/current/verify/arweave-package-complete-2026-07-11/official-endpoints.json
 79e47e484e1627280cd8706fe42e9ac18494785df8992c9c2f73a6880c7c32bf  organchor/current/verify/arweave-package-complete-2026-07-11/verify/official-endpoints.json
 79e47e484e1627280cd8706fe42e9ac18494785df8992c9c2f73a6880c7c32bf  organchor/current/verify/official-endpoints.json
@@ -53,12 +52,13 @@
 82d76b103c2c2ec32d41b5ea9f545e747b03ec50c0f2cbe83da7a112f4f177c9  organchor/history/2026-07-10-parent-value-001/reports/value-continuity-report.json
 82d76b103c2c2ec32d41b5ea9f545e747b03ec50c0f2cbe83da7a112f4f177c9  organchor/history/2026-07-11-carrier-ledger-001/arweave-package-complete-2026-07-11/verify/reports/value-continuity-report.json
 82d76b103c2c2ec32d41b5ea9f545e747b03ec50c0f2cbe83da7a112f4f177c9  organchor/history/2026-07-11-carrier-ledger-001/reports/value-continuity-report.json
+841e5d41b4cb875abddbe0d468ec5ca23045b5f51bf385420b4035aeefd0f51c  organchor/current/verify/index.html
 90fad6c2aa36307a7dedddb3795bd4a2a3333d6cc279a4caa062ae8364ea1807  organchor/current/verify/arweave-package-complete-2026-07-11/verify/organchor.json
 90fad6c2aa36307a7dedddb3795bd4a2a3333d6cc279a4caa062ae8364ea1807  organchor/history/2026-07-10-parent-value-001/organchor.json
 90fad6c2aa36307a7dedddb3795bd4a2a3333d6cc279a4caa062ae8364ea1807  organchor/history/2026-07-11-carrier-ledger-001/arweave-package-complete-2026-07-11/verify/organchor.json
-9443c16f3474cbc270e6d02e54c49e592b0769d320686bee51fe1a0a7fdd0732  organchor/current/adoption-status.html
-9443c16f3474cbc270e6d02e54c49e592b0769d320686bee51fe1a0a7fdd0732  organchor/current/verify/adoption-status.html
 969fd7c40cc2df4b6afb23f75d2bb2e48ee6502611a8ab91c0e9d14be6415a04  organchor/history/2026-07-09/organchor.json
+b1a8f6d4382f03f07fe55823f5c25161d004a7f69448dacb7c5aa1b8027eb5bf  organchor/current/adoption-status.json
+b1a8f6d4382f03f07fe55823f5c25161d004a7f69448dacb7c5aa1b8027eb5bf  organchor/current/verify/adoption-status.json
 b6c55386d7c83f893868a336bfd98a58b886f258df849376616f84824fdca1bd  organchor/current/verify/arweave-package-complete-2026-07-11/claims/product-claims.json.sig
 b6c55386d7c83f893868a336bfd98a58b886f258df849376616f84824fdca1bd  organchor/current/verify/arweave-package-complete-2026-07-11/verify/claims/product-claims.json.sig
 b6c55386d7c83f893868a336bfd98a58b886f258df849376616f84824fdca1bd  organchor/current/verify/claims/product-claims.json.sig
@@ -67,6 +67,7 @@ b6c55386d7c83f893868a336bfd98a58b886f258df849376616f84824fdca1bd  organchor/hist
 b6c55386d7c83f893868a336bfd98a58b886f258df849376616f84824fdca1bd  organchor/history/2026-07-11-carrier-ledger-001/arweave-package-complete-2026-07-11/verify/claims/product-claims.json.sig
 b6c55386d7c83f893868a336bfd98a58b886f258df849376616f84824fdca1bd  organchor/history/2026-07-11-carrier-ledger-001/claims/product-claims.json.sig
 bbfbd1bf4c48a23d9569d3f3d46c33dc5bc0f5244afe4452fc1d5bbcdccde72d  organchor/history/2026-07-11-carrier-ledger-001/organchor.lock.json
+bc56228d4bb3f36913596624831fa40591c68cb33ce754c84a6e7cac404311d4  organchor/current/well-known/organchor.json
 bf9fd7a7d4745e98f9d0f6909c09c6a0a34a8204dfac5e41a1eff924acd63991  organchor/current/verify/arweave-package-complete-2026-07-11/evidence/evidence-manifest.json.sig
 bf9fd7a7d4745e98f9d0f6909c09c6a0a34a8204dfac5e41a1eff924acd63991  organchor/current/verify/arweave-package-complete-2026-07-11/verify/evidence/evidence-manifest.json.sig
 bf9fd7a7d4745e98f9d0f6909c09c6a0a34a8204dfac5e41a1eff924acd63991  organchor/current/verify/evidence/evidence-manifest.json.sig
@@ -74,8 +75,6 @@ bf9fd7a7d4745e98f9d0f6909c09c6a0a34a8204dfac5e41a1eff924acd63991  organchor/hist
 bf9fd7a7d4745e98f9d0f6909c09c6a0a34a8204dfac5e41a1eff924acd63991  organchor/history/2026-07-11-carrier-ledger-001/arweave-package-complete-2026-07-11/evidence/evidence-manifest.json.sig
 bf9fd7a7d4745e98f9d0f6909c09c6a0a34a8204dfac5e41a1eff924acd63991  organchor/history/2026-07-11-carrier-ledger-001/arweave-package-complete-2026-07-11/verify/evidence/evidence-manifest.json.sig
 bf9fd7a7d4745e98f9d0f6909c09c6a0a34a8204dfac5e41a1eff924acd63991  organchor/history/2026-07-11-carrier-ledger-001/evidence/evidence-manifest.json.sig
-c37239c42580c1c4418be6f6137dad9a8852c62fd3fef8d5ad30b6cea377246c  organchor/current/verify/organchor.lock.json.sig
-d218caa2bca42cf52d88f618db35eda956a15d522bc2f942ad044c4d3119ee73  organchor/current/well-known/organchor.json
 d75115ac2b9168a5e9432bc6c4650ed558afbbfe75b9409a0248a909b54f432b  organchor/current/verify/arweave-package-complete-2026-07-11/evidence/evidence-manifest.json
 d75115ac2b9168a5e9432bc6c4650ed558afbbfe75b9409a0248a909b54f432b  organchor/current/verify/arweave-package-complete-2026-07-11/verify/evidence/evidence-manifest.json
 d75115ac2b9168a5e9432bc6c4650ed558afbbfe75b9409a0248a909b54f432b  organchor/current/verify/evidence/evidence-manifest.json
@@ -90,3 +89,4 @@ f1f3699eb02a8092607ec7115cf306f86ddd5a7a9b7d42144745fc0196624dba  organchor/hist
 f1f3699eb02a8092607ec7115cf306f86ddd5a7a9b7d42144745fc0196624dba  organchor/history/2026-07-11-carrier-ledger-001/arweave-package-complete-2026-07-11/verify/reports/value-continuity-report.md
 f1f3699eb02a8092607ec7115cf306f86ddd5a7a9b7d42144745fc0196624dba  organchor/history/2026-07-11-carrier-ledger-001/reports/value-continuity-report.md
 fb5891073376471bd5b2f4c90462c4bef461b9671f415ae599e9e31ec1a80e37  organchor/history/2026-07-11-carrier-ledger-001/organchor.lock.json.sig
+fc7a7b7f94218b769190ed6ae13791192ace8501990ecb2905bf24143079e060  organchor/current/verify/organchor.lock.json.sig
