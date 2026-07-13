@@ -212,7 +212,7 @@
     <header>
       <h1>CivitasX OrgAnchor Adoption Status</h1>
       <p>This page explains how far CivitasX has applied OrgAnchor to itself. It is a public gap status, not a new root authority statement, not an endorsement, and not a higher maturity claim.</p>
-      <p>CivitasX is publicly verifiable now. This refreshed carrier-ledger candidate adds a signed publication ledger and limited carrier receipt trail, but it still does not complete the full long-term OrgAnchor continuity paradigm.</p>
+      <p>CivitasX is publicly verifiable now. This refreshed carrier-ledger package adds a signed publication ledger, limited carrier receipt trail, public-artifact recovery rehearsal, and Bitcoin-upgraded OpenTimestamps proof, but it still does not complete the full long-term OrgAnchor continuity paradigm.</p>
       <div class="summary" aria-label="Current baseline summary">
         <div class="card">
           <span class="label">Identity</span>
@@ -236,7 +236,7 @@
     <section aria-labelledby="plain-meaning">
       <h2 id="plain-meaning">Plain Meaning</h2>
       <p>CivitasX currently has a working public verification package. People and AI agents can check the signed identity record, public endpoints, parent claims, evidence manifest, and value continuity report.</p>
-      <p>This refreshed package adds a public signed publication ledger and limited carrier receipts. What remains incomplete is deeper resilience: real independent content-addressed carrier publication, recovery from public artifacts, durable naming, and real multi-custodian migration.</p>
+      <p>This refreshed package adds a public signed publication ledger, limited carrier receipts, a public-artifact recovery rehearsal, and a Bitcoin-upgraded OpenTimestamps proof. What remains incomplete is deeper resilience: real independent content-addressed carrier publication, durable naming, and real multi-custodian migration.</p>
       <p class="note">In short: this package is a stronger continuity candidate, but not enough to say CivitasX has fully completed the OrgAnchor continuity model.</p>
     </section>
 
@@ -264,12 +264,12 @@
           <tr>
             <th scope="row">Level 3: Mirrored and Archived Identity</th>
             <td><span class="badge in-progress">IN PROGRESS</span></td>
-            <td>This refreshed package includes a signed lockfile, limited carrier receipts, an OpenTimestamps proof, an Arweave manual package, and a carrier-ledger history snapshot. It still lacks a real IPFS CID or equivalent independent content-addressed public mirror, a real Arweave transaction, and Bitcoin-confirmed timestamp.</td>
+            <td>This refreshed package includes a signed lockfile, limited carrier receipts, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. It still lacks a real IPFS CID or equivalent independent content-addressed public mirror and a real Arweave transaction.</td>
           </tr>
           <tr>
             <th scope="row">Level 4: Disaster Recovery and Auxiliary Names</th>
             <td><span class="badge partial">PARTIAL</span></td>
-            <td>A local clean-room recovery rehearsal passed from a local archive. Recovery from independently retrieved public artifacts has not yet been proven.</td>
+            <td>A public-artifact recovery rehearsal passed using Cloudflare public routes and the GitHub public archive tag. Durable auxiliary naming remains incomplete.</td>
           </tr>
           <tr>
             <th scope="row">Level 5: Governance and Migration Ready</th>
@@ -299,7 +299,7 @@
           <tr>
             <th scope="row">Carrier receipts</th>
             <td><span class="badge limited">PRESENT LIMITED</span></td>
-            <td>This refreshed carrier-ledger package includes limited carrier receipts for OpenTimestamps calendar publication and an Arweave manual package. It does not include a real IPFS CID, real Arweave transaction, or Bitcoin-confirmed timestamp.</td>
+            <td>This refreshed carrier-ledger package includes limited carrier receipts for an OpenTimestamps proof upgraded with Bitcoin block-header attestations and an Arweave manual package. It does not include a real IPFS CID or real Arweave transaction.</td>
           </tr>
           <tr>
             <th scope="row">Content-addressed mirror</th>
@@ -313,8 +313,8 @@
           </tr>
           <tr>
             <th scope="row">Public-artifact recovery</th>
-            <td><span class="badge not-proven">NOT PROVEN</span></td>
-            <td>Recovery has not yet been repeated using only externally retrieved public artifacts.</td>
+            <td><span class="badge pass">PASSED PUBLIC REHEARSAL</span></td>
+            <td>A public-artifact recovery rehearsal passed using Cloudflare public routes and the GitHub public archive tag; it verified public route bytes, JSON parseability, manifest artifacts, and 4 public signatures.</td>
           </tr>
           <tr>
             <th scope="row">Canonical domain</th>
@@ -344,9 +344,8 @@
       <h2 id="next">Recommended Next Actions</h2>
       <ol>
         <li>Add at least one real independent carrier, such as IPFS, Arweave transaction, or another content-addressed or append-only archive.</li>
-        <li>Repeat recovery from public artifacts only.</li>
         <li>Harden the canonical domain and durable naming strategy.</li>
-        <li>Track Bitcoin confirmation for the OpenTimestamps receipt and record the result when available.</li>
+        <li>Optionally repeat OpenTimestamps verification against a local Bitcoin Core node when one is available.</li>
         <li>Prepare threshold custody only when real independent long-term custodians exist.</li>
       </ol>
     </section>

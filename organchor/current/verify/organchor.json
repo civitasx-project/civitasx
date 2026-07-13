@@ -1,7 +1,7 @@
 {
   "type": "OrgAnchorVerifyIndex",
   "version": "1.0",
-  "generated_at": "2026-07-11T07:36:23.529Z",
+  "generated_at": "2026-07-13T00:56:19.054Z",
   "role": "adopting-organization-verify-index",
   "organization": {
     "name": "CivitasX",
@@ -68,7 +68,7 @@
   },
   "visible_proof": {
     "status": "PASS",
-    "generated_at": "2026-07-11T07:36:23.529Z",
+    "generated_at": "2026-07-13T00:56:19.054Z",
     "checks": [
       {
         "label": "Official endpoint statement",
@@ -118,7 +118,7 @@
       {
         "label": "Lockfile integrity",
         "status": "PASS",
-        "detail": "organchor.lock.json hash sha256:fd315ad3ea311c9cf298c05bb215c567f0e409fab3a84ad7f6da942e3bc25b56 is signed by 1/1 required root member(s)."
+        "detail": "organchor.lock.json hash sha256:88d558cc8954b80b2e3b1c77a7266b8f3b14fb2701a4a965529c9f950314fdcd is signed by 1/1 required root member(s)."
       }
     ],
     "summary": {
@@ -130,7 +130,7 @@
       "migration_count": 0,
       "carrier_receipt_count": 2,
       "lockfile_status": "SIGNED",
-      "lockfile_hash": "sha256:fd315ad3ea311c9cf298c05bb215c567f0e409fab3a84ad7f6da942e3bc25b56",
+      "lockfile_hash": "sha256:88d558cc8954b80b2e3b1c77a7266b8f3b14fb2701a4a965529c9f950314fdcd",
       "lockfile_signed": true
     }
   },
@@ -245,7 +245,7 @@
         "status": "PUBLISHED",
         "recorded_at": "2026-07-11T07:03:02.361Z",
         "summary": {
-          "bitcoin_anchor_status": "PENDING"
+          "bitcoin_anchor_status": "CONFIRMED"
         }
       }
     ]
@@ -253,9 +253,9 @@
   "lockfile_integrity": {
     "status": "SIGNED",
     "path": "organchor.lock.json",
-    "hash": "sha256:fd315ad3ea311c9cf298c05bb215c567f0e409fab3a84ad7f6da942e3bc25b56",
+    "hash": "sha256:88d558cc8954b80b2e3b1c77a7266b8f3b14fb2701a4a965529c9f950314fdcd",
     "signature_path": "organchor.lock.json.sig",
-    "signature_hash": "sha256:3f5ec7e3b5b9cedea274f59c32a054a2da195c78b53d9512db13982b92599588",
+    "signature_hash": "sha256:1e3153e3fb312fa12af93b119f3617b65f10575677764a703c62cae058f79b4f",
     "valid_signatures": [
       "civitasx-founder-rehearsal-2026"
     ],

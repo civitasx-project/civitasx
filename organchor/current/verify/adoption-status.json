@@ -1,137 +1,135 @@
-﻿{
-    "type":  "CivitasXOrgAnchorAdoptionGapStatus",
-    "version":  "1.0",
-    "updated_at":  "2026-07-12",
-    "origin":  "https://civitasx.pages.dev",
-    "verify_url":  "https://civitasx.pages.dev/verify/",
-    "verify_index_url":  "https://civitasx.pages.dev/verify/organchor.json",
-    "status_scope":  "Public maturity and gap status for CivitasX\u0027s own OrgAnchor adoption. This is not a new root authority statement and not a trust badge.",
-    "current_baseline":  {
-                             "identity_status":  "PASS",
-                             "value_status":  "PASS",
-                             "conformance_status":  "FULL_COMPATIBLE",
-                             "doctor_status":  "READY",
-                             "current_package_is_sufficient_for_present_public_continuity_baseline":  true,
-                             "complete_organchor_paradigm_adoption":  false,
-                             "signed_publication_ledger":  "DEPLOYED_SIGNED",
-                             "carrier_receipts":  "PRESENT_LIMITED",
-                             "github_mirror":  "MIRRORED_AND_TAGGED"
-                         },
-    "level_matrix":  [
-                         {
-                             "level":  1,
-                             "name":  "Minimal Verifiable Identity",
-                             "status":  "PASS",
-                             "summary":  "Root authority, signed official endpoint statement, public verify page, and CLI verification are present."
-                         },
-                         {
-                             "level":  2,
-                             "name":  "Public Verification Presence",
-                             "status":  "PASS_WITH_DOMAIN_WARNINGS",
-                             "summary":  "The Cloudflare Pages verification route is live and reachable, but the project still uses a shared provider subdomain and some domain controls require manual review."
-                         },
-                         {
-                             "level":  3,
-                             "name":  "Mirrored and Archived Identity",
-                             "status":  "IN_PROGRESS",
-                             "summary":  "The refreshed carrier-ledger package includes a signed lockfile, limited carrier receipts, an OpenTimestamps proof, an Arweave manual package, and a carrier-ledger history snapshot. It still lacks a real IPFS CID or equivalent independent content-addressed public mirror, a real Arweave transaction, and Bitcoin-confirmed timestamp."
-                         },
-                         {
-                             "level":  4,
-                             "name":  "Disaster Recovery and Auxiliary Names",
-                             "status":  "PARTIAL",
-                             "summary":  "A local clean-room recovery rehearsal passed from a local archive, but recovery from independently retrieved public artifacts has not yet been proven."
-                         },
-                         {
-                             "level":  5,
-                             "name":  "Governance and Migration Ready",
-                             "status":  "PARTIAL_AND_BLOCKED",
-                             "summary":  "The current authority is a truthful 1-of-1 Temporary Founder Authority. Real threshold custody and signed migration require independent long-term custodians and are not complete."
-                         }
-                     ],
-    "live_package_gaps":  [
-                              {
-                                  "id":  "signed-publication-ledger",
-                                  "status":  "INCLUDED_SIGNED",
-                                  "summary":  "This refreshed carrier-ledger package includes a signed organchor.lock.json publication ledger."
-                              },
-                              {
-                                  "id":  "carrier-receipts",
-                                  "status":  "PRESENT_LIMITED",
-                                  "summary":  "This refreshed carrier-ledger package includes limited carrier receipts for OpenTimestamps calendar publication and an Arweave manual package. It does not include a real IPFS CID, real Arweave transaction, or Bitcoin-confirmed timestamp."
-                              },
-                              {
-                                  "id":  "content-addressed-mirror",
-                                  "status":  "NOT_PUBLISHED",
-                                  "summary":  "No real IPFS CID or equivalent independent public content-addressed mirror is currently published for this package."
-                              },
-                              {
-                                  "id":  "arweave-transaction",
-                                  "status":  "NOT_PUBLISHED",
-                                  "summary":  "A portable Arweave manual package is included, but there is no public Arweave transaction."
-                              },
-                              {
-                                  "id":  "public-artifact-recovery",
-                                  "status":  "NOT_PROVEN",
-                                  "summary":  "Recovery has not yet been repeated using only externally retrieved public artifacts."
-                              },
-                              {
-                                  "id":  "canonical-domain",
-                                  "status":  "PARTIAL",
-                                  "summary":  "The project currently uses civitasx.pages.dev. A dedicated canonical domain and hardened naming strategy remain future work."
-                              },
-                              {
-                                  "id":  "threshold-custody",
-                                  "status":  "BLOCKED_ON_REAL_CUSTODIANS",
-                                  "summary":  "The current root authority is 1-of-1. Multi-custodian authority should wait for real independent custodians and must not be simulated."
-                              },
-                              {
-                                  "id":  "migration-history",
-                                  "status":  "NOT_INCLUDED",
-                                  "summary":  "No authority migration has happened, so no migration chain is included in the current package."
-                              },
-                              {
-                                  "id":  "independent-evidence",
-                                  "status":  "LIMITED",
-                                  "summary":  "The current parent claims are supported by first-party evidence and reproducible public records, but not by independent S2/S3/S4 evidence."
-                              }
-                          ],
-    "recommended_next_actions":  [
-                                     {
-                                         "order":  1,
-                                         "action":  "Add at least one real independent carrier such as IPFS, Arweave transaction, or another content-addressed or append-only archive.",
-                                         "reason":  "Cloudflare, GitHub, OpenTimestamps calendar receipt, and Arweave manual package still do not complete independent carrier redundancy."
-                                     },
-                                     {
-                                         "order":  2,
-                                         "action":  "Repeat recovery from public artifacts only.",
-                                         "reason":  "This tests whether later people can reconstruct the record without local files or the active Cloudflare account."
-                                     },
-                                     {
-                                         "order":  3,
-                                         "action":  "Harden the canonical domain and durable naming strategy.",
-                                         "reason":  "A provider subdomain is acceptable for the current baseline, but not the long-term naming end state."
-                                     },
-                                     {
-                                         "order":  4,
-                                         "action":  "Track Bitcoin confirmation for the OpenTimestamps receipt and record the result when available.",
-                                         "reason":  "Calendar acceptance exists, but Bitcoin anchoring remains a separate evidence state."
-                                     },
-                                     {
-                                         "order":  5,
-                                         "action":  "Prepare threshold custody only when real independent long-term custodians exist.",
-                                         "reason":  "Multi-custodian authority should not be simulated or rushed before the social prerequisite exists."
-                                     }
-                                 ],
-    "non_claims":  [
-                       "This status does not mean CivitasX is endorsed by OrgAnchor.",
-                       "This status does not prove that CivitasX is correct.",
-                       "This status does not prove decentralized governance.",
-                       "This status does not make Cloudflare, GitHub, IPFS, Arweave, or any carrier the identity root.",
-                       "This status does not grant authority to issue new official CivitasX statements without the current valid root authority or a later signed migration."
-                   ],
-    "source_audit":  "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_PARADIGM_GAP_AUDIT_2026-07-12.md",
-    "source_roadmap":  "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_ADOPTION_ROADMAP_2026-07-12.md",
-    "source_unfreeze_review":  "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_CARRIER_LEDGER_UNFREEZE_REVIEW_2026-07-12.md",
-    "source_deployment":  "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_CARRIER_LEDGER_DEPLOYED_2026-07-12.md"
+{
+  "type": "CivitasXOrgAnchorAdoptionGapStatus",
+  "version": "1.0",
+  "updated_at": "2026-07-13",
+  "origin": "https://civitasx.pages.dev",
+  "verify_url": "https://civitasx.pages.dev/verify/",
+  "verify_index_url": "https://civitasx.pages.dev/verify/organchor.json",
+  "status_scope": "Public maturity and gap status for CivitasX's own OrgAnchor adoption. This is not a new root authority statement and not a trust badge.",
+  "current_baseline": {
+    "identity_status": "PASS",
+    "value_status": "PASS",
+    "conformance_status": "FULL_COMPATIBLE",
+    "doctor_status": "READY",
+    "current_package_is_sufficient_for_present_public_continuity_baseline": true,
+    "complete_organchor_paradigm_adoption": false,
+    "signed_publication_ledger": "DEPLOYED_SIGNED",
+    "carrier_receipts": "PRESENT_LIMITED",
+    "github_mirror": "MIRRORED_AND_TAGGED",
+    "opentimestamps_bitcoin_anchor": "CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK"
+  },
+  "level_matrix": [
+    {
+      "level": 1,
+      "name": "Minimal Verifiable Identity",
+      "status": "PASS",
+      "summary": "Root authority, signed official endpoint statement, public verify page, and CLI verification are present."
+    },
+    {
+      "level": 2,
+      "name": "Public Verification Presence",
+      "status": "PASS_WITH_DOMAIN_WARNINGS",
+      "summary": "The Cloudflare Pages verification route is live and reachable, but the project still uses a shared provider subdomain and some domain controls require manual review."
+    },
+    {
+      "level": 3,
+      "name": "Mirrored and Archived Identity",
+      "status": "IN_PROGRESS",
+      "summary": "The refreshed carrier-ledger package includes a signed lockfile, limited carrier receipts, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. It still lacks a real IPFS CID or equivalent independent content-addressed public mirror and a real Arweave transaction."
+    },
+    {
+      "level": 4,
+      "name": "Disaster Recovery and Auxiliary Names",
+      "status": "PARTIAL",
+      "summary": "A public-artifact recovery rehearsal passed using Cloudflare public routes and the GitHub public archive tag. Durable auxiliary naming remains incomplete."
+    },
+    {
+      "level": 5,
+      "name": "Governance and Migration Ready",
+      "status": "PARTIAL_AND_BLOCKED",
+      "summary": "The current authority is a truthful 1-of-1 Temporary Founder Authority. Real threshold custody and signed migration require independent long-term custodians and are not complete."
+    }
+  ],
+  "live_package_gaps": [
+    {
+      "id": "signed-publication-ledger",
+      "status": "INCLUDED_SIGNED",
+      "summary": "This refreshed carrier-ledger package includes a signed organchor.lock.json publication ledger."
+    },
+    {
+      "id": "carrier-receipts",
+      "status": "PRESENT_LIMITED",
+      "summary": "This refreshed carrier-ledger package includes limited carrier receipts for an OpenTimestamps proof upgraded with Bitcoin block-header attestations and an Arweave manual package. It does not include a real IPFS CID or real Arweave transaction."
+    },
+    {
+      "id": "content-addressed-mirror",
+      "status": "NOT_PUBLISHED",
+      "summary": "No real IPFS CID or equivalent independent public content-addressed mirror is currently published for this package."
+    },
+    {
+      "id": "arweave-transaction",
+      "status": "NOT_PUBLISHED",
+      "summary": "A portable Arweave manual package is included, but there is no public Arweave transaction."
+    },
+    {
+      "id": "public-artifact-recovery",
+      "status": "PASSED_PUBLIC_REHEARSAL",
+      "summary": "A public-artifact recovery rehearsal passed using Cloudflare public routes and the GitHub public archive tag; it verified public route bytes, JSON parseability, manifest artifacts, and 4 public signatures."
+    },
+    {
+      "id": "canonical-domain",
+      "status": "PARTIAL",
+      "summary": "The project currently uses civitasx.pages.dev. A dedicated canonical domain and hardened naming strategy remain future work."
+    },
+    {
+      "id": "threshold-custody",
+      "status": "BLOCKED_ON_REAL_CUSTODIANS",
+      "summary": "The current root authority is 1-of-1. Multi-custodian authority should wait for real independent custodians and must not be simulated."
+    },
+    {
+      "id": "migration-history",
+      "status": "NOT_INCLUDED",
+      "summary": "No authority migration has happened, so no migration chain is included in the current package."
+    },
+    {
+      "id": "independent-evidence",
+      "status": "LIMITED",
+      "summary": "The current parent claims are supported by first-party evidence and reproducible public records, but not by independent S2/S3/S4 evidence."
+    }
+  ],
+  "recommended_next_actions": [
+    {
+      "order": 1,
+      "action": "Add at least one real independent carrier such as IPFS, Arweave transaction, or another content-addressed or append-only archive.",
+      "reason": "Cloudflare, GitHub, OpenTimestamps, and an Arweave manual package still do not complete independent carrier redundancy."
+    },
+    {
+      "order": 2,
+      "action": "Harden the canonical domain and durable naming strategy.",
+      "reason": "A provider subdomain is acceptable for the current baseline, but not the long-term naming end state."
+    },
+    {
+      "order": 3,
+      "action": "Optionally repeat OpenTimestamps verification against a local Bitcoin Core node when one is available.",
+      "reason": "The proof now contains Bitcoin block-header attestations checked against public block data; local full-node verification remains a stronger independent check."
+    },
+    {
+      "order": 4,
+      "action": "Prepare threshold custody only when real independent long-term custodians exist.",
+      "reason": "Multi-custodian authority should not be simulated or rushed before the social prerequisite exists."
+    }
+  ],
+  "non_claims": [
+    "This status does not mean CivitasX is endorsed by OrgAnchor.",
+    "This status does not prove that CivitasX is correct.",
+    "This status does not prove decentralized governance.",
+    "This status does not make Cloudflare, GitHub, IPFS, Arweave, or any carrier the identity root.",
+    "This status does not grant authority to issue new official CivitasX statements without the current valid root authority or a later signed migration."
+  ],
+  "source_audit": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_PARADIGM_GAP_AUDIT_2026-07-12.md",
+  "source_roadmap": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_ADOPTION_ROADMAP_2026-07-12.md",
+  "source_unfreeze_review": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_CARRIER_LEDGER_UNFREEZE_REVIEW_2026-07-12.md",
+  "source_deployment": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_CARRIER_LEDGER_DEPLOYED_2026-07-12.md",
+  "source_public_artifact_recovery": "outreach/first-public-civitasx/CIVITASX_PUBLIC_ARTIFACT_RECOVERY_REHEARSAL_2026-07-13.md",
+  "source_opentimestamps_confirmation": "outreach/first-public-civitasx/CIVITASX_OPENTIMESTAMPS_BITCOIN_CONFIRMATION_2026-07-13.md"
 }

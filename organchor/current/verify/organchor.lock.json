@@ -2,13 +2,13 @@
   "type": "OrgAnchorLockfile",
   "version": "1.0",
   "created_at": "2026-07-11T06:52:35.429Z",
-  "updated_at": "2026-07-11T07:35:12.764Z",
+  "updated_at": "2026-07-13T00:55:57.263Z",
   "artifacts": {
     "sha256:79e47e484e1627280cd8706fe42e9ac18494785df8992c9c2f73a6880c7c32bf": {
       "hash": "sha256:79e47e484e1627280cd8706fe42e9ac18494785df8992c9c2f73a6880c7c32bf",
       "kind": "opentimestamps-stamped-file",
       "path": "statements/official-endpoints.json",
-      "updated_at": "2026-07-11T07:03:02.361Z",
+      "updated_at": "2026-07-13T00:55:57.263Z",
       "receipts": [
         {
           "provider": "opentimestamps",
@@ -37,9 +37,66 @@
                 "status": "OK"
               }
             ],
-            "bitcoin_anchor_status": "PENDING",
-            "note": "OpenTimestamps calendar receipt created. Run upgrade after Bitcoin confirmation, then verify."
-          }
+            "bitcoin_anchor_status": "CONFIRMED",
+            "note": "OpenTimestamps proof upgraded to include Bitcoin block header attestations. Public block merkle roots matched via Blockstream API; full local Bitcoin Core verification was not run on this machine.",
+            "proof_hash": "sha256:26eafe7bb9a7185fd10b236b3dcf4435fa7804ab5cc24fdef351262a06dec877",
+            "proof_size": 4619,
+            "proof_upgraded_at": "2026-07-13T00:55:57.263Z",
+            "bitcoin_confirmation": {
+              "status": "CONFIRMED_BY_BLOCK_HEADER_ATTESTATIONS",
+              "verified_at": "2026-07-13T00:55:57.263Z",
+              "verification_method": "OpenTimestamps upgrade plus public Bitcoin block merkle-root check",
+              "full_node_verification": "NOT_RUN_NO_LOCAL_BITCOIN_CORE_RPC",
+              "public_block_api": "https://blockstream.info/api",
+              "attestations": [
+                {
+                  "height": 957535,
+                  "calendar": "bob.btc.calendar.opentimestamps.org",
+                  "tx_id": "364c559dded861b69b54cb2308bf7185a676e6ddfa46ba116bfb5fd6e6fa5fc0",
+                  "block_hash": "000000000000000000001c80c72c1af7de5f94841eab5e2ea445b9a5e5dcefa8",
+                  "expected_merkle_root": "456dc17dd67a4c9adb03fd7c5977fc66a14c4b66ccdccf16fce4295667899678",
+                  "observed_merkle_root": "456dc17dd67a4c9adb03fd7c5977fc66a14c4b66ccdccf16fce4295667899678",
+                  "public_block_api_match": true,
+                  "block_time_utc": "2026-07-11T07:11:01Z",
+                  "source": "https://blockstream.info/api/block/000000000000000000001c80c72c1af7de5f94841eab5e2ea445b9a5e5dcefa8"
+                },
+                {
+                  "height": 957536,
+                  "calendar": "alice.btc.calendar.opentimestamps.org",
+                  "tx_id": "e4b8fb21b0f0a1ec05ddf91c9bc03c055e88ce923965317b0b46e77244323a61",
+                  "block_hash": "00000000000000000001acac6b8f8aaa6d672218799e8f74159fb7544edfb85a",
+                  "expected_merkle_root": "f473890f110da0dd8285441220af462bde06298f61f0cb27988d67cd076fe509",
+                  "observed_merkle_root": "f473890f110da0dd8285441220af462bde06298f61f0cb27988d67cd076fe509",
+                  "public_block_api_match": true,
+                  "block_time_utc": "2026-07-11T07:16:23Z",
+                  "source": "https://blockstream.info/api/block/00000000000000000001acac6b8f8aaa6d672218799e8f74159fb7544edfb85a"
+                },
+                {
+                  "height": 957565,
+                  "calendar": "finney.calendar.eternitywall.com",
+                  "tx_id": "67f5b2d74e572b0febc06c61fd42e8cbe1e96022741e3b90fdfe7268ca0efad8",
+                  "block_hash": "00000000000000000001ffa5e6e9bdf58a710c054d753db438221503c3cc8964",
+                  "expected_merkle_root": "e4a82151091ad13d0b46a89b421bd49036f914b0dd70dd80657fdf685fa9fceb",
+                  "observed_merkle_root": "e4a82151091ad13d0b46a89b421bd49036f914b0dd70dd80657fdf685fa9fceb",
+                  "public_block_api_match": true,
+                  "block_time_utc": "2026-07-11T12:18:39Z",
+                  "source": "https://blockstream.info/api/block/00000000000000000001ffa5e6e9bdf58a710c054d753db438221503c3cc8964"
+                },
+                {
+                  "height": 957579,
+                  "calendar": "btc.calendar.catallaxy.com",
+                  "tx_id": "2d26b36be0731ace2c4bfec4b4276536557daafc72621b918e2793dd77068b80",
+                  "block_hash": "00000000000000000000b7c00baad167fa5a897ef5c3f830236503b85b115e0d",
+                  "expected_merkle_root": "9c6ecaf34aab0e8c164f29d3daf6b653364f976c4a343bc6301701e4b9a2e0d3",
+                  "observed_merkle_root": "9c6ecaf34aab0e8c164f29d3daf6b653364f976c4a343bc6301701e4b9a2e0d3",
+                  "public_block_api_match": true,
+                  "block_time_utc": "2026-07-11T14:35:38Z",
+                  "source": "https://blockstream.info/api/block/00000000000000000000b7c00baad167fa5a897ef5c3f830236503b85b115e0d"
+                }
+              ]
+            }
+          },
+          "updated_at": "2026-07-13T00:55:57.263Z"
         }
       ]
     },

@@ -46,7 +46,13 @@ Current carrier-ledger state:
 ```text
 lockfile_integrity: SIGNED
 carrier_receipts: PRESENT
+opentimestamps_bitcoin_anchor: CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK
+public_artifact_recovery: PASSED_PUBLIC_REHEARSAL
 ```
+
+The active mirror now includes the upgraded OpenTimestamps proof with Bitcoin
+block-header attestations. It still does not include a real IPFS CID or a real
+Arweave transaction.
 
 ## Historical Snapshots
 

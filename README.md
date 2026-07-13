@@ -83,6 +83,8 @@ conformance_status: FULL_COMPATIBLE
 trust_decision: NOT_ASSIGNED_BY_ORGANCHOR
 lockfile_integrity: SIGNED
 carrier_receipts: PRESENT
+opentimestamps_bitcoin_anchor: CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK
+public_artifact_recovery: PASSED_PUBLIC_REHEARSAL
 ```
 
 The current root authority is a Temporary Founder Authority for origin
