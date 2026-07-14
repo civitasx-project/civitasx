@@ -236,7 +236,7 @@
     <section aria-labelledby="plain-meaning">
       <h2 id="plain-meaning">Plain Meaning</h2>
       <p>CivitasX currently has a working public verification package. People and AI agents can check the signed identity record, public endpoints, parent claims, evidence manifest, and value continuity report.</p>
-      <p>This refreshed package adds a public signed publication ledger, carrier receipts, a real IPFS Pinata CID, a real Arweave Turbo publication, a public-artifact recovery rehearsal, and a Bitcoin-upgraded OpenTimestamps proof. What remains incomplete is deeper resilience: arweave.net public gateway propagation, durable naming, and real multi-custodian migration.</p>
+      <p>This refreshed package adds a public signed publication ledger, carrier receipts, a real IPFS Pinata CID, a real Arweave Turbo publication, a public-artifact recovery rehearsal, and a Bitcoin-upgraded OpenTimestamps proof. What remains incomplete is deeper resilience: durable naming, local Bitcoin Core full-node verification, and real multi-custodian migration.</p>
       <p class="note">In short: this package is a stronger continuity candidate, but not enough to say CivitasX has fully completed the OrgAnchor continuity model.</p>
     </section>
 
@@ -263,8 +263,8 @@
           </tr>
           <tr>
             <th scope="row">Level 3: Mirrored and Archived Identity</th>
-            <td><span class="badge in-progress">IN PROGRESS</span></td>
-            <td>This refreshed package includes a signed lockfile, carrier receipts, a real IPFS Pinata CID, a real Arweave Turbo publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. Turbo gateway retrieval has been hash-verified; arweave.net public gateway propagation remains pending.</td>
+            <td><span class="badge pass">PASS</span></td>
+            <td>This refreshed package includes a signed lockfile, carrier receipts, a real IPFS Pinata CID, a real Arweave Turbo publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. Key Arweave files have been hash-verified through both Turbo and arweave.net gateways.</td>
           </tr>
           <tr>
             <th scope="row">Level 4: Disaster Recovery and Auxiliary Names</th>
@@ -309,7 +309,7 @@
           <tr>
             <th scope="row">Arweave transaction</th>
             <td><span class="badge pass">PUBLISHED TURBO</span></td>
-            <td>The current verify directory was uploaded through Arweave Turbo: 36 files, directory hash <code>sha256:0801ea82f5e5b10c640de659a2a8631773a1e7f9699502e71fd33707b35da359</code>. Key Turbo gateway retrievals were hash-verified; arweave.net public gateway propagation remains pending.</td>
+            <td>The verification package snapshot was uploaded through Arweave Turbo: 36 files, directory hash <code>sha256:0801ea82f5e5b10c640de659a2a8631773a1e7f9699502e71fd33707b35da359</code>. Key files were hash-verified through both Turbo and arweave.net gateways.</td>
           </tr>
           <tr>
             <th scope="row">Public-artifact recovery</th>
@@ -343,7 +343,6 @@
     <section aria-labelledby="next">
       <h2 id="next">Recommended Next Actions</h2>
       <ol>
-        <li>Monitor arweave.net propagation and add another independent long-term carrier if needed.</li>
         <li>Harden the canonical domain and durable naming strategy.</li>
         <li>Optionally repeat OpenTimestamps verification against a local Bitcoin Core node when one is available.</li>
         <li>Prepare threshold custody only when real independent long-term custodians exist.</li>

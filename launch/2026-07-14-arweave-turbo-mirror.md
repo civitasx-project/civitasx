@@ -34,9 +34,8 @@ organchor.json: rkP9qB0RNIIVPFbIhjPd1g7h1V543F2udA1e91ixptA
 organchor.lock.json: 8gOvI8fha37IZgsQRqJ_l8uHfgUDBYbeGSWYUzd3VGc
 ```
 
-Turbo gateway retrieval for these key files was hash-verified against the
-recorded receipt hashes. Public `arweave.net` gateway propagation was still
-pending when this update was recorded.
+Turbo gateway and public `arweave.net` retrieval for these key files were both
+hash-verified against the recorded receipt hashes.
 
 ## Current Boundary
 

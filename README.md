@@ -87,7 +87,7 @@ lockfile_integrity: SIGNED
 carrier_receipts: PRESENT_WITH_IPFS_ARWEAVE_TURBO_AND_OTS
 content_addressed_mirror: PUBLISHED_IPFS_PINATA
 arweave_transaction: PUBLISHED_ARWEAVE_TURBO
-arweave_gateway_verification: TURBO_GATEWAY_HASH_VERIFIED_ARWEAVE_NET_PENDING
+arweave_gateway_verification: TURBO_AND_ARWEAVE_NET_HASH_VERIFIED
 opentimestamps_bitcoin_anchor: CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK
 ```
 

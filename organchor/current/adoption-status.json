@@ -18,7 +18,7 @@
     "github_mirror": "MIRRORED_AND_TAGGED",
     "content_addressed_mirror": "PUBLISHED_IPFS_PINATA",
     "arweave_transaction": "PUBLISHED_ARWEAVE_TURBO",
-    "arweave_gateway_verification": "TURBO_GATEWAY_HASH_VERIFIED_ARWEAVE_NET_PENDING",
+    "arweave_gateway_verification": "TURBO_AND_ARWEAVE_NET_HASH_VERIFIED",
     "opentimestamps_bitcoin_anchor": "CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK"
   },
   "level_matrix": [
@@ -37,8 +37,8 @@
     {
       "level": 3,
       "name": "Mirrored and Archived Identity",
-      "status": "IN_PROGRESS",
-      "summary": "The refreshed carrier-ledger package includes a signed lockfile, carrier receipts, a real IPFS Pinata CID, a real Arweave Turbo publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. Turbo gateway retrieval has been hash-verified; arweave.net public gateway propagation remains pending."
+      "status": "PASS",
+      "summary": "The refreshed carrier-ledger package includes a signed lockfile, carrier receipts, a real IPFS Pinata CID, a real Arweave Turbo publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. Key Arweave files have been hash-verified through both Turbo and arweave.net gateways."
     },
     {
       "level": 4,
@@ -72,7 +72,7 @@
     {
       "id": "arweave-transaction",
       "status": "PUBLISHED_ARWEAVE_TURBO",
-      "summary": "The current verify directory was uploaded through Arweave Turbo: 36 files, directory hash sha256:0801ea82f5e5b10c640de659a2a8631773a1e7f9699502e71fd33707b35da359. Key Turbo gateway retrievals were hash-verified; arweave.net public gateway propagation remains pending."
+      "summary": "The verification package snapshot was uploaded through Arweave Turbo: 36 files, directory hash sha256:0801ea82f5e5b10c640de659a2a8631773a1e7f9699502e71fd33707b35da359. Key files were hash-verified through both Turbo and arweave.net gateways."
     },
     {
       "id": "public-artifact-recovery",
@@ -103,21 +103,16 @@
   "recommended_next_actions": [
     {
       "order": 1,
-      "action": "Monitor arweave.net propagation and add another independent long-term carrier if needed.",
-      "reason": "The Arweave Turbo upload is recorded and hash-verified through Turbo's gateway, but long-term public retrieval should be checked again after arweave.net indexing catches up."
+      "action": "Harden the canonical domain and durable naming strategy.",
+      "reason": "Cloudflare Pages is acceptable for the current baseline, but a long-horizon parent project should not depend only on a shared provider subdomain."
     },
     {
       "order": 2,
-      "action": "Harden the canonical domain and durable naming strategy.",
-      "reason": "A provider subdomain is acceptable for the current baseline, but not the long-term naming end state."
-    },
-    {
-      "order": 3,
       "action": "Optionally repeat OpenTimestamps verification against a local Bitcoin Core node when one is available.",
       "reason": "The proof now contains Bitcoin block-header attestations checked against public block data; local full-node verification remains a stronger independent check."
     },
     {
-      "order": 4,
+      "order": 3,
       "action": "Prepare threshold custody only when real independent long-term custodians exist.",
       "reason": "Multi-custodian authority should not be simulated or rushed before the social prerequisite exists."
     }
