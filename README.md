@@ -73,6 +73,7 @@ First identity snapshot: https://civitasx.pages.dev/verify-history/2026-07-09/
 First parent value snapshot: https://civitasx.pages.dev/verify-history/2026-07-10-parent-value-001/
 Carrier-ledger snapshot: https://civitasx.pages.dev/verify-history/2026-07-11-carrier-ledger-001/
 IPFS Pinata mirror: https://gateway.pinata.cloud/ipfs/bafybeibqtofd5n74wyiteepu34irjlllzazsndliglpwk6ogduayaumlc4/organchor.json
+Arweave Turbo owner: FPp1-IGNqgBFcvYTzahkoNx7NlwLgcrwUD3flushljA
 ```
 
 Current production verification:
@@ -83,8 +84,10 @@ value_status: PASS
 conformance_status: FULL_COMPATIBLE
 trust_decision: NOT_ASSIGNED_BY_ORGANCHOR
 lockfile_integrity: SIGNED
-carrier_receipts: PRESENT_WITH_IPFS_AND_OTS
+carrier_receipts: PRESENT_WITH_IPFS_ARWEAVE_TURBO_AND_OTS
 content_addressed_mirror: PUBLISHED_IPFS_PINATA
+arweave_transaction: PUBLISHED_ARWEAVE_TURBO
+arweave_gateway_verification: TURBO_GATEWAY_HASH_VERIFIED_ARWEAVE_NET_PENDING
 opentimestamps_bitcoin_anchor: CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK
 ```
 

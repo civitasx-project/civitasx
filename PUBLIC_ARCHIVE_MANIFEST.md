@@ -1,8 +1,8 @@
 # CivitasX Public Archive Manifest
 
-Updated: 2026-07-13
+Updated: 2026-07-14
 
-Status: published through the IPFS Pinata continuity mirror, with current
+Status: published through the Arweave Turbo continuity mirror, with current
 OrgAnchor adoption-gap status mirrored.
 
 ## Public Archive Contents
@@ -27,6 +27,7 @@ launch/2026-07-11-parent-value-v2.md
 launch/2026-07-12-carrier-ledger-refresh.md
 launch/2026-07-13-ots-bitcoin-confirmation.md
 launch/2026-07-13-ipfs-pinata-mirror.md
+launch/2026-07-14-arweave-turbo-mirror.md
 continuity/CONTINUITY.md
 continuity/CIVITASX_PARENT_MISSION.md
 continuity/CIVITASX_FOUNDING_BASELINE.md

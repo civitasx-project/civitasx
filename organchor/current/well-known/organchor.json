@@ -30,7 +30,7 @@
     "identity_status": "PASS",
     "value_status": "PASS",
     "policy_route": "READY_FOR_EXTERNAL_POLICY",
-    "updated_at": "2026-07-13T03:21:14.810Z"
+    "updated_at": "2026-07-14T00:24:02.764Z"
   },
   "agent_flow": {
     "first_pass": "organchor verify url https://civitasx.pages.dev --compact",

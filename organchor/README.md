@@ -45,22 +45,30 @@ Current carrier-ledger state:
 
 ```text
 lockfile_integrity: SIGNED
-carrier_receipts: PRESENT_WITH_IPFS_AND_OTS
+carrier_receipts: PRESENT_WITH_IPFS_ARWEAVE_TURBO_AND_OTS
 content_addressed_mirror: PUBLISHED_IPFS_PINATA
+arweave_transaction: PUBLISHED_ARWEAVE_TURBO
+arweave_gateway_verification: TURBO_GATEWAY_HASH_VERIFIED_ARWEAVE_NET_PENDING
 opentimestamps_bitcoin_anchor: CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK
 public_artifact_recovery: PASSED_PUBLIC_REHEARSAL
 ```
 
 The active mirror now includes the upgraded OpenTimestamps proof with Bitcoin
-block-header attestations and a real IPFS Pinata CID:
+block-header attestations, a real IPFS Pinata CID, and a real Arweave Turbo
+publication receipt:
 
 ```text
 bafybeibqtofd5n74wyiteepu34irjlllzazsndliglpwk6ogduayaumlc4
+arweave_turbo_directory_hash: sha256:0801ea82f5e5b10c640de659a2a8631773a1e7f9699502e71fd33707b35da359
+arweave_turbo_owner: FPp1-IGNqgBFcvYTzahkoNx7NlwLgcrwUD3flushljA
 ```
 
-It still does not include a real Arweave transaction, local Bitcoin Core
-full-node verification, custom-domain hardening, multi-custodian authority, or
-decentralized governance.
+Turbo gateway retrieval for key files has been hash-verified. Public
+`arweave.net` gateway propagation was still pending when this mirror was
+recorded.
+
+It still does not include local Bitcoin Core full-node verification,
+custom-domain hardening, multi-custodian authority, or decentralized governance.
 
 ## Historical Snapshots
 

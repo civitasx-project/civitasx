@@ -4,14 +4,14 @@
   "canonicalization": "RFC8785-JCS",
   "hash": {
     "algorithm": "sha256",
-    "value": "sha256:aa8124ea195854808760de14ed103da3465e13d42fac304eade233ee90c32fd9"
+    "value": "sha256:7561863cd0289087f1e693c6a49ad90e475b03cf323141c093b63a1407ad6edd"
   },
   "signatures": [
     {
       "key_id": "civitasx-founder-rehearsal-2026",
       "algorithm": "ed25519",
-      "signature": "aJCEty8anJoiRtCIVWA12YQGm79LWR1QlrT0raBYP4mFTsHEsnlzdY1t77eRHgmR5VEW3t5sR9eyL9TsD9MoBg",
-      "signed_at": "2026-07-13T03:21:14.424Z"
+      "signature": "y4O1P2Vm4Icq1u3KwALPgYRjU1Ad3YYGhHhWABxaxdUQeeB8WjNbG0CGSVatq7OTfGVvIME3rSDfuvLRYTPWAQ",
+      "signed_at": "2026-07-14T00:24:02.382Z"
     }
   ]
 }

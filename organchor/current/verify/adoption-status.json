@@ -1,7 +1,7 @@
 {
   "type": "CivitasXOrgAnchorAdoptionGapStatus",
   "version": "1.0",
-  "updated_at": "2026-07-13",
+  "updated_at": "2026-07-14",
   "origin": "https://civitasx.pages.dev",
   "verify_url": "https://civitasx.pages.dev/verify/",
   "verify_index_url": "https://civitasx.pages.dev/verify/organchor.json",
@@ -14,9 +14,11 @@
     "current_package_is_sufficient_for_present_public_continuity_baseline": true,
     "complete_organchor_paradigm_adoption": false,
     "signed_publication_ledger": "DEPLOYED_SIGNED",
-    "carrier_receipts": "PRESENT_WITH_IPFS_AND_OTS",
+    "carrier_receipts": "PRESENT_WITH_IPFS_ARWEAVE_TURBO_AND_OTS",
     "github_mirror": "MIRRORED_AND_TAGGED",
     "content_addressed_mirror": "PUBLISHED_IPFS_PINATA",
+    "arweave_transaction": "PUBLISHED_ARWEAVE_TURBO",
+    "arweave_gateway_verification": "TURBO_GATEWAY_HASH_VERIFIED_ARWEAVE_NET_PENDING",
     "opentimestamps_bitcoin_anchor": "CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK"
   },
   "level_matrix": [
@@ -36,7 +38,7 @@
       "level": 3,
       "name": "Mirrored and Archived Identity",
       "status": "IN_PROGRESS",
-      "summary": "The refreshed carrier-ledger package includes a signed lockfile, carrier receipts, a real IPFS Pinata CID, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. It still lacks a real Arweave transaction and deeper long-term carrier redundancy."
+      "summary": "The refreshed carrier-ledger package includes a signed lockfile, carrier receipts, a real IPFS Pinata CID, a real Arweave Turbo publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. Turbo gateway retrieval has been hash-verified; arweave.net public gateway propagation remains pending."
     },
     {
       "level": 4,
@@ -59,8 +61,8 @@
     },
     {
       "id": "carrier-receipts",
-      "status": "PRESENT_WITH_IPFS_AND_OTS",
-      "summary": "This refreshed carrier-ledger package includes carrier receipts for a real IPFS Pinata publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, and an Arweave manual package. It does not include a real Arweave transaction."
+      "status": "PRESENT_WITH_IPFS_ARWEAVE_TURBO_AND_OTS",
+      "summary": "This refreshed carrier-ledger package includes carrier receipts for a real IPFS Pinata publication, a real Arweave Turbo publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, and an Arweave manual package."
     },
     {
       "id": "content-addressed-mirror",
@@ -69,8 +71,8 @@
     },
     {
       "id": "arweave-transaction",
-      "status": "NOT_PUBLISHED",
-      "summary": "A portable Arweave manual package is included, but there is no public Arweave transaction."
+      "status": "PUBLISHED_ARWEAVE_TURBO",
+      "summary": "The current verify directory was uploaded through Arweave Turbo: 36 files, directory hash sha256:0801ea82f5e5b10c640de659a2a8631773a1e7f9699502e71fd33707b35da359. Key Turbo gateway retrievals were hash-verified; arweave.net public gateway propagation remains pending."
     },
     {
       "id": "public-artifact-recovery",
@@ -101,8 +103,8 @@
   "recommended_next_actions": [
     {
       "order": 1,
-      "action": "Add a real Arweave transaction or another second independent append-only/content-addressed carrier.",
-      "reason": "The real IPFS publication improves carrier redundancy, but one pinning-backed IPFS mirror does not complete long-term independent preservation."
+      "action": "Monitor arweave.net propagation and add another independent long-term carrier if needed.",
+      "reason": "The Arweave Turbo upload is recorded and hash-verified through Turbo's gateway, but long-term public retrieval should be checked again after arweave.net indexing catches up."
     },
     {
       "order": 2,
@@ -134,5 +136,6 @@
   "source_public_artifact_recovery": "outreach/first-public-civitasx/CIVITASX_PUBLIC_ARTIFACT_RECOVERY_REHEARSAL_2026-07-13.md",
   "source_opentimestamps_confirmation": "outreach/first-public-civitasx/CIVITASX_OPENTIMESTAMPS_BITCOIN_CONFIRMATION_2026-07-13.md"
   ,
-  "source_ipfs_pinata_publication": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_IPFS_PINATA_DEPLOYED_2026-07-13.md"
+  "source_ipfs_pinata_publication": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_IPFS_PINATA_DEPLOYED_2026-07-13.md",
+  "source_arweave_turbo_publication": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_ARWEAVE_TURBO_DEPLOYED_2026-07-14.md"
 }
