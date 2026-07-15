@@ -212,7 +212,7 @@
     <header>
       <h1>CivitasX OrgAnchor Adoption Status</h1>
       <p>This page explains how far CivitasX has applied OrgAnchor to itself. It is a public gap status, not a new root authority statement, not an endorsement, and not a higher maturity claim.</p>
-      <p>CivitasX is publicly verifiable now. This refreshed carrier-ledger package adds a signed publication ledger, carrier receipt trail, real IPFS publication, real Arweave Turbo publication, public-artifact recovery rehearsal, and Bitcoin-upgraded OpenTimestamps proof, but it still does not complete the full long-term OrgAnchor continuity paradigm.</p>
+      <p>CivitasX is publicly verifiable now. The 2026-07-15 parent-path package adds the public research route, signed claims and evidence for the working map, a new IPFS publication, a new Arweave Turbo publication, and a new OpenTimestamps proof. It strengthens continuity without claiming that CivitasX has completed the full long-term OrgAnchor continuity paradigm.</p>
       <div class="summary" aria-label="Current baseline summary">
         <div class="card">
           <span class="label">Identity</span>
@@ -236,7 +236,8 @@
     <section aria-labelledby="plain-meaning">
       <h2 id="plain-meaning">Plain Meaning</h2>
       <p>CivitasX currently has a working public verification package. People and AI agents can check the signed identity record, public endpoints, parent claims, evidence manifest, and value continuity report.</p>
-      <p>This refreshed package adds a public signed publication ledger, carrier receipts, a real IPFS Pinata CID, a real Arweave Turbo publication, a public-artifact recovery rehearsal, and a Bitcoin-upgraded OpenTimestamps proof. What remains incomplete is deeper resilience: durable naming, local Bitcoin Core full-node verification, and real multi-custodian migration.</p>
+      <p>The parent-path package is published to IPFS and Arweave Turbo. Its key Arweave files have been hash-verified through Turbo; propagation to <code>arweave.net</code> is still pending. The new OpenTimestamps proof has calendar attestations and is waiting for Bitcoin confirmation, while the prior proof remains Bitcoin-confirmed.</p>
+      <p>What remains incomplete is deeper resilience: durable naming, confirmation of the new timestamp, local Bitcoin Core full-node verification, and real multi-custodian migration.</p>
       <p class="note">In short: this package is a stronger continuity candidate, but not enough to say CivitasX has fully completed the OrgAnchor continuity model.</p>
     </section>
 
@@ -264,7 +265,7 @@
           <tr>
             <th scope="row">Level 3: Mirrored and Archived Identity</th>
             <td><span class="badge pass">PASS</span></td>
-            <td>This refreshed package includes a signed lockfile, carrier receipts, a real IPFS Pinata CID, a real Arweave Turbo publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. Key Arweave files have been hash-verified through both Turbo and arweave.net gateways.</td>
+            <td>The parent-path package includes a signed lockfile, IPFS Pinata and Arweave Turbo publications, a new OpenTimestamps proof, and an immutable history snapshot. The new Arweave files are verified through Turbo; <code>arweave.net</code> propagation is pending. The prior package remains verified through both gateways and retains a Bitcoin-confirmed timestamp.</td>
           </tr>
           <tr>
             <th scope="row">Level 4: Disaster Recovery and Auxiliary Names</th>
@@ -299,17 +300,17 @@
           <tr>
             <th scope="row">Carrier receipts</th>
             <td><span class="badge pass">PRESENT WITH IPFS AND ARWEAVE</span></td>
-            <td>This refreshed carrier-ledger package includes carrier receipts for a real IPFS Pinata publication, a real Arweave Turbo publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, and an Arweave manual package.</td>
+            <td>The signed ledger records the 2026-07-15 parent-path package on IPFS Pinata and Arweave Turbo, plus a new OpenTimestamps calendar proof. The new proof is pending Bitcoin confirmation; the prior proof remains Bitcoin-confirmed.</td>
           </tr>
           <tr>
             <th scope="row">Content-addressed mirror</th>
             <td><span class="badge pass">PUBLISHED IPFS</span></td>
-            <td>A real IPFS Pinata CID is recorded for the current verify directory: <code>bafybeibqtofd5n74wyiteepu34irjlllzazsndliglpwk6ogduayaumlc4</code>. This improves carrier redundancy but does not make IPFS or Pinata the identity root.</td>
+            <td>A real IPFS Pinata CID is recorded for the parent-path verification package: <code>bafybeie7gdli6pislictn6qobwdkhkazdtbvwsjvtn5ijatjedb3626l4u</code>. This improves carrier redundancy but does not make IPFS or Pinata the identity root.</td>
           </tr>
           <tr>
             <th scope="row">Arweave transaction</th>
             <td><span class="badge pass">PUBLISHED TURBO</span></td>
-            <td>The verification package snapshot was uploaded through Arweave Turbo: 36 files, directory hash <code>sha256:0801ea82f5e5b10c640de659a2a8631773a1e7f9699502e71fd33707b35da359</code>. Key files were hash-verified through both Turbo and arweave.net gateways.</td>
+            <td>The parent-path verification package was uploaded through Arweave Turbo: 45 files, directory hash <code>sha256:dcb05c435e4d0d30d6090cc747e7f924ff3c8928cc27889f49efdbc626ebd790</code>. Key files are hash-verified through Turbo; <code>arweave.net</code> propagation remains pending. The prior package remains verified through both gateways.</td>
           </tr>
           <tr>
             <th scope="row">Public-artifact recovery</th>
@@ -344,7 +345,7 @@
       <h2 id="next">Recommended Next Actions</h2>
       <ol>
         <li>Harden the canonical domain and durable naming strategy.</li>
-        <li>Optionally repeat OpenTimestamps verification against a local Bitcoin Core node when one is available.</li>
+        <li>Upgrade and verify the 2026-07-15 OpenTimestamps proof after Bitcoin confirmation; optionally repeat verification against a local Bitcoin Core node.</li>
         <li>Prepare threshold custody only when real independent long-term custodians exist.</li>
       </ol>
     </section>
@@ -367,7 +368,8 @@
         <li><a href="./organchor.json">OrgAnchor verify index</a></li>
         <li><a href="./organchor.lock.json">Signed publication ledger</a></li>
         <li><a href="./organchor.lock.json.sig">Publication ledger signature</a></li>
-        <li><a href="./anchors/opentimestamps/official-endpoints.json.ots">OpenTimestamps proof</a></li>
+        <li><a href="./anchors/opentimestamps/official-endpoints-2026-07-15.json.ots">Current parent-path OpenTimestamps proof (Bitcoin confirmation pending)</a></li>
+        <li><a href="./anchors/opentimestamps/official-endpoints.json.ots">Prior Bitcoin-confirmed OpenTimestamps proof</a></li>
         <li><a href="./arweave-manifest-complete-2026-07-11.json">Arweave manual package manifest</a></li>
         <li><a href="./reports/value-continuity-report.json">Value continuity report JSON</a></li>
         <li><a href="./reports/value-continuity-report.md">Value continuity report Markdown</a></li>

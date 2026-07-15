@@ -29,7 +29,7 @@ They make the live state legible:
 ```text
 Level 1: PASS
 Level 2: PASS WITH DOMAIN WARNINGS
-Level 3: IN PROGRESS
+Level 3: PASS
 Level 4: PARTIAL
 Level 5: PARTIAL AND BLOCKED
 ```
@@ -48,23 +48,24 @@ lockfile_integrity: SIGNED
 carrier_receipts: PRESENT_WITH_IPFS_ARWEAVE_TURBO_AND_OTS
 content_addressed_mirror: PUBLISHED_IPFS_PINATA
 arweave_transaction: PUBLISHED_ARWEAVE_TURBO
-arweave_gateway_verification: TURBO_AND_ARWEAVE_NET_HASH_VERIFIED
-opentimestamps_bitcoin_anchor: CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK
+arweave_gateway_verification: CURRENT_TURBO_VERIFIED_ARWEAVE_NET_PROPAGATION_PENDING
+opentimestamps_bitcoin_anchor: CURRENT_PENDING_WITH_PRIOR_CONFIRMED_PROOF
 public_artifact_recovery: PASSED_PUBLIC_REHEARSAL
 ```
 
-The active mirror now includes the upgraded OpenTimestamps proof with Bitcoin
-block-header attestations, a real IPFS Pinata CID, and a real Arweave Turbo
-publication receipt:
+The active mirror now includes the parent-path research claim and evidence, a
+new OpenTimestamps calendar proof, a new IPFS Pinata CID, and a new Arweave
+Turbo publication receipt:
 
 ```text
-bafybeibqtofd5n74wyiteepu34irjlllzazsndliglpwk6ogduayaumlc4
-arweave_turbo_directory_hash: sha256:0801ea82f5e5b10c640de659a2a8631773a1e7f9699502e71fd33707b35da359
+bafybeie7gdli6pislictn6qobwdkhkazdtbvwsjvtn5ijatjedb3626l4u
+arweave_turbo_directory_hash: sha256:dcb05c435e4d0d30d6090cc747e7f924ff3c8928cc27889f49efdbc626ebd790
 arweave_turbo_owner: FPp1-IGNqgBFcvYTzahkoNx7NlwLgcrwUD3flushljA
 ```
 
-Turbo gateway and public `arweave.net` retrieval for key files have both been
-hash-verified.
+Key files in the new package have been hash-verified through Turbo. Public
+`arweave.net` propagation is pending. The prior package remains hash-verified
+through both gateways, and its OpenTimestamps proof remains Bitcoin-confirmed.
 
 It still does not include local Bitcoin Core full-node verification,
 custom-domain hardening, multi-custodian authority, or decentralized governance.
@@ -75,6 +76,7 @@ custom-domain hardening, multi-custodian authority, or decentralized governance.
 history/2026-07-09/
 history/2026-07-10-parent-value-001/
 history/2026-07-11-carrier-ledger-001/
+history/2026-07-15-parent-path-001/
 ```
 
 This is the first deployed CivitasX identity-continuity snapshot under OrgAnchor
@@ -135,6 +137,12 @@ It records local publication-ledger and carrier-receipt evidence. It does not
 claim complete Level 3 adoption, Level 4 completion, Level 5 readiness, real
 IPFS publication, real Arweave transaction, Bitcoin-confirmed OpenTimestamps
 anchoring, multi-custodian authority, or decentralized governance.
+
+The fourth snapshot is the first parent-path research snapshot. It preserves
+the same root authority and stable parent values while adding the official
+Research route, the parent-path working-map claim and evidence, new IPFS and
+Arweave Turbo receipts, and a new OpenTimestamps proof. The research note is a
+working theory, not proof; the new timestamp is pending Bitcoin confirmation.
 
 ## Verification Boundary
 

@@ -1,7 +1,7 @@
 {
   "type": "CivitasXOrgAnchorAdoptionGapStatus",
   "version": "1.0",
-  "updated_at": "2026-07-14",
+  "updated_at": "2026-07-15",
   "origin": "https://civitasx.pages.dev",
   "verify_url": "https://civitasx.pages.dev/verify/",
   "verify_index_url": "https://civitasx.pages.dev/verify/organchor.json",
@@ -19,7 +19,7 @@
     "content_addressed_mirror": "PUBLISHED_IPFS_PINATA",
     "arweave_transaction": "PUBLISHED_ARWEAVE_TURBO",
     "arweave_gateway_verification": "TURBO_AND_ARWEAVE_NET_HASH_VERIFIED",
-    "opentimestamps_bitcoin_anchor": "CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK"
+    "opentimestamps_bitcoin_anchor": "CURRENT_PARENT_PATH_PROOF_PENDING_WITH_PRIOR_CONFIRMED_PROOF"
   },
   "level_matrix": [
     {
@@ -38,7 +38,7 @@
       "level": 3,
       "name": "Mirrored and Archived Identity",
       "status": "PASS",
-      "summary": "The refreshed carrier-ledger package includes a signed lockfile, carrier receipts, a real IPFS Pinata CID, a real Arweave Turbo publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, an Arweave manual package, and a carrier-ledger history snapshot. Key Arweave files have been hash-verified through both Turbo and arweave.net gateways."
+      "summary": "The parent-path package includes a signed lockfile, a real IPFS Pinata CID, a real Arweave Turbo publication, a new OpenTimestamps calendar proof, and an immutable history snapshot. The new Arweave files have been hash-verified through Turbo; arweave.net propagation is still pending. The prior carrier package remains verified through both gateways and retains a Bitcoin-confirmed OpenTimestamps proof."
     },
     {
       "level": 4,
@@ -62,17 +62,17 @@
     {
       "id": "carrier-receipts",
       "status": "PRESENT_WITH_IPFS_ARWEAVE_TURBO_AND_OTS",
-      "summary": "This refreshed carrier-ledger package includes carrier receipts for a real IPFS Pinata publication, a real Arweave Turbo publication, an OpenTimestamps proof upgraded with Bitcoin block-header attestations, and an Arweave manual package."
+      "summary": "The signed ledger records the 2026-07-15 parent-path package on IPFS Pinata and Arweave Turbo, plus a new OpenTimestamps calendar proof. The new proof is pending Bitcoin confirmation; the prior proof remains Bitcoin-confirmed."
     },
     {
       "id": "content-addressed-mirror",
       "status": "PUBLISHED_IPFS_PINATA",
-      "summary": "A real IPFS Pinata CID is recorded for the current verify directory: bafybeibqtofd5n74wyiteepu34irjlllzazsndliglpwk6ogduayaumlc4. This improves carrier redundancy but does not make IPFS or Pinata the identity root."
+      "summary": "A real IPFS Pinata CID is recorded for the parent-path verification package: bafybeie7gdli6pislictn6qobwdkhkazdtbvwsjvtn5ijatjedb3626l4u. This improves carrier redundancy but does not make IPFS or Pinata the identity root."
     },
     {
       "id": "arweave-transaction",
       "status": "PUBLISHED_ARWEAVE_TURBO",
-      "summary": "The verification package snapshot was uploaded through Arweave Turbo: 36 files, directory hash sha256:0801ea82f5e5b10c640de659a2a8631773a1e7f9699502e71fd33707b35da359. Key files were hash-verified through both Turbo and arweave.net gateways."
+      "summary": "The parent-path verification package was uploaded through Arweave Turbo: 45 files, directory hash sha256:dcb05c435e4d0d30d6090cc747e7f924ff3c8928cc27889f49efdbc626ebd790. Key files are hash-verified through Turbo; arweave.net propagation remains pending. The prior package remains verified through both gateways."
     },
     {
       "id": "public-artifact-recovery",
@@ -108,8 +108,8 @@
     },
     {
       "order": 2,
-      "action": "Optionally repeat OpenTimestamps verification against a local Bitcoin Core node when one is available.",
-      "reason": "The proof now contains Bitcoin block-header attestations checked against public block data; local full-node verification remains a stronger independent check."
+      "action": "Upgrade and verify the 2026-07-15 OpenTimestamps proof after Bitcoin confirmation, and optionally repeat verification against a local Bitcoin Core node.",
+      "reason": "The new parent-path proof currently has calendar attestations and is pending Bitcoin confirmation; local full-node verification remains a stronger independent check after upgrade."
     },
     {
       "order": 3,
@@ -133,5 +133,7 @@
   ,
   "source_ipfs_pinata_publication": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_IPFS_PINATA_DEPLOYED_2026-07-13.md",
   "source_arweave_turbo_publication": "outreach/first-public-civitasx/CIVITASX_ORGANCHOR_ARWEAVE_TURBO_DEPLOYED_2026-07-14.md",
-  "source_arweave_public_artifact_recovery": "outreach/first-public-civitasx/CIVITASX_PUBLIC_ARTIFACT_RECOVERY_REHEARSAL_ARWEAVE_NET_VERIFIED_2026-07-14.md"
+  "source_arweave_public_artifact_recovery": "outreach/first-public-civitasx/CIVITASX_PUBLIC_ARTIFACT_RECOVERY_REHEARSAL_ARWEAVE_NET_VERIFIED_2026-07-14.md",
+  "source_parent_path_note": "outreach/first-public-civitasx/CIVITASX_PARENT_PATH_NOTE_CANDIDATE_EN.md",
+  "source_parent_path_release": "outreach/first-public-civitasx/CIVITASX_PARENT_PATH_V1_RELEASE_2026-07-15.md"
 }

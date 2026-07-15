@@ -1,9 +1,10 @@
 # CivitasX Public Archive Manifest
 
-Updated: 2026-07-14
+Updated: 2026-07-15
 
-Status: published through the Arweave Turbo continuity mirror, with current
-OrgAnchor adoption-gap status mirrored.
+Status: parent-path V1 archived with signed continuity records, IPFS Pinata and
+Arweave Turbo carrier publications, and a new OpenTimestamps proof pending
+Bitcoin confirmation.
 
 ## Public Archive Contents
 
@@ -18,6 +19,8 @@ public/PUBLIC_INTRO_EN.md
 public/PUBLIC_FAQ_EN.md
 public/zh/PUBLIC_INTRO_ZH.md
 public/zh/PUBLIC_FAQ_ZH.md
+public/research/README.md
+public/research/FROM_FOUR_STARTING_POINTS_TO_A_TESTABLE_PARENT_PATH.md
 projects/OrgAnchor.md
 projects/EchoEnginer.md
 projects/ProvisionLoop.md
@@ -28,6 +31,7 @@ launch/2026-07-12-carrier-ledger-refresh.md
 launch/2026-07-13-ots-bitcoin-confirmation.md
 launch/2026-07-13-ipfs-pinata-mirror.md
 launch/2026-07-14-arweave-turbo-mirror.md
+launch/2026-07-15-parent-path-v1.md
 continuity/CONTINUITY.md
 continuity/CIVITASX_PARENT_MISSION.md
 continuity/CIVITASX_FOUNDING_BASELINE.md
@@ -39,6 +43,7 @@ organchor/current/verify/
 organchor/history/2026-07-09/
 organchor/history/2026-07-10-parent-value-001/
 organchor/history/2026-07-11-carrier-ledger-001/
+organchor/history/2026-07-15-parent-path-001/
 organchor/CHECKSUMS.sha256
 ```
 

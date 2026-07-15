@@ -1,0 +1,52 @@
+{
+  "type": "CivitasXSnapshotManifest",
+  "version": "1.0",
+  "snapshot_id": "2026-07-15-parent-path-001",
+  "created_at": "2026-07-15T00:18:53.189Z",
+  "status": "FROZEN_PUBLICATION_SNAPSHOT",
+  "supersedes": "2026-07-11-carrier-ledger-001",
+  "authority_change": false,
+  "root_authority_hash": "sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f",
+  "statement_canonical_hash": "sha256:bac1525f3f2c1f13b64325f50164443a6c53eac994ed3ce9756cb904adcd7578",
+  "statement_file_hash": "sha256:a69dbab599f9dd8a9a485226799ca1d21654525f4e378d5c5f8a2006460aaffd",
+  "claims_canonical_hash": "sha256:54825ef691435b0fb864b01bcfaf00624880b1e2a4d0541e9603f1415d7703f4",
+  "evidence_canonical_hash": "sha256:41e58c241fd159454debc85ca6df87fa24c992fb212a9d9447f9f228807ac020",
+  "signed_lockfile_hash": "sha256:6aa9e69c246fc7bc62b6a9b33ccf360e5e2ca7177535e49f3b105a00870c1456",
+  "change_classes": [
+    "operational",
+    "evidentiary",
+    "discovery-route",
+    "carrier-publication"
+  ],
+  "research": {
+    "title": "From Four Starting Points to a Testable Parent Path",
+    "status": "WORKING_THEORY_NOT_PROOF",
+    "k4_is_fifth_project": false,
+    "article_file_hash": "sha256:db96f6e290305c5c983bf2c505cb929775cfba9d41dc0659e97ef097dc4ee322"
+  },
+  "carriers": {
+    "ipfs_pinata": {
+      "status": "PUBLISHED",
+      "cid": "bafybeie7gdli6pislictn6qobwdkhkazdtbvwsjvtn5ijatjedb3626l4u",
+      "directory_hash": "sha256:fd7a6b2b85077a8db7a62721ac1aa2ecd33e4a85ceffd114a4e7b770a3ec7783"
+    },
+    "arweave_turbo": {
+      "status": "PUBLISHED_TURBO_VERIFIED_ARWEAVE_NET_PROPAGATION_PENDING",
+      "owner": "FPp1-IGNqgBFcvYTzahkoNx7NlwLgcrwUD3flushljA",
+      "directory_hash": "sha256:dcb05c435e4d0d30d6090cc747e7f924ff3c8928cc27889f49efdbc626ebd790",
+      "manifest_canonical_hash": "sha256:5ae0a440f0fbc05e84dd10f44364514215c6662055445a7ce80a47cfb7cb893a"
+    },
+    "opentimestamps": {
+      "status": "PENDING_BITCOIN_CONFIRMATION",
+      "proof_file": "anchors/opentimestamps/official-endpoints-2026-07-15.json.ots",
+      "proof_hash": "sha256:363ffd1daa04606a90f8b0a2ea5bb266a6565dda11a4dc3dfb76823ba2a28cef"
+    }
+  },
+  "known_boundaries": [
+    "The parent-path note is first-party working theory, not proof.",
+    "The new OpenTimestamps proof is pending Bitcoin confirmation.",
+    "The new Arweave transactions have not yet propagated to arweave.net.",
+    "The project still uses civitasx.pages.dev rather than a dedicated domain.",
+    "The root authority remains a truthful 1-of-1 Temporary Founder Authority."
+  ]
+}

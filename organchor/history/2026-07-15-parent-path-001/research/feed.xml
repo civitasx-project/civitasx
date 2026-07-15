@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CivitasX Research</title>
+    <link>https://civitasx.pages.dev/research/</link>
+    <description>Working maps, evidence standards, and public questions for the CivitasX civilizational path.</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://civitasx.pages.dev/research/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Four Starting Points to a Civilizational Path</title>
+      <link>https://civitasx.pages.dev/research/from-four-starting-points/</link>
+      <guid isPermaLink="true">https://civitasx.pages.dev/research/from-four-starting-points/</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Why OrgAnchor, EchoEnginer, ProvisionLoop, and WillFlow belong in one theory of change; where the path is still broken; and what evidence could prove the current map wrong.</description>
+    </item>
+  </channel>
+</rss>

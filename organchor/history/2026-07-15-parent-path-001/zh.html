@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CivitasX 首次公开说明</title>
+  <meta name="description" content="CivitasX 是一项面向未来文明的长期公共工程，让更多人拥有真实的生存自由、发展自由和选择自己人生的可能。">
+  <link rel="canonical" href="https://civitasx.pages.dev/zh">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CivitasX">
+  <meta property="og:title" content="CivitasX First Public Statement">
+  <meta property="og:description" content="CivitasX is a long-term public engineering effort for future civilization. Toward the stars. Let every person rise.">
+  <meta property="og:url" content="https://civitasx.pages.dev/zh">
+  <meta property="og:image" content="https://civitasx.pages.dev/assets/brand/civitasx-civilization-lab-banner-2048x1152.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CivitasX First Public Statement">
+  <meta name="twitter:description" content="CivitasX is a long-term public engineering effort for future civilization. Toward the stars. Let every person rise.">
+  <meta name="twitter:image" content="https://civitasx.pages.dev/assets/brand/civitasx-civilization-lab-banner-2048x1152.png">
+  <link rel="alternate" type="application/rss+xml" title="CivitasX Research" href="https://civitasx.pages.dev/research/feed.xml">
+  <link rel="icon" href="assets/brand/civitasx-civilization-lab-profile-1024.png">
+  <style>
+    :root {
+      --ink: #121821;
+      --paper: #f5f1e8;
+      --paper-2: #fffaf0;
+      --line: rgba(18, 24, 33, 0.14);
+      --green: #168967;
+      --blue: #2d73c9;
+      --gold: #c9972e;
+      --muted: #5f6873;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "Noto Sans SC", "Segoe UI", sans-serif;
+      line-height: 1.68;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--line);
+      background: rgba(245, 241, 232, 0.94);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      width: min(1120px, calc(100% - 32px));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .brand img {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: var(--white);
+      background: var(--ink);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(90deg, rgba(18, 24, 33, 0.94), rgba(18, 24, 33, 0.72) 48%, rgba(18, 24, 33, 0.36)),
+        url("assets/brand/civitasx-civilization-lab-banner-2048x1152.png");
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.02);
+    }
+
+    .hero-inner {
+      position: relative;
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 88px 0 96px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 14px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 44px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: 1.05;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin: 28px 0 0;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: clamp(17px, 2.2vw, 22px);
+    }
+
+    .motto {
+      margin-top: 26px;
+      color: var(--white);
+      font-size: clamp(22px, 3vw, 34px);
+      font-weight: 760;
+    }
+
+    .hero-actions {
+      margin-top: 34px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      border-radius: 6px;
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.08);
+      font-weight: 650;
+    }
+
+    .button.primary {
+      border-color: var(--green);
+      background: var(--green);
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+      gap: 48px;
+      align-items: start;
+    }
+
+    .lead {
+      color: #26313c;
+      font-size: 19px;
+    }
+
+    .side-panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, 0.76);
+      padding: 24px;
+    }
+
+    .side-panel p:last-child,
+    .project p:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .project {
+      min-height: 320px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper-2);
+      padding: 22px;
+    }
+
+    .project-label {
+      display: inline-flex;
+      margin-bottom: 16px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .project p {
+      color: #2c3742;
+      font-size: 15px;
+    }
+
+    .why {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .why h2,
+    .why p {
+      color: var(--white);
+    }
+
+    .why p {
+      max-width: 860px;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .closing {
+      margin-top: 28px;
+      color: var(--white);
+      font-size: clamp(24px, 3vw, 38px);
+      line-height: 1.25;
+      font-weight: 760;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 32px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 860px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 14px 0;
+      }
+
+      .navlinks {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        overflow-x: visible;
+        padding-bottom: 4px;
+        white-space: normal;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-inner {
+        padding: 72px 0 78px;
+      }
+
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top">
+        <img src="assets/brand/civitasx-civilization-lab-profile-1024.png" alt="CivitasX mark">
+        <span>CivitasX</span>
+      </a>
+      <div class="navlinks">
+        <a href="#what">是什么</a>
+        <a href="#start">从哪里开始</a>
+        <a href="#why">为什么</a>
+        <a href="research/">Research（英文）</a>
+        <a href="faq-zh.html">FAQ</a>
+        <a href="index.html">English</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="CivitasX introduction">
+      <div class="hero-inner">
+        <div class="eyebrow">CivitasX 首次公开说明</div>
+        <h1>有些事情，不能永远停留在草稿里。</h1>
+        <p class="hero-copy">如果人类文明还有更美好的未来，那它至少应该让人们无条件享有最基本的生存与健康保障，能够按照自己的意志选择人生道路，并通过真实创造与公众认可，公平地影响资源流向。</p>
+        <div class="motto">星辰大海，人人如龙。</div>
+        <div class="hero-actions">
+          <a class="button primary" href="#start">查看四个方向</a>
+          <a class="button" href="#why">为什么要做</a>
+          <a class="button" href="faq-zh.html">阅读 FAQ</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="what">
+      <div class="wrap intro-grid">
+        <div>
+          <h2>CivitasX 是什么</h2>
+          <p class="lead">CivitasX 是一项面向未来文明的长期公共工程。</p>
+          <p>它从一个很朴素、也很宏大的目标出发：让更多人拥有真实的生存自由、发展自由和选择自己人生的可能。</p>
+          <p>为了接近这个目标，CivitasX 准备先从下面四个项目方向展开探索。它们未必是最好的，但已是当下我们能够想到的、最可能迈入实践的起点。</p>
+        </div>
+        <aside class="side-panel">
+          <h3>起点</h3>
+          <p>组织更容易被验证，真实价值更容易被触达，生存供给更接近自动化闭环，公共资源流动持续接受成员共同意志的校准。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="start">
+      <div class="wrap">
+        <h2>从哪里开始</h2>
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-label">OrgAnchor</div>
+            <h3>组织身份与证据可验证</h3>
+            <p>在 AI 时代，交易双方如何借助 AI Agent，以更低成本找到彼此、了解彼此、核验关键信息，并完成初步判断。</p>
+            <p>OrgAnchor 帮助组织发布经过签名的身份、官方存在位置、主张、证据和迁移记录。它不是认证机构或市场排名系统。</p>
+          </article>
+          <article class="project">
+            <div class="project-label">EchoEnginer</div>
+            <h3>长期主义组织的真实触达</h3>
+            <p>在生成式 AI 普及后，内容供给急剧膨胀，人类注意力愈发稀缺。EchoEnginer 关注如何以尽可能低的成本和精力，完成体系化、可复盘、可迭代的线上科学宣发。</p>
+            <p>它不是单纯的内容生成器、发帖工具或营销后台，而是标准化宣发工作底座。</p>
+          </article>
+          <article class="project">
+            <div class="project-label">ProvisionLoop</div>
+            <h3>基本生存保障供给闭环</h3>
+            <p>ProvisionLoop 试图把 CivitasX 所追求的生存自由，推进为组织对成员的基本生存保障承诺。</p>
+            <p>它探索当被迫的人类重复劳动逐步退出供给闭环时，土地、资源、能源、设备、自动化系统、机器人、维护能力和安全冗余应当如何组合。</p>
+          </article>
+          <article class="project">
+            <div class="project-label">WillFlow</div>
+            <h3>公共愿力沙盒</h3>
+            <p>WillFlow 研究公共资源、生产资料和可验证供给能力形成后，如何让每个成员周期性地重新拥有影响资源流向的真实能力。</p>
+            <p>它会先以小型模拟共同体推演资源如何流动、组织如何兴衰、成员意志是否被真实表达，以及系统是否会偏离成员共同意志。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="why">
+      <div class="wrap">
+        <h2>为什么要做</h2>
+        <p>人类正在进入一个能力急剧扩张的时代。自动化、人形机器人、AI 等新的技术与协作工具，正在重写生产、组织和决策的方式。</p>
+        <p>但能力本身不会自动带来更好的文明。它可以让人更自由，也可以让旧结构更牢固；可以让真实价值被看见，也可以让包装和操控更高效；可以帮助人作出选择，也可以在无形中使人失去选择的可能。</p>
+        <p>CivitasX 要做的，是把这种越来越强的文明能力，尽可能导向人的主体性：让人不再把一生耗在基本生存压力里，让真实创造能够被看见和支持，让公共资源的流动持续接受成员共同意志的校准，让更多人能够按照自己的意志选择道路、建设所信、活出意义。</p>
+        <div class="closing">让我们一起，让世界变得更美好！</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>CivitasX 首次公开说明</span>
+      <span>Text source: PUBLIC_INTRO_ZH.md</span>
+    </div>
+  </footer>
+</body>
+</html>

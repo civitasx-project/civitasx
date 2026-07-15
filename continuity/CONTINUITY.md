@@ -8,6 +8,7 @@ Read these first:
 ```text
 public/PUBLIC_INTRO_EN.md
 public/PUBLIC_FAQ_EN.md
+public/research/FROM_FOUR_STARTING_POINTS_TO_A_TESTABLE_PARENT_PATH.md
 continuity/CIVITASX_PARENT_MISSION.md
 continuity/CIVITASX_FOUNDING_BASELINE.md
 LICENSE.md
@@ -65,6 +66,8 @@ historical fork, translation, adaptation, or inspired work.
 4. Record changes publicly with dates and reasons.
 5. Move detailed implementation work into the relevant subproject.
 6. Keep the public record reusable and continuable for the next generation.
+7. Treat the parent-path note as a testable working map, not a finished doctrine;
+   require a model, implementation, or new evidence before extending its theory.
 
 ## Boundary
 

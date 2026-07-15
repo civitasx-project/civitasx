@@ -1,0 +1,365 @@
+{
+  "type": "OrgAnchorVerifyIndex",
+  "version": "1.0",
+  "generated_at": "2026-07-10T13:00:41.300Z",
+  "role": "adopting-organization-verify-index",
+  "organization": {
+    "name": "CivitasX",
+    "display_name": "CivitasX",
+    "description": "CivitasX is a long-term public engineering effort for future civilization, focused on survival freedom, development freedom, and the possibility for people to live by their own will. Its current OrgAnchor root authority is a temporary founder-stage continuity anchor for origin records and future migration, not a claim of permanent ownership or decentralized governance."
+  },
+  "statement": {
+    "path": "official-endpoints.json",
+    "hash": "sha256:1a52e0d110a50547640f01194d9f2195d5a0a9a44bec79b20966cc78e4f8a5df"
+  },
+  "signature": {
+    "path": "official-endpoints.json.sig",
+    "hash": "sha256:528ebd9dc5a9bc16fb9c303e0d3800ac512d5a01815877b4534692bd11bc75bc"
+  },
+  "root_authority": {
+    "path": "root-authority.json",
+    "hash": "sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f",
+    "authority_id": "root-authority-2026",
+    "threshold": {
+      "required": 1,
+      "total": 1
+    }
+  },
+  "verification": {
+    "command": "organchor statement verify --authority root-authority.json --expected-authority-hash sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f --in official-endpoints.json --sig official-endpoints.json.sig"
+  },
+  "agent_verification": {
+    "contract": "https://organchor.org/specs/agent-verification.v1",
+    "contract_version": "1.0",
+    "primary_entrypoint": "/.well-known/organchor.json",
+    "verify_base_path": "/verify/",
+    "artifact_base_path": "/verify/",
+    "command": "organchor verify url <organization-url>",
+    "compact_command": "organchor verify url <organization-url> --compact",
+    "result_type": "OrgAnchorAgentVerificationResult",
+    "compact_result_type": "OrgAnchorAgentVerificationCompactResult",
+    "trust_decision": "not_assigned_by_organchor",
+    "summary": {
+      "kind": "signed_organization_verification_index",
+      "goal": "Verify organization identity continuity and inspect value evidence with minimal external-agent friction.",
+      "identity_root": "root_authority",
+      "final_trust_decision": "external_agent_policy",
+      "required_identity_checks": [
+        "statement_hash",
+        "signature_hash",
+        "authority_hash",
+        "statement_authority_binding",
+        "statement_signature_threshold"
+      ],
+      "optional_value_checks": [
+        "claims_manifest",
+        "evidence_manifest",
+        "claims_evidence_references",
+        "value_continuity"
+      ],
+      "optional_history_checks": [
+        "lockfile_hash",
+        "lockfile_signature",
+        "carrier_receipts",
+        "external_anchors"
+      ],
+      "preferred_first_pass": "compact"
+    }
+  },
+  "visible_proof": {
+    "status": "PASS",
+    "generated_at": "2026-07-10T13:00:41.300Z",
+    "checks": [
+      {
+        "label": "Official endpoint statement",
+        "status": "PASS",
+        "detail": "Canonical hash recorded as sha256:1a52e0d110a50547640f01194d9f2195d5a0a9a44bec79b20966cc78e4f8a5df."
+      },
+      {
+        "label": "Root authority binding",
+        "status": "PASS",
+        "detail": "Statement root authority hash matches sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f."
+      },
+      {
+        "label": "Signature threshold",
+        "status": "PASS",
+        "detail": "1 valid signature(s) found; 1 required."
+      },
+      {
+        "label": "Signature file",
+        "status": "PASS",
+        "detail": "Detached signature hash recorded as sha256:528ebd9dc5a9bc16fb9c303e0d3800ac512d5a01815877b4534692bd11bc75bc."
+      },
+      {
+        "label": "Claims manifest",
+        "status": "PASS",
+        "detail": "Signed claims manifest was included and verified against this root authority."
+      },
+      {
+        "label": "Evidence manifest",
+        "status": "PASS",
+        "detail": "Signed evidence manifest was included and verified against this root authority."
+      },
+      {
+        "label": "Value continuity report",
+        "status": "PRESENT",
+        "detail": "Value audit report included with 9 claim(s), 9 evidence-linked claim(s), and 0 unsupported claim(s)."
+      },
+      {
+        "label": "Migration history",
+        "status": "NOT_INCLUDED",
+        "detail": "No migration history is included in this verify package yet."
+      },
+      {
+        "label": "Carrier receipts",
+        "status": "NOT_INCLUDED",
+        "detail": "No IPFS, Arweave, OpenTimestamps, or other carrier receipts were included."
+      },
+      {
+        "label": "Lockfile integrity",
+        "status": "NOT_INCLUDED",
+        "detail": "No signed publication receipt ledger was included."
+      }
+    ],
+    "summary": {
+      "statement_signed": true,
+      "threshold_met": true,
+      "valid_signature_count": 1,
+      "required_signature_count": 1,
+      "linked_artifact_count": 2,
+      "migration_count": 0,
+      "carrier_receipt_count": 0,
+      "lockfile_status": "NOT_INCLUDED",
+      "lockfile_hash": null,
+      "lockfile_signed": false
+    }
+  },
+  "agent_review": {
+    "overall_status": "PASS",
+    "identity_status": "PASS",
+    "value_status": "PASS",
+    "conformance_status": "FULL_COMPATIBLE",
+    "trust_decision": "NOT_ASSIGNED_BY_ORGANCHOR",
+    "policy_route": {
+      "route": "EXTERNAL_POLICY_REVIEW",
+      "guidance": "Verification passed, but external policy still needs to decide whether the evidence is sufficient for the intended purpose.",
+      "reasons": [
+        "manual_checks_present",
+        "no_third_party_claims"
+      ]
+    },
+    "evidence_class_summary": [
+      {
+        "label": "S1 First-party",
+        "status": "PRESENT",
+        "count": 8,
+        "detail": "Organization-submitted evidence. Useful for scope and integrity, but not independent by itself."
+      },
+      {
+        "label": "S2 Third-party",
+        "status": "NOT_INCLUDED",
+        "count": 0,
+        "detail": "Organization-submitted third-party material with mechanical route and gap checks."
+      },
+      {
+        "label": "S3 Sampling",
+        "status": "NOT_INCLUDED",
+        "count": 0,
+        "detail": "Random purchase or sampling records. Current tooling checks declared gates; network slot ledgers are future work."
+      },
+      {
+        "label": "S4 Observation",
+        "status": "DESIGN_PREVIEW",
+        "count": 0,
+        "detail": "Real-use or delivery observation. Alpha support is partial and should be treated as a design-preview signal."
+      },
+      {
+        "label": "S5 Challenge",
+        "status": "DESIGN_PREVIEW",
+        "count": 0,
+        "detail": "Public challenge, correction, negative evidence, and historical accountability governance is documented but not implemented as a finished acceptance gate."
+      }
+    ],
+    "next_best_actions": [
+      "Request independent S2/S3/S4 support when the decision requires more than first-party evidence.",
+      "Request S3 random purchase or sampling support when anti-hand-picked-sample assurance matters.",
+      "Add an independent attestation or external evidence source for the exact claim.",
+      "No S2 material is declared; request S2 only if the target purpose requires external support.",
+      "No S3 sampling evidence is declared; request S3 only if the target purpose requires random sampling or anti-hand-picked-sample support.",
+      "No S4 observation evidence is declared; request S4 only if the target purpose requires real delivery, use, support, uptime, or supply-continuity observation."
+    ],
+    "source_files": [
+      "organchor.json",
+      "reports/value-continuity-report.json",
+      "reports/value-continuity-report.md"
+    ]
+  },
+  "root_continuity": {
+    "status": "CURRENT_ROOT_ONLY",
+    "current_root_authority": {
+      "path": "root-authority.json",
+      "hash": "sha256:a5fed87b2948159240708c29b341e9a4717093787679711f8e8c50644953228f",
+      "authority_id": "root-authority-2026",
+      "threshold": {
+        "required": 1,
+        "total": 1
+      }
+    },
+    "previous_root_authorities": [],
+    "migration_chain": [],
+    "historical_verification_rule": "Historical statements use the root authority that signed them.",
+    "future_statement_rule": "New statements should be verified against the current root authority unless a later valid migration supersedes it."
+  },
+  "carrier_receipts": {
+    "status": "NOT_INCLUDED",
+    "source_lockfile": null,
+    "receipts": []
+  },
+  "lockfile_integrity": {
+    "status": "NOT_INCLUDED",
+    "note": "No lockfile snapshot was included."
+  },
+  "value_continuity": {
+    "status": "PRESENT",
+    "path": "reports/value-continuity-report.json",
+    "hash": "sha256:38b8cad18c666de6d9da332a3217491cc9ec00256a95d6efc58a4d03ec73ceb5",
+    "markdown_path": "reports/value-continuity-report.md",
+    "markdown_hash": "sha256:f1f3699eb02a8092607ec7115cf306f86ddd5a7a9b7d42144745fc0196624dba",
+    "summary": {
+      "total_claims": 9,
+      "self_asserted_claims": 0,
+      "evidence_linked_claims": 9,
+      "third_party_claims": 0,
+      "reproducible_claims": 9,
+      "time_proven_claims": 0,
+      "unsupported_claims": 0,
+      "total_evidence_items": 8,
+      "external_evidence_items": 8,
+      "first_party_evidence_items": 8,
+      "stale_evidence_items": 0,
+      "profile_declared_claims": 0,
+      "profile_pass_claims": 0,
+      "profile_gap_claims": 0,
+      "PASS": 63,
+      "WARN": 0,
+      "FAIL": 0,
+      "MANUAL_CHECK_REQUIRED": 8
+    },
+    "claim_support_summary": {
+      "support_levels": {
+        "L0_UNSUPPORTED": 0,
+        "L1_SIGNED_SELF_CLAIM": 0,
+        "L2_HASH_BOUND_EVIDENCE": 0,
+        "L3_REPRODUCIBLE_METHOD": 9,
+        "L4_INDEPENDENT_ATTESTATION": 0,
+        "TIME_OBSERVED": 0
+      },
+      "risk_gap_count": 9,
+      "top_risk_gaps": [
+        "Only first-party evidence is linked."
+      ],
+      "next_best_actions": [
+        "Add an independent attestation or external evidence source for the exact claim."
+      ]
+    },
+    "s2_summary": {
+      "effective_s2_count": 0,
+      "candidate_unverified_external_material_count": 0,
+      "s2_state_counts": {
+        "S2_1_GENERIC_ROUTE_PROVIDED": 0,
+        "S2_2_VERIFIED_ROUTE_CHECKED": 0,
+        "S2_3_ISSUER_BACKED": 0
+      },
+      "expired_s2_count": 0,
+      "broken_s2_anchor_count": 0,
+      "manual_check_s2_count": 0,
+      "unknown_sample_source_count": 0,
+      "unknown_relationship_count": 0,
+      "top_s2_gaps": [],
+      "next_actions": [
+        "No S2 material is declared; request S2 only if the target purpose requires external support."
+      ],
+      "not_a_trust_decision": true
+    },
+    "s3_summary": {
+      "effective_s3_count": 0,
+      "candidate_unverified_sampling_count": 0,
+      "s3_state_counts": {
+        "S3_1_SAMPLING_ROUTE_PROVIDED": 0,
+        "S3_2_CUSTODY_DOCUMENTED": 0,
+        "S3_3_INDEPENDENT_TEST_RECORDED": 0
+      },
+      "organization_selected_sample_count": 0,
+      "organization_provided_sample_count": 0,
+      "missing_sample_identity_count": 0,
+      "missing_claim_binding_count": 0,
+      "missing_sample_pool_count": 0,
+      "missing_sample_slot_count": 0,
+      "missing_finite_policy_count": 0,
+      "missing_duplicate_control_count": 0,
+      "missing_credential_binding_count": 0,
+      "missing_sampling_plan_count": 0,
+      "organization_can_choose_samples_count": 0,
+      "missing_raw_evidence_reference_count": 0,
+      "organization_controlled_storage_count": 0,
+      "missing_custody_count": 0,
+      "manual_check_s3_count": 0,
+      "top_s3_gaps": [],
+      "next_actions": [
+        "No S3 sampling evidence is declared; request S3 only if the target purpose requires random sampling or anti-hand-picked-sample support."
+      ],
+      "not_a_trust_decision": true
+    },
+    "s4_summary": {
+      "effective_s4_count": 0,
+      "candidate_unverified_observation_count": 0,
+      "s4_state_counts": {
+        "S4_1_OBSERVATION_SUMMARY_PROVIDED": 0,
+        "S4_2_RAW_BUNDLE_AVAILABLE": 0,
+        "S4_3_OBSERVER_OR_DIRECTORY_REVIEWED": 0
+      },
+      "current_window_observation_count": 0,
+      "historical_observation_count": 0,
+      "raw_bundle_available_count": 0,
+      "missing_subject_binding_count": 0,
+      "manual_check_s4_count": 0,
+      "top_s4_gaps": [],
+      "next_actions": [
+        "No S4 observation evidence is declared; request S4 only if the target purpose requires real delivery, use, support, uptime, or supply-continuity observation."
+      ],
+      "not_a_trust_decision": true
+    }
+  },
+  "directory_discovery": {
+    "status": "NOT_INCLUDED",
+    "trust_boundary": {
+      "directory_is_trust_root": false,
+      "final_trust_decision": "EXTERNAL_AGENT",
+      "records_must_verify_at_origin": true
+    },
+    "note": "No Directory snapshot was included in this verification index."
+  },
+  "linked_artifacts": {
+    "claims": {
+      "path": "claims/product-claims.json",
+      "hash": "sha256:412694e0bafa073da095b695fc8583f590f4257f0d6fc7ad1a102fab056f09b4",
+      "signature_path": "claims/product-claims.json.sig",
+      "signature_hash": "sha256:efd02dd016e27dc7242730be1f499327a8ff297bfdd41c772be30e0cdfea97c7"
+    },
+    "evidence": {
+      "path": "evidence/evidence-manifest.json",
+      "hash": "sha256:c0957dbe91015922af37e2afe116bb719d2693a01f0289b8178b2e227307e8b1",
+      "signature_path": "evidence/evidence-manifest.json.sig",
+      "signature_hash": "sha256:a3a2c2a111a0c4f651fe8d161a5b9784b6c965a0544fb67735ae66e7e3fb0c38"
+    }
+  },
+  "migration_history": {
+    "status": "NOT_INCLUDED",
+    "migrations": []
+  },
+  "notes": [
+    "This index belongs to the adopting organization using OrgAnchor.",
+    "This index is not a trust root.",
+    "Verify signatures and root authority before trusting endpoint claims."
+  ]
+}

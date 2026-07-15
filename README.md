@@ -22,6 +22,21 @@ FAQ:
 https://civitasx.pages.dev/faq
 ```
 
+## Research
+
+The first parent-level research note connects the four starting directions into
+a testable working path:
+
+```text
+https://civitasx.pages.dev/research/
+https://civitasx.pages.dev/research/from-four-starting-points/
+public/research/FROM_FOUR_STARTING_POINTS_TO_A_TESTABLE_PARENT_PATH.md
+```
+
+It is a working theory of change, not proof. It states evidence requirements,
+failure signals, and a stop rule against further theory work without a model,
+implementation, or new evidence.
+
 ## Current Starting Directions
 
 ```text
@@ -72,7 +87,8 @@ Beacon: https://civitasx.pages.dev/.well-known/organchor.json
 First identity snapshot: https://civitasx.pages.dev/verify-history/2026-07-09/
 First parent value snapshot: https://civitasx.pages.dev/verify-history/2026-07-10-parent-value-001/
 Carrier-ledger snapshot: https://civitasx.pages.dev/verify-history/2026-07-11-carrier-ledger-001/
-IPFS Pinata mirror: https://gateway.pinata.cloud/ipfs/bafybeibqtofd5n74wyiteepu34irjlllzazsndliglpwk6ogduayaumlc4/organchor.json
+Parent-path snapshot: https://civitasx.pages.dev/verify-history/2026-07-15-parent-path-001/
+IPFS Pinata mirror: https://gateway.pinata.cloud/ipfs/bafybeie7gdli6pislictn6qobwdkhkazdtbvwsjvtn5ijatjedb3626l4u/organchor.json
 Arweave Turbo owner: FPp1-IGNqgBFcvYTzahkoNx7NlwLgcrwUD3flushljA
 ```
 
@@ -87,8 +103,8 @@ lockfile_integrity: SIGNED
 carrier_receipts: PRESENT_WITH_IPFS_ARWEAVE_TURBO_AND_OTS
 content_addressed_mirror: PUBLISHED_IPFS_PINATA
 arweave_transaction: PUBLISHED_ARWEAVE_TURBO
-arweave_gateway_verification: TURBO_AND_ARWEAVE_NET_HASH_VERIFIED
-opentimestamps_bitcoin_anchor: CONFIRMED_PUBLIC_BLOCK_HEADER_CHECK
+arweave_gateway_verification: CURRENT_TURBO_VERIFIED_ARWEAVE_NET_PROPAGATION_PENDING
+opentimestamps_bitcoin_anchor: CURRENT_PENDING_WITH_PRIOR_CONFIRMED_PROOF
 ```
 
 The current root authority is a Temporary Founder Authority for origin

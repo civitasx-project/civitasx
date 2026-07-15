@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CivitasX FAQ 与误读边界</title>
+  <meta name="description" content="CivitasX 首次公开 FAQ 与误读边界。">
+  <link rel="canonical" href="https://civitasx.pages.dev/faq-zh">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CivitasX">
+  <meta property="og:title" content="CivitasX FAQ And Boundaries">
+  <meta property="og:description" content="Questions, boundaries, and current public status for CivitasX.">
+  <meta property="og:url" content="https://civitasx.pages.dev/faq-zh">
+  <meta property="og:image" content="https://civitasx.pages.dev/assets/brand/civitasx-civilization-lab-banner-2048x1152.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CivitasX FAQ And Boundaries">
+  <meta name="twitter:description" content="Questions, boundaries, and current public status for CivitasX.">
+  <meta name="twitter:image" content="https://civitasx.pages.dev/assets/brand/civitasx-civilization-lab-banner-2048x1152.png">
+  <link rel="alternate" type="application/rss+xml" title="CivitasX Research" href="https://civitasx.pages.dev/research/feed.xml">
+  <link rel="icon" href="assets/brand/civitasx-civilization-lab-profile-1024.png">
+  <style>
+    :root {
+      --ink: #121821;
+      --paper: #f5f1e8;
+      --paper-2: #fffaf0;
+      --line: rgba(18, 24, 33, 0.14);
+      --blue: #2d73c9;
+      --muted: #5f6873;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "Noto Sans SC", "Segoe UI", sans-serif;
+      line-height: 1.68;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      background: rgba(245, 241, 232, 0.96);
+    }
+
+    .nav,
+    .wrap,
+    .footer-inner {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .brand img {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    .hero {
+      padding: 72px 0 48px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(38px, 7vw, 64px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin: 20px 0 0;
+      color: #26313c;
+      font-size: 19px;
+    }
+
+    .faq {
+      padding: 48px 0 72px;
+    }
+
+    .item {
+      padding: 26px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ol {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .boundary {
+      margin-top: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper-2);
+      padding: 20px;
+      font-family: "Cascadia Mono", "JetBrains Mono", monospace;
+      font-size: 14px;
+      white-space: pre-line;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 32px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <img src="assets/brand/civitasx-civilization-lab-profile-1024.png" alt="CivitasX mark">
+        <span>CivitasX</span>
+      </a>
+      <div>
+        <a href="zh.html">返回中文说明页</a>
+        <span aria-hidden="true"> · </span>
+        <a href="research/">Research（英文）</a>
+        <span aria-hidden="true"> · </span>
+        <a href="faq.html">English FAQ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>FAQ 与误读边界</h1>
+        <p class="lead">本文用于处理 CivitasX 首次公开时最容易出现的高风险误读。</p>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="wrap">
+        <article class="item">
+          <h2>1. CivitasX 是政治组织吗？</h2>
+          <p>不是。CivitasX 当前是一项面向未来文明的长期公共工程，用来把生存自由、发展自由、组织可信、真实触达、生存供给和公共资源意志校准等问题，拆成可以逐步建设、验证和改进的方向。</p>
+          <p>它不是政党，不是现实政治组织，不是建国计划，也不主张绕过现实法律体系去建立现实治理实体。</p>
+        </article>
+
+        <article class="item">
+          <h2>2. CivitasX 是发币项目吗？</h2>
+          <p>不是。CivitasX 内部确实讨论过周期性公共购买力、资源愿力代币等机制概念，但这些属于 WillFlow 相关的长期机制研究和沙盒推演对象，不是现实发行计划。</p>
+          <p>当前不发行代币，不出售代币，不承诺收益，不设计投资品，不提供金融产品。</p>
+        </article>
+
+        <article class="item">
+          <h2>3. WillFlow 是什么？</h2>
+          <p>WillFlow 是 CivitasX 的四个起点之一。</p>
+          <p>它主要研究：当一个共同体逐步拥有公共资源、生产资料和可验证供给能力后，如何让每个成员都能周期性地重新拥有影响资源流向的真实能力，并使资源的使用、扩张和流动，始终接受整体成员共同意志的持续校准。</p>
+          <p>它当前会先以“公共愿力沙盒”的方式推进，不是现实发币计划，不是已经完成的治理系统。</p>
+        </article>
+
+        <article class="item">
+          <h2>4. WillFlow 是货币系统吗？</h2>
+          <p>不是现实货币系统。</p>
+          <p>WillFlow 可能会在沙盒中推演周期性公共购买力、产品与服务、生产资料动态使用、旧权重校正等机制，但这些是为了研究资源流动如何回应成员共同意志，不是发布货币、金融产品或投资标的。</p>
+        </article>
+
+        <article class="item">
+          <h2>5. CivitasX 是乌托邦吗？</h2>
+          <p>CivitasX 有长期愿景，但不应停在乌托邦式口号里。</p>
+          <p>它现在选择从四个方向开始：OrgAnchor、EchoEnginer、ProvisionLoop、WillFlow。它们分别把组织可信、真实触达、生存供给和公共愿力推演变成可以逐步建设、验证、协作和持续改进的对象。</p>
+        </article>
+
+        <article class="item">
+          <h2>6. “星辰大海，人人如龙”是不是太宏大？</h2>
+          <p>它是长期愿景，不是当前承诺。</p>
+          <p>“星辰大海”表示人类文明不应把自身上限锁死在当前狭小结构中。“人人如龙”表示更多人应在生存不被胁迫的基础上，拥有发展、选择、创造和体验人生的机会，而不是表示人人都要支配别人。</p>
+        </article>
+
+        <article class="item">
+          <h2>7. OrgAnchor 和 CivitasX 是什么关系？</h2>
+          <p>OrgAnchor 是 CivitasX 的四个起点之一，用来解决组织身份、官方存在位置、主张、证据和迁移记录的可验证问题。</p>
+          <p>OrgAnchor 不是认证机构，不是市场排名系统，也不替外部人做最终判断。它提供的是可检查、可追溯、可迁移的公开资料底座。</p>
+        </article>
+
+        <article class="item">
+          <h2>8. EchoEnginer 是否已经正式对外服务？</h2>
+          <p>没有。EchoEnginer 是 CivitasX 的四个起点之一，目标是在生成式 AI 普及、内容供给膨胀、人类注意力稀缺的环境下，帮助长期主义组织以更低成本完成体系化、可复盘、可迭代的线上科学宣发。</p>
+          <p>当前不应把它宣传为已经正式对外服务。</p>
+        </article>
+
+        <article class="item">
+          <h2>9. ProvisionLoop 是否已经实现免费供给？</h2>
+          <p>没有。ProvisionLoop 研究的是如何把 CivitasX 所追求的生存自由，推进为组织对成员的基本生存保障承诺。</p>
+          <p>它的目标是逐步逼近基本生存保障无偿永续供给，但当前不是后稀缺承诺，也不是免费普遍供给已经实现。</p>
+        </article>
+
+        <article class="item">
+          <h2>10. 主链、分链是不是现实政治结构？</h2>
+          <p>不是。主链、分链是 CivitasX 内部讨论过的文明结构和机制概念。当前公开说明中只保留必要表达：基本保障底线、分链自治、生产资料动态使用和反捕获规则可以进入 WillFlow 沙盒推演。</p>
+          <p>这些概念不是现实政府结构，不是国家设计，也不是已经定稿的制度方案。</p>
+        </article>
+
+        <article class="item">
+          <h2>11. CivitasX 现在为什么要公开？</h2>
+          <p>因为有些事情不能永远停留在草稿里。</p>
+          <p>CivitasX 现在公开，不是宣布已经完成所有答案，而是让一个已经确立价值核心的方向进入世界，让愿意建设它的人能够看见、理解、接续，并一起把它推向现实。</p>
+        </article>
+
+        <article class="item">
+          <h2>12. 现在怎样的反馈最有价值？</h2>
+          <p>现阶段最有价值的是围绕母项目提出建设性反馈：</p>
+          <ol>
+            <li>哪个表述最容易造成误读。</li>
+            <li>CivitasX 是否能被清楚理解为一个母项目框架，而不是产品、发币项目、政治组织、创业项目或完成版教义。</li>
+            <li>怎样的保存、归档、翻译、转述、引用路径，能让它更容易被接续。</li>
+            <li>哪些领域、读者、共同体、理论、现实案例、失败案例或工程路径，应该被拿来继续比较。</li>
+            <li>在任何子项目宣称更多能力之前，哪些风险最需要被提前看见。</li>
+          </ol>
+        </article>
+
+        <article class="item">
+          <h2>13. 什么反馈价值较低？</h2>
+          <p>价值较低的是：</p>
+          <ol>
+            <li>只说“太理想”但不指出哪一层无法成立。</li>
+            <li>只说“我支持”但不指出能参与什么。</li>
+            <li>把 CivitasX 误读成发币、建国、宗教或完整制度后再批判。</li>
+            <li>把 CivitasX 母项目当成产品组合，要求它现在决定子项目优先级。</li>
+            <li>要求马上给出所有参数和实施细则。</li>
+          </ol>
+        </article>
+
+        <article class="item">
+          <h2>14. 当前最重要的公开边界是什么？</h2>
+          <div class="boundary">不是成品答案；
+不是发币；
+不是金融产品；
+不是政治组织；
+不是建国计划；
+不是后稀缺承诺；
+不是单个工具项目；
+不是 AI 替人拥有意志。</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">CivitasX 首次公开 FAQ</div>
+  </footer>
+</body>
+</html>
