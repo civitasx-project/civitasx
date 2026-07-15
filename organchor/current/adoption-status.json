@@ -38,7 +38,7 @@
       "level": 3,
       "name": "Mirrored and Archived Identity",
       "status": "PASS",
-      "summary": "The parent-path package includes a signed lockfile, a real IPFS Pinata CID, a real Arweave Turbo publication, a new OpenTimestamps calendar proof, and an immutable history snapshot. The new Arweave files have been hash-verified through Turbo; arweave.net propagation is still pending. The prior carrier package remains verified through both gateways and retains a Bitcoin-confirmed OpenTimestamps proof."
+      "summary": "The parent-path package includes a signed lockfile, a real IPFS Pinata CID, a real Arweave Turbo publication, a new OpenTimestamps calendar proof, and an immutable history snapshot. Key Arweave files have been hash-verified through both Turbo and arweave.net. The prior carrier package also remains verified and retains a Bitcoin-confirmed OpenTimestamps proof."
     },
     {
       "level": 4,
@@ -72,7 +72,7 @@
     {
       "id": "arweave-transaction",
       "status": "PUBLISHED_ARWEAVE_TURBO",
-      "summary": "The parent-path verification package was uploaded through Arweave Turbo: 45 files, directory hash sha256:dcb05c435e4d0d30d6090cc747e7f924ff3c8928cc27889f49efdbc626ebd790. Key files are hash-verified through Turbo; arweave.net propagation remains pending. The prior package remains verified through both gateways."
+      "summary": "The parent-path verification package was uploaded through Arweave Turbo: 45 files, directory hash sha256:dcb05c435e4d0d30d6090cc747e7f924ff3c8928cc27889f49efdbc626ebd790. Key files are hash-verified through both Turbo and arweave.net."
     },
     {
       "id": "public-artifact-recovery",

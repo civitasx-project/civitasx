@@ -236,7 +236,7 @@
     <section aria-labelledby="plain-meaning">
       <h2 id="plain-meaning">Plain Meaning</h2>
       <p>CivitasX currently has a working public verification package. People and AI agents can check the signed identity record, public endpoints, parent claims, evidence manifest, and value continuity report.</p>
-      <p>The parent-path package is published to IPFS and Arweave Turbo. Its key Arweave files have been hash-verified through Turbo; propagation to <code>arweave.net</code> is still pending. The new OpenTimestamps proof has calendar attestations and is waiting for Bitcoin confirmation, while the prior proof remains Bitcoin-confirmed.</p>
+      <p>The parent-path package is published to IPFS and Arweave Turbo. Its key Arweave files have been hash-verified through both Turbo and <code>arweave.net</code>. The new OpenTimestamps proof has calendar attestations and is waiting for Bitcoin confirmation, while the prior proof remains Bitcoin-confirmed.</p>
       <p>What remains incomplete is deeper resilience: durable naming, confirmation of the new timestamp, local Bitcoin Core full-node verification, and real multi-custodian migration.</p>
       <p class="note">In short: this package is a stronger continuity candidate, but not enough to say CivitasX has fully completed the OrgAnchor continuity model.</p>
     </section>
@@ -265,7 +265,7 @@
           <tr>
             <th scope="row">Level 3: Mirrored and Archived Identity</th>
             <td><span class="badge pass">PASS</span></td>
-            <td>The parent-path package includes a signed lockfile, IPFS Pinata and Arweave Turbo publications, a new OpenTimestamps proof, and an immutable history snapshot. The new Arweave files are verified through Turbo; <code>arweave.net</code> propagation is pending. The prior package remains verified through both gateways and retains a Bitcoin-confirmed timestamp.</td>
+            <td>The parent-path package includes a signed lockfile, IPFS Pinata and Arweave Turbo publications, a new OpenTimestamps proof, and an immutable history snapshot. Key Arweave files are verified through both Turbo and <code>arweave.net</code>. The prior package remains verified and retains a Bitcoin-confirmed timestamp.</td>
           </tr>
           <tr>
             <th scope="row">Level 4: Disaster Recovery and Auxiliary Names</th>
@@ -310,7 +310,7 @@
           <tr>
             <th scope="row">Arweave transaction</th>
             <td><span class="badge pass">PUBLISHED TURBO</span></td>
-            <td>The parent-path verification package was uploaded through Arweave Turbo: 45 files, directory hash <code>sha256:dcb05c435e4d0d30d6090cc747e7f924ff3c8928cc27889f49efdbc626ebd790</code>. Key files are hash-verified through Turbo; <code>arweave.net</code> propagation remains pending. The prior package remains verified through both gateways.</td>
+            <td>The parent-path verification package was uploaded through Arweave Turbo: 45 files, directory hash <code>sha256:dcb05c435e4d0d30d6090cc747e7f924ff3c8928cc27889f49efdbc626ebd790</code>. Key files are hash-verified through both Turbo and <code>arweave.net</code>.</td>
           </tr>
           <tr>
             <th scope="row">Public-artifact recovery</th>

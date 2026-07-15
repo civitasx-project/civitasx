@@ -32,6 +32,7 @@ launch/2026-07-13-ots-bitcoin-confirmation.md
 launch/2026-07-13-ipfs-pinata-mirror.md
 launch/2026-07-14-arweave-turbo-mirror.md
 launch/2026-07-15-parent-path-v1.md
+launch/2026-07-15-parent-path-v1-deployed.md
 continuity/CONTINUITY.md
 continuity/CIVITASX_PARENT_MISSION.md
 continuity/CIVITASX_FOUNDING_BASELINE.md

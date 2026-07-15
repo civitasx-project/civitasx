@@ -2,8 +2,7 @@
 
 Date: 2026-07-15
 
-Status: approved release candidate; independent carriers published; primary
-deployment and public archive update pending.
+Status: published, mirrored, signed, and production-verified.
 
 ## Scope
 
@@ -58,10 +57,10 @@ verify/organchor.json: MaicGQb-id8okLSTtSJimf12uBoXNI0VWawCNlgLNJA
 verify/organchor.lock.json: oKGb5dXeAuuiXVqqu3ezju7XziLF5-zcbjPIhKqkoxI
 ```
 
-The three key Arweave files were retrieved from `turbo-gateway.com` and matched
-their local SHA-256 hashes. At release preparation time, `arweave.net` had not
-yet propagated the new transactions and returned 404. The prior Arweave package
-remains verified through both gateways.
+The three key Arweave files were retrieved from both `turbo-gateway.com` and
+`arweave.net` and matched their local SHA-256 hashes. The public Arweave gateway
+initially returned 404 while the transactions propagated, then passed the same
+hash checks after propagation.
 
 OpenTimestamps:
 
@@ -106,7 +105,7 @@ new immutable history snapshot.
 ```text
 The research note is first-party working theory, not proof.
 The 2026-07-15 OpenTimestamps proof is pending Bitcoin confirmation.
-The new Arweave transactions are Turbo-verified; arweave.net propagation is pending.
+The new Arweave transactions are hash-verified through Turbo and arweave.net.
 CivitasX still uses civitasx.pages.dev rather than a dedicated domain.
 The current authority remains a truthful 1-of-1 Temporary Founder Authority.
 Independent S2/S3/S4 evidence remains limited.

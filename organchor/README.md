@@ -48,7 +48,7 @@ lockfile_integrity: SIGNED
 carrier_receipts: PRESENT_WITH_IPFS_ARWEAVE_TURBO_AND_OTS
 content_addressed_mirror: PUBLISHED_IPFS_PINATA
 arweave_transaction: PUBLISHED_ARWEAVE_TURBO
-arweave_gateway_verification: CURRENT_TURBO_VERIFIED_ARWEAVE_NET_PROPAGATION_PENDING
+arweave_gateway_verification: TURBO_AND_ARWEAVE_NET_HASH_VERIFIED
 opentimestamps_bitcoin_anchor: CURRENT_PENDING_WITH_PRIOR_CONFIRMED_PROOF
 public_artifact_recovery: PASSED_PUBLIC_REHEARSAL
 ```
@@ -63,9 +63,9 @@ arweave_turbo_directory_hash: sha256:dcb05c435e4d0d30d6090cc747e7f924ff3c8928cc2
 arweave_turbo_owner: FPp1-IGNqgBFcvYTzahkoNx7NlwLgcrwUD3flushljA
 ```
 
-Key files in the new package have been hash-verified through Turbo. Public
-`arweave.net` propagation is pending. The prior package remains hash-verified
-through both gateways, and its OpenTimestamps proof remains Bitcoin-confirmed.
+Key files in the new package have been hash-verified through both Turbo and
+public `arweave.net`. The prior package remains hash-verified, and its
+OpenTimestamps proof remains Bitcoin-confirmed.
 
 It still does not include local Bitcoin Core full-node verification,
 custom-domain hardening, multi-custodian authority, or decentralized governance.
