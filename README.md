@@ -22,6 +22,19 @@ FAQ:
 https://civitasx.pages.dev/faq
 ```
 
+External reading copies:
+
+```text
+Medium First Public Statement:
+https://medium.com/@civitasx/civitasx-first-public-statement-c21a9755f2e1
+
+Substack First Public Statement:
+https://civitasxresearch.substack.com/p/civitasx-first-public-statement
+```
+
+These copies support discovery. The CivitasX website remains the official
+statement and revision source.
+
 ## Research
 
 The first parent-level research note connects the four starting directions into
@@ -36,6 +49,18 @@ public/research/FROM_FOUR_STARTING_POINTS_TO_A_TESTABLE_PARENT_PATH.md
 It is a working theory of change, not proof. It states evidence requirements,
 failure signals, and a stop rule against further theory work without a model,
 implementation, or new evidence.
+
+External Parent Path copies:
+
+```text
+Medium:
+https://medium.com/@civitasx/from-four-starting-points-to-a-civilizational-path-db9403a80b9e
+
+Substack:
+https://civitasxresearch.substack.com/p/from-four-starting-points
+```
+
+Both copies direct new readers back to the official First Public Statement.
 
 ## Current Starting Directions
 
@@ -149,4 +174,10 @@ Reuse permission does not grant official signed continuity or endorsement.
 Bluesky: https://bsky.app/profile/civitasx.bsky.social
 First post: https://bsky.app/profile/civitasx.bsky.social/post/3mpkzxox7bf2k
 First thread: https://bsky.app/profile/civitasx.bsky.social/post/3mpl2qzsduc2s
+```
+
+Later public publication correction:
+
+```text
+launch/2026-07-16-platform-onboarding-repair.md
 ```

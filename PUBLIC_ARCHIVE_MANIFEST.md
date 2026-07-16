@@ -1,10 +1,11 @@
 # CivitasX Public Archive Manifest
 
-Updated: 2026-07-15
+Updated: 2026-07-16
 
-Status: parent-path V1 archived with signed continuity records, IPFS Pinata and
-Arweave Turbo carrier publications, and a new OpenTimestamps proof pending
-Bitcoin confirmation.
+Status: parent-path V1 remains archived with signed continuity records, IPFS
+Pinata and Arweave Turbo carrier publications, and a new OpenTimestamps proof
+pending Bitcoin confirmation. External publication onboarding links and their
+authority boundary are now recorded.
 
 ## Public Archive Contents
 
@@ -33,6 +34,7 @@ launch/2026-07-13-ipfs-pinata-mirror.md
 launch/2026-07-14-arweave-turbo-mirror.md
 launch/2026-07-15-parent-path-v1.md
 launch/2026-07-15-parent-path-v1-deployed.md
+launch/2026-07-16-platform-onboarding-repair.md
 continuity/CONTINUITY.md
 continuity/CIVITASX_PARENT_MISSION.md
 continuity/CIVITASX_FOUNDING_BASELINE.md
